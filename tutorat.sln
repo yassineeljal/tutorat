@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tutorat", "tutorat\tutorat.csproj", "{E967C801-8594-4583-80C4-279A1CD18C57}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "data", "data\data.csproj", "{6A9AD3D6-F2EB-41A3-BBE9-B9C311BA70D0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E967C801-8594-4583-80C4-279A1CD18C57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E967C801-8594-4583-80C4-279A1CD18C57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E967C801-8594-4583-80C4-279A1CD18C57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E967C801-8594-4583-80C4-279A1CD18C57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A9AD3D6-F2EB-41A3-BBE9-B9C311BA70D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A9AD3D6-F2EB-41A3-BBE9-B9C311BA70D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A9AD3D6-F2EB-41A3-BBE9-B9C311BA70D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A9AD3D6-F2EB-41A3-BBE9-B9C311BA70D0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {873763B9-6CB1-4F9C-87C3-3667D48AF1EF}
+	EndGlobalSection
+EndGlobal

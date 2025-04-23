@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "UpXu3ZJtt5E=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\2387923\\OneDrive - Cégep Marie-Victorin\\Desktop\\tutorat\\tutorat\\tutorat.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\2387923\\.nuget\\packages\\communitytoolkit.mvvm\\8.4.0\\communitytoolkit.mvvm.8.4.0.nupkg.sha512",
+    "C:\\Users\\2387923\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\9.0.4\\microsoft.extensions.dependencyinjection.9.0.4.nupkg.sha512",
+    "C:\\Users\\2387923\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.4\\microsoft.extensions.dependencyinjection.abstractions.9.0.4.nupkg.sha512"
+  ],
+  "logs": []
+}
