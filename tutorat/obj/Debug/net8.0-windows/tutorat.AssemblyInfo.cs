@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("tutorat")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0207be8fcb5d61d9f69973716908cbb39b0a65db")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9dea0665a892fea6eb5f055af4972f95fd2cd310")]
 [assembly: System.Reflection.AssemblyProductAttribute("tutorat")]
 [assembly: System.Reflection.AssemblyTitleAttribute("tutorat")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
