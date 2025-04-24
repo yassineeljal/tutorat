@@ -12,13 +12,15 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\2387923\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\2387923\\.nuget\\packages",
+      "C:\\Users\\yassi\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\yassi\\.nuget\\packages",
       "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
     ],
     "configProperties": {
       "MVVMTOOLKIT_ENABLE_INOTIFYPROPERTYCHANGING_SUPPORT": true,
+      "System.Reflection.NullabilityInfoContext.IsSupported": true,
       "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization": true,
+      "CSWINRT_USE_WINDOWS_UI_XAML_PROJECTIONS": false,
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true
     }
   }

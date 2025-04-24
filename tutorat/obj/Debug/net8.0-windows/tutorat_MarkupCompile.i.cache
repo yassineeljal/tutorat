@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\2387923\OneDrive - Cégep Marie-Victorin\Desktop\tutorat\tutorat\obj\Debug\net8.0-windows\
+C:\Users\yassi\OneDrive\Desktop\tutorat\tutorat\obj\Debug\net8.0-windows\
 tutorat
 none
 false
-TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-C:\Users\2387923\OneDrive - Cégep Marie-Victorin\Desktop\tutorat\tutorat\App.xaml
-11407045341
+TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
+C:\Users\yassi\OneDrive\Desktop\tutorat\tutorat\App.xaml
+5-1711261068
 
-11-1470432158
-201-1457291737
-MainWindow.xaml;
+162023452902
+219-1003603252
+MainWindow.xaml;View\TeacherDashboard.xaml;View\TeacherUserControls\Meeting.xaml;View\TeacherUserControls\StudentRequest.xaml;View\TeacherUserControls\TutorList.xaml;
 
 False
 
