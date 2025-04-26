@@ -7,10 +7,13 @@ using tutorat.Service.MeetingService;
 
 namespace tutorat.ViewModel
 {
-    public class MeetingViewModel : ObservableObject
+    public partial class MeetingViewModel : ObservableObject
     {
         private readonly IMeetingService _meetingService;
         public ObservableCollection<Meeting> Meetings { get; set; } = new ObservableCollection<Meeting>();
+
+        [ObservableProperty]
+        private String idInput;
         public MeetingViewModel(IMeetingService meetingService)
         {
             _meetingService = meetingService;
@@ -43,6 +46,11 @@ namespace tutorat.ViewModel
             {
                 Meetings.Add(meeting);
             }
+        }
+
+        private void DeleteMeeting()
+        {
+
         }
 
     }

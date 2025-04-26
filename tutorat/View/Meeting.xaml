@@ -7,6 +7,43 @@
         mc:Ignorable="d"
         Title="Meeting" Height="450" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="0" Margin="0,0,0,10">
+            <TextBlock Text="Id :" VerticalAlignment="Center" Margin="5,0,5,0"/>
+            <TextBox Width="100"
+                     Text="{Binding IdInput, UpdateSourceTrigger=PropertyChanged}" />
+            <Button Content="Rechercher"
+                    Margin="10,0,0,0"
+                    Command="{Binding DeleteMeetingCommand}"/>
+        </StackPanel>
+        <Button Content="Supprimer"
+                    Grid.Row="2"
+                    Width="100"
+                    Height="30"
+                    Background="Red"
+                
+                    Margin="10,0,0,0"
+                    Command="{Binding DeleteMeetingCommand}"/>
+
+        <DataGrid Grid.Row="1"
+                  ItemsSource="{Binding Meetings}"
+                  SelectedItem="{Binding SelectedMeeting}"
+                  AutoGenerateColumns="False"
+                  SelectionMode="Single"
+                  CanUserAddRows="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Id" Binding="{Binding Id}" Width="Auto"/>
+                <DataGridTextColumn Header="Nom" Binding="{Binding Name}" Width="*"/>
+                <DataGridTextColumn Header="Description" Binding="{Binding Description}" Width="*"/>
+                <DataGridTextColumn Header="Date de la rencontre" Binding="{Binding DateMeeting}" Width="Auto"/>
+                <DataGridTextColumn Header="Tuteur" Binding="{Binding Tutor.Da}" Width="Auto"/>
+                <DataGridTextColumn Header="Étudiant" Binding="{Binding Student.Da}" Width="Auto"/>
+            </DataGrid.Columns>
+        </DataGrid>
     </Grid>
 </Window>
