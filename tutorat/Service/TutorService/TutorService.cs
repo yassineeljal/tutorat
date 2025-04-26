@@ -27,14 +27,19 @@ namespace tutorat.Service.TutorService
 
         public Tutor GetByDa(int da)
         {
-            return _db.Tutors.Find(da);
+            var tutor = from t in _db.Tutors
+                        where t.Da == da
+                        select t;
+            return tutor.FirstOrDefault();
         }
 
         public void Update(Tutor tutor)
         {
-            if (_db.Tutors.Find(tutor.Da) != null){
-
+            var exist = _db.Tutors.FirstOrDefault(t => t.Da == tutor.Da);
+            if (exist != null){
+                
             }
+            _db.SaveChanges();
         }
     }
 }

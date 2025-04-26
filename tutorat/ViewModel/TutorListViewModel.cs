@@ -10,6 +10,7 @@ namespace tutorat.ViewModel
     {
         private readonly ITutorService _tutorService;
         public ObservableCollection<Tutor> Tutors { get; set; } = new ObservableCollection<Tutor>();
+        public ObservableCollection<Tutor> TutorsSearch { get; set; } = new ObservableCollection<Tutor>();
 
         public TutorListViewModel(ITutorService tutorService)
         {
@@ -23,6 +24,10 @@ namespace tutorat.ViewModel
 
         [ObservableProperty]
         private Tutor selectedTutor;
+        
+        [ObservableProperty]
+        [NotifyCanExecuteChangedFor(nameof(DeleteTutorCommand))]
+        private Tutor selectedTutorSearch;
 
         private void LoadTutors()
         {
@@ -31,6 +36,12 @@ namespace tutorat.ViewModel
                 FirstName = "Alice",
                 LastName = "Martin",
                 Da = 98765
+            });
+            _tutorService.Create(new Tutor
+            {
+                FirstName = "Alice",
+                LastName = "Martin",
+                Da = 2
             });
             var tutors = _tutorService.GetAll();
             foreach (var tutor in tutors)
@@ -41,8 +52,37 @@ namespace tutorat.ViewModel
         [RelayCommand]
         private void SearchTutor()
         {
-            Tutors.Clear();
-            Tutors.Add(_tutorService.GetByDa(int.Parse(daInput)));
+            var tutor = _tutorService.GetByDa(int.Parse(daInput));
+            if (string.IsNullOrEmpty(daInput))
+            {
+                return;
+            }
+            if( tutor == null || TutorsSearch.FirstOrDefault(t => t.Da == tutor.Da) != null) {
+                return;
+            }
+            else
+            {
+                TutorsSearch.Clear();
+                TutorsSearch.Add(_tutorService.GetByDa(int.Parse(daInput)));
+            }
+
+        }
+
+        private bool canDeleteTutor()
+        {
+            return SelectedTutorSearch != null;
+        }
+
+        [RelayCommand(CanExecute = nameof(canDeleteTutor))]
+        private void DeleteTutor()
+        {
+            if (SelectedTutorSearch != null)
+            {
+                _tutorService.Delete(SelectedTutorSearch.Da);
+                Tutors.Remove(SelectedTutorSearch);
+                TutorsSearch.Clear();
+                SelectedTutor = null;
+            }
         }
     }
 }

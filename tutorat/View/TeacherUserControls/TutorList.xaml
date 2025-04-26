@@ -12,6 +12,7 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
 
         <StackPanel Orientation="Horizontal" Grid.Row="0" Margin="0,0,0,10">
@@ -37,10 +38,32 @@
             </DataGrid.Columns>
         </DataGrid>
 
-        <Button Content="Info"
-                Grid.Row="2"
-                HorizontalAlignment="Center"
-                Width="100"
-                Margin="0,10,0,0"/>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="3" Margin="0,10,0,0">
+            <Button Content="Info"
+                    Command="{Binding InfoTutorCommand}"
+                    Height="30"
+                    Width="100"/>
+            <Button Content="Supprimer"
+                    Command="{Binding DeleteTutorCommand}"
+                    Height="30"
+                    Width="100"
+                    Background="Red"/>
+        </StackPanel>
+
+
+        <DataGrid Grid.Row="2"
+                  ItemsSource="{Binding TutorsSearch}"
+                  SelectedItem="{Binding SelectedTutorSearch}"
+                  AutoGenerateColumns="False"
+                  SelectionMode="Single"
+                  CanUserAddRows="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Id" Binding="{Binding Id}" Width="Auto"/>
+                <DataGridTextColumn Header="Prénom" Binding="{Binding FirstName}" Width="*"/>
+                <DataGridTextColumn Header="Nom" Binding="{Binding LastName}" Width="*"/>
+                <DataGridTextColumn Header="DA" Binding="{Binding Da}" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
     </Grid>
 </UserControl>
