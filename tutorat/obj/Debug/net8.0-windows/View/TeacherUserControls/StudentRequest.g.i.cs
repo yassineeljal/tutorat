@@ -53,7 +53,7 @@ namespace tutorat.View.TeacherUserControls {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/tutorat;component/view/teacherusercontrols/studentrequest.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/tutorat;V1.0.0.0;component/view/teacherusercontrols/studentrequest.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\View\TeacherUserControls\StudentRequest.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -10,7 +10,7 @@ namespace tutorat.Service.TeacherService
 {
     public class TeacherService : ITeacherService
     {
-        private TutorDbContext _db;
+        private ModelDbContext _db;
 
         public void Create(Teacher teacher)
         {

@@ -5,7 +5,7 @@ namespace tutorat.Service.TutorService
 {
     public class TutorService : ITutorService
     {
-        private TutorDbContext _db = new TutorDbContext();
+        private ModelDbContext _db = new ModelDbContext();
         public void Create(Tutor tutor)
         {
             _db.Tutors.Add(tutor);

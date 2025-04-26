@@ -7,10 +7,10 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="View\TeacherDashboard.xaml.cs">
+    <Compile Update="View\Meeting.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="View\TeacherUserControls\Meeting.xaml.cs">
+    <Compile Update="View\TeacherDashboard.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="View\TeacherUserControls\StudentRequest.xaml.cs">

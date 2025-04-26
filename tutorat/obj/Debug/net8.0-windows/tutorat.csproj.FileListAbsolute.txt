@@ -1,7 +1,6 @@
 C:\Users\yassi\OneDrive\Desktop\tutorat\tutorat\obj\Debug\net8.0-windows\tutorat.csproj.AssemblyReference.cache
 C:\Users\yassi\OneDrive\Desktop\tutorat\tutorat\obj\Debug\net8.0-windows\MainWindow.g.cs
 C:\Users\yassi\OneDrive\Desktop\tutorat\tutorat\obj\Debug\net8.0-windows\View\TeacherDashboard.g.cs
-C:\Users\yassi\OneDrive\Desktop\tutorat\tutorat\obj\Debug\net8.0-windows\View\TeacherUserControls\Meeting.g.cs
 C:\Users\yassi\OneDrive\Desktop\tutorat\tutorat\obj\Debug\net8.0-windows\View\TeacherUserControls\StudentRequest.g.cs
 C:\Users\yassi\OneDrive\Desktop\tutorat\tutorat\obj\Debug\net8.0-windows\View\TeacherUserControls\TutorList.g.cs
 C:\Users\yassi\OneDrive\Desktop\tutorat\tutorat\obj\Debug\net8.0-windows\App.g.cs
@@ -143,7 +142,6 @@ C:\Users\yassi\OneDrive\Desktop\tutorat\tutorat\bin\Debug\net8.0-windows\data.dl
 C:\Users\yassi\OneDrive\Desktop\tutorat\tutorat\bin\Debug\net8.0-windows\data.pdb
 C:\Users\yassi\OneDrive\Desktop\tutorat\tutorat\obj\Debug\net8.0-windows\MainWindow.baml
 C:\Users\yassi\OneDrive\Desktop\tutorat\tutorat\obj\Debug\net8.0-windows\View\TeacherDashboard.baml
-C:\Users\yassi\OneDrive\Desktop\tutorat\tutorat\obj\Debug\net8.0-windows\View\TeacherUserControls\Meeting.baml
 C:\Users\yassi\OneDrive\Desktop\tutorat\tutorat\obj\Debug\net8.0-windows\View\TeacherUserControls\StudentRequest.baml
 C:\Users\yassi\OneDrive\Desktop\tutorat\tutorat\obj\Debug\net8.0-windows\View\TeacherUserControls\TutorList.baml
 C:\Users\yassi\OneDrive\Desktop\tutorat\tutorat\obj\Debug\net8.0-windows\tutorat.g.resources
@@ -158,3 +156,8 @@ C:\Users\yassi\OneDrive\Desktop\tutorat\tutorat\obj\Debug\net8.0-windows\refint\
 C:\Users\yassi\OneDrive\Desktop\tutorat\tutorat\obj\Debug\net8.0-windows\tutorat.pdb
 C:\Users\yassi\OneDrive\Desktop\tutorat\tutorat\obj\Debug\net8.0-windows\tutorat.genruntimeconfig.cache
 C:\Users\yassi\OneDrive\Desktop\tutorat\tutorat\obj\Debug\net8.0-windows\ref\tutorat.dll
+C:\Users\yassi\OneDrive\Desktop\tutorat\tutorat\bin\Debug\net8.0-windows\MaterialDesignColors.dll
+C:\Users\yassi\OneDrive\Desktop\tutorat\tutorat\bin\Debug\net8.0-windows\MaterialDesignThemes.Wpf.dll
+C:\Users\yassi\OneDrive\Desktop\tutorat\tutorat\bin\Debug\net8.0-windows\Microsoft.Xaml.Behaviors.dll
+C:\Users\yassi\OneDrive\Desktop\tutorat\tutorat\obj\Debug\net8.0-windows\View\Meeting.g.cs
+C:\Users\yassi\OneDrive\Desktop\tutorat\tutorat\obj\Debug\net8.0-windows\View\Meeting.baml
