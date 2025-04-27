@@ -13,10 +13,16 @@
     <Compile Update="View\TeacherDashboard.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="View\TeacherProfile.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="View\TeacherUserControls\StudentRequest.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="View\TeacherUserControls\TutorList.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\TutorProfile.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>

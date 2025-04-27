@@ -9,6 +9,7 @@ namespace data
         public DbSet<Teacher> Teachers { get; set; }
         public DbSet<Student> Students { get; set; }
         public DbSet<Meeting> Meetings { get; set; }
+        public DbSet<Request> Requests { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder options) =>
             options.UseSqlite("Data Source=tutorat.db");
