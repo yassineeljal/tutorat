@@ -49,6 +49,33 @@ namespace data.Migrations
                     b.ToTable("Meetings");
                 });
 
+            modelBuilder.Entity("data.Model.Request", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Category")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("Note")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("StudentId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Subject")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("StudentId");
+
+                    b.ToTable("Requests");
+                });
+
             modelBuilder.Entity("data.Model.Student", b =>
                 {
                     b.Property<int>("Id")
@@ -132,6 +159,17 @@ namespace data.Migrations
                     b.Navigation("Student");
 
                     b.Navigation("Tutor");
+                });
+
+            modelBuilder.Entity("data.Model.Request", b =>
+                {
+                    b.HasOne("data.Model.Student", "Student")
+                        .WithMany()
+                        .HasForeignKey("StudentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Student");
                 });
 #pragma warning restore 612, 618
         }

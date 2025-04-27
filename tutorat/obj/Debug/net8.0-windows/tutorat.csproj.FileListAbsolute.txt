@@ -1,7 +1,6 @@
 C:\Users\yassi\OneDrive\Desktop\tutorat\tutorat\obj\Debug\net8.0-windows\tutorat.csproj.AssemblyReference.cache
 C:\Users\yassi\OneDrive\Desktop\tutorat\tutorat\obj\Debug\net8.0-windows\MainWindow.g.cs
 C:\Users\yassi\OneDrive\Desktop\tutorat\tutorat\obj\Debug\net8.0-windows\View\TeacherDashboard.g.cs
-C:\Users\yassi\OneDrive\Desktop\tutorat\tutorat\obj\Debug\net8.0-windows\View\TeacherUserControls\StudentRequest.g.cs
 C:\Users\yassi\OneDrive\Desktop\tutorat\tutorat\obj\Debug\net8.0-windows\View\TeacherUserControls\TutorList.g.cs
 C:\Users\yassi\OneDrive\Desktop\tutorat\tutorat\obj\Debug\net8.0-windows\App.g.cs
 C:\Users\yassi\OneDrive\Desktop\tutorat\tutorat\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
@@ -142,7 +141,6 @@ C:\Users\yassi\OneDrive\Desktop\tutorat\tutorat\bin\Debug\net8.0-windows\data.dl
 C:\Users\yassi\OneDrive\Desktop\tutorat\tutorat\bin\Debug\net8.0-windows\data.pdb
 C:\Users\yassi\OneDrive\Desktop\tutorat\tutorat\obj\Debug\net8.0-windows\MainWindow.baml
 C:\Users\yassi\OneDrive\Desktop\tutorat\tutorat\obj\Debug\net8.0-windows\View\TeacherDashboard.baml
-C:\Users\yassi\OneDrive\Desktop\tutorat\tutorat\obj\Debug\net8.0-windows\View\TeacherUserControls\StudentRequest.baml
 C:\Users\yassi\OneDrive\Desktop\tutorat\tutorat\obj\Debug\net8.0-windows\View\TeacherUserControls\TutorList.baml
 C:\Users\yassi\OneDrive\Desktop\tutorat\tutorat\obj\Debug\net8.0-windows\tutorat.g.resources
 C:\Users\yassi\OneDrive\Desktop\tutorat\tutorat\obj\Debug\net8.0-windows\tutorat.GeneratedMSBuildEditorConfig.editorconfig
@@ -165,3 +163,5 @@ C:\Users\yassi\OneDrive\Desktop\tutorat\tutorat\obj\Debug\net8.0-windows\View\Te
 C:\Users\yassi\OneDrive\Desktop\tutorat\tutorat\obj\Debug\net8.0-windows\View\TutorProfile.g.cs
 C:\Users\yassi\OneDrive\Desktop\tutorat\tutorat\obj\Debug\net8.0-windows\View\TeacherProfile.baml
 C:\Users\yassi\OneDrive\Desktop\tutorat\tutorat\obj\Debug\net8.0-windows\View\TutorProfile.baml
+C:\Users\yassi\OneDrive\Desktop\tutorat\tutorat\obj\Debug\net8.0-windows\View\StudentRequest.g.cs
+C:\Users\yassi\OneDrive\Desktop\tutorat\tutorat\obj\Debug\net8.0-windows\View\StudentRequest.baml

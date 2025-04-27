@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\yassi\OneDrive\Desktop\tutorat\tutorat\App.xaml
-72120862368
+764022125
 
-21-94877686
+24-1267739694
 222-1577912795
-MainWindow.xaml;View\Meeting.xaml;View\TeacherDashboard.xaml;View\TeacherProfile.xaml;View\TeacherUserControls\StudentRequest.xaml;View\TeacherUserControls\TutorList.xaml;View\TutorProfile.xaml;
+MainWindow.xaml;View\Meeting.xaml;View\StudentRequest.xaml;View\TeacherDashboard.xaml;View\TeacherProfile.xaml;View\TeacherUserControls\TutorList.xaml;View\TutorProfile.xaml;
 
 False
 
