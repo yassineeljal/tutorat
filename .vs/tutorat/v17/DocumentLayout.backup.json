@@ -3,32 +3,52 @@
   "WorkspaceRootPath": "C:\\Users\\yassi\\OneDrive\\Desktop\\tutorat\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|c:\\users\\yassi\\onedrive\\desktop\\tutorat\\tutorat\\viewmodel\\studentrequestviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|solutionrelative:tutorat\\viewmodel\\studentrequestviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|c:\\users\\yassi\\onedrive\\desktop\\tutorat\\tutorat\\service\\requestservice\\requestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|solutionrelative:tutorat\\service\\requestservice\\requestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6A9AD3D6-F2EB-41A3-BBE9-B9C311BA70D0}|data\\data.csproj|c:\\users\\yassi\\onedrive\\desktop\\tutorat\\data\\model\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6A9AD3D6-F2EB-41A3-BBE9-B9C311BA70D0}|data\\data.csproj|solutionrelative:data\\model\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|c:\\users\\yassi\\onedrive\\desktop\\tutorat\\tutorat\\service\\studentservice\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|solutionrelative:tutorat\\service\\studentservice\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6A9AD3D6-F2EB-41A3-BBE9-B9C311BA70D0}|data\\data.csproj|c:\\users\\yassi\\onedrive\\desktop\\tutorat\\data\\modeldbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6A9AD3D6-F2EB-41A3-BBE9-B9C311BA70D0}|data\\data.csproj|solutionrelative:data\\modeldbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|c:\\users\\yassi\\onedrive\\desktop\\tutorat\\tutorat\\viewmodel\\studentrequestviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|solutionrelative:tutorat\\viewmodel\\studentrequestviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6A9AD3D6-F2EB-41A3-BBE9-B9C311BA70D0}|data\\data.csproj|c:\\users\\yassi\\onedrive\\desktop\\tutorat\\data\\model\\request.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6A9AD3D6-F2EB-41A3-BBE9-B9C311BA70D0}|data\\data.csproj|solutionrelative:data\\model\\request.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|c:\\users\\yassi\\onedrive\\desktop\\tutorat\\tutorat\\view\\studentrequest.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|solutionrelative:tutorat\\view\\studentrequest.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6A9AD3D6-F2EB-41A3-BBE9-B9C311BA70D0}|data\\data.csproj|c:\\users\\yassi\\onedrive\\desktop\\tutorat\\data\\model\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A9AD3D6-F2EB-41A3-BBE9-B9C311BA70D0}|data\\data.csproj|solutionrelative:data\\model\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|c:\\users\\yassi\\onedrive\\desktop\\tutorat\\tutorat\\view\\studentrequest.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|solutionrelative:tutorat\\view\\studentrequest.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A9AD3D6-F2EB-41A3-BBE9-B9C311BA70D0}|data\\data.csproj|c:\\users\\yassi\\onedrive\\desktop\\tutorat\\data\\model\\meeting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A9AD3D6-F2EB-41A3-BBE9-B9C311BA70D0}|data\\data.csproj|solutionrelative:data\\model\\meeting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|c:\\users\\yassi\\onedrive\\desktop\\tutorat\\tutorat\\view\\meeting.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|solutionrelative:tutorat\\view\\meeting.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|c:\\users\\yassi\\onedrive\\desktop\\tutorat\\tutorat\\view\\teacherdashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|solutionrelative:tutorat\\view\\teacherdashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|c:\\users\\yassi\\onedrive\\desktop\\tutorat\\tutorat\\service\\requestservice\\irequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|solutionrelative:tutorat\\service\\requestservice\\irequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A9AD3D6-F2EB-41A3-BBE9-B9C311BA70D0}|data\\data.csproj|c:\\users\\yassi\\onedrive\\desktop\\tutorat\\data\\modeldbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A9AD3D6-F2EB-41A3-BBE9-B9C311BA70D0}|data\\data.csproj|solutionrelative:data\\modeldbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|c:\\users\\yassi\\onedrive\\desktop\\tutorat\\tutorat\\view\\studentrequest.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|solutionrelative:tutorat\\view\\studentrequest.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|c:\\users\\yassi\\onedrive\\desktop\\tutorat\\tutorat\\viewmodel\\tutorlistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -39,10 +59,6 @@
       "RelativeMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|solutionrelative:tutorat\\view\\meeting.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6A9AD3D6-F2EB-41A3-BBE9-B9C311BA70D0}|data\\data.csproj|c:\\users\\yassi\\onedrive\\desktop\\tutorat\\data\\model\\meeting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6A9AD3D6-F2EB-41A3-BBE9-B9C311BA70D0}|data\\data.csproj|solutionrelative:data\\model\\meeting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|c:\\users\\yassi\\onedrive\\desktop\\tutorat\\tutorat\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|solutionrelative:tutorat\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
@@ -51,24 +67,8 @@
       "RelativeMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|solutionrelative:tutorat\\view\\teacherprofile.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|c:\\users\\yassi\\onedrive\\desktop\\tutorat\\tutorat\\view\\meeting.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|solutionrelative:tutorat\\view\\meeting.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|c:\\users\\yassi\\onedrive\\desktop\\tutorat\\tutorat\\viewmodel\\meetingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|solutionrelative:tutorat\\viewmodel\\meetingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|c:\\users\\yassi\\onedrive\\desktop\\tutorat\\tutorat\\service\\studentservice\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|solutionrelative:tutorat\\service\\studentservice\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|c:\\users\\yassi\\onedrive\\desktop\\tutorat\\tutorat\\view\\teacherdashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|solutionrelative:tutorat\\view\\teacherdashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|c:\\users\\yassi\\onedrive\\desktop\\tutorat\\tutorat\\service\\requestservice\\irequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|solutionrelative:tutorat\\service\\requestservice\\irequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|c:\\users\\yassi\\onedrive\\desktop\\tutorat\\tutorat\\service\\studentservice\\istudentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -142,100 +142,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "StudentRequest.xaml",
-              "DocumentMoniker": "C:\\Users\\yassi\\OneDrive\\Desktop\\tutorat\\tutorat\\View\\StudentRequest.xaml",
-              "RelativeDocumentMoniker": "tutorat\\View\\StudentRequest.xaml",
-              "ToolTip": "C:\\Users\\yassi\\OneDrive\\Desktop\\tutorat\\tutorat\\View\\StudentRequest.xaml",
-              "RelativeToolTip": "tutorat\\View\\StudentRequest.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-27T00:58:18.346Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "StudentRequest.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\yassi\\OneDrive\\Desktop\\tutorat\\tutorat\\View\\StudentRequest.xaml.cs",
-              "RelativeDocumentMoniker": "tutorat\\View\\StudentRequest.xaml.cs",
-              "ToolTip": "C:\\Users\\yassi\\OneDrive\\Desktop\\tutorat\\tutorat\\View\\StudentRequest.xaml.cs",
-              "RelativeToolTip": "tutorat\\View\\StudentRequest.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAzAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "Request.cs",
+              "DocumentMoniker": "C:\\Users\\yassi\\OneDrive\\Desktop\\tutorat\\data\\Model\\Request.cs",
+              "RelativeDocumentMoniker": "data\\Model\\Request.cs",
+              "ToolTip": "C:\\Users\\yassi\\OneDrive\\Desktop\\tutorat\\data\\Model\\Request.cs",
+              "RelativeToolTip": "data\\Model\\Request.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T01:56:05.178Z",
+              "WhenOpened": "2025-04-28T17:42:27.668Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Student.cs",
-              "DocumentMoniker": "C:\\Users\\yassi\\OneDrive\\Desktop\\tutorat\\data\\Model\\Student.cs",
-              "RelativeDocumentMoniker": "data\\Model\\Student.cs",
-              "ToolTip": "C:\\Users\\yassi\\OneDrive\\Desktop\\tutorat\\data\\Model\\Student.cs",
-              "RelativeToolTip": "data\\Model\\Student.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T23:27:27.429Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "StudentRequestViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\yassi\\OneDrive\\Desktop\\tutorat\\tutorat\\ViewModel\\StudentRequestViewModel.cs",
-              "RelativeDocumentMoniker": "tutorat\\ViewModel\\StudentRequestViewModel.cs",
-              "ToolTip": "C:\\Users\\yassi\\OneDrive\\Desktop\\tutorat\\tutorat\\ViewModel\\StudentRequestViewModel.cs",
-              "RelativeToolTip": "tutorat\\ViewModel\\StudentRequestViewModel.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAADYAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T00:59:30.075Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RequestService.cs",
-              "DocumentMoniker": "C:\\Users\\yassi\\OneDrive\\Desktop\\tutorat\\tutorat\\Service\\RequestService\\RequestService.cs",
-              "RelativeDocumentMoniker": "tutorat\\Service\\RequestService\\RequestService.cs",
-              "ToolTip": "C:\\Users\\yassi\\OneDrive\\Desktop\\tutorat\\tutorat\\Service\\RequestService\\RequestService.cs",
-              "RelativeToolTip": "tutorat\\Service\\RequestService\\RequestService.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwA8AAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T00:45:09.64Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "TutorListViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\yassi\\OneDrive\\Desktop\\tutorat\\tutorat\\ViewModel\\TutorListViewModel.cs",
-              "RelativeDocumentMoniker": "tutorat\\ViewModel\\TutorListViewModel.cs",
-              "ToolTip": "C:\\Users\\yassi\\OneDrive\\Desktop\\tutorat\\tutorat\\ViewModel\\TutorListViewModel.cs",
-              "RelativeToolTip": "tutorat\\ViewModel\\TutorListViewModel.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAswBkAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T22:38:48.103Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Meeting.xaml",
-              "DocumentMoniker": "C:\\Users\\yassi\\OneDrive\\Desktop\\tutorat\\tutorat\\View\\Meeting.xaml",
-              "RelativeDocumentMoniker": "tutorat\\View\\Meeting.xaml",
-              "ToolTip": "C:\\Users\\yassi\\OneDrive\\Desktop\\tutorat\\tutorat\\View\\Meeting.xaml",
-              "RelativeToolTip": "tutorat\\View\\Meeting.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-26T21:48:38.042Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\yassi\\OneDrive\\Desktop\\tutorat\\tutorat\\App.xaml",
               "RelativeDocumentMoniker": "tutorat\\App.xaml",
@@ -247,109 +171,106 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 4,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\yassi\\OneDrive\\Desktop\\tutorat\\data\\Model\\Student.cs",
+              "RelativeDocumentMoniker": "data\\Model\\Student.cs",
+              "ToolTip": "C:\\Users\\yassi\\OneDrive\\Desktop\\tutorat\\data\\Model\\Student.cs",
+              "RelativeToolTip": "data\\Model\\Student.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-23T23:27:27.429Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "StudentService.cs",
               "DocumentMoniker": "C:\\Users\\yassi\\OneDrive\\Desktop\\tutorat\\tutorat\\Service\\StudentService\\StudentService.cs",
               "RelativeDocumentMoniker": "tutorat\\Service\\StudentService\\StudentService.cs",
               "ToolTip": "C:\\Users\\yassi\\OneDrive\\Desktop\\tutorat\\tutorat\\Service\\StudentService\\StudentService.cs",
               "RelativeToolTip": "tutorat\\Service\\StudentService\\StudentService.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAowCUAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAAACAAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-26T23:12:36.284Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "MeetingViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\yassi\\OneDrive\\Desktop\\tutorat\\tutorat\\ViewModel\\MeetingViewModel.cs",
-              "RelativeDocumentMoniker": "tutorat\\ViewModel\\MeetingViewModel.cs",
-              "ToolTip": "C:\\Users\\yassi\\OneDrive\\Desktop\\tutorat\\tutorat\\ViewModel\\MeetingViewModel.cs",
-              "RelativeToolTip": "tutorat\\ViewModel\\MeetingViewModel.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAgwAcAAAAbAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "StudentRequestViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\yassi\\OneDrive\\Desktop\\tutorat\\tutorat\\ViewModel\\StudentRequestViewModel.cs",
+              "RelativeDocumentMoniker": "tutorat\\ViewModel\\StudentRequestViewModel.cs",
+              "ToolTip": "C:\\Users\\yassi\\OneDrive\\Desktop\\tutorat\\tutorat\\ViewModel\\StudentRequestViewModel.cs",
+              "RelativeToolTip": "tutorat\\ViewModel\\StudentRequestViewModel.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAWwDgAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T20:29:18.42Z",
+              "WhenOpened": "2025-04-27T00:59:30.075Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Meeting.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\yassi\\OneDrive\\Desktop\\tutorat\\tutorat\\View\\Meeting.xaml.cs",
-              "RelativeDocumentMoniker": "tutorat\\View\\Meeting.xaml.cs",
-              "ToolTip": "C:\\Users\\yassi\\OneDrive\\Desktop\\tutorat\\tutorat\\View\\Meeting.xaml.cs",
-              "RelativeToolTip": "tutorat\\View\\Meeting.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "RequestService.cs",
+              "DocumentMoniker": "C:\\Users\\yassi\\OneDrive\\Desktop\\tutorat\\tutorat\\Service\\RequestService\\RequestService.cs",
+              "RelativeDocumentMoniker": "tutorat\\Service\\RequestService\\RequestService.cs",
+              "ToolTip": "C:\\Users\\yassi\\OneDrive\\Desktop\\tutorat\\tutorat\\Service\\RequestService\\RequestService.cs",
+              "RelativeToolTip": "tutorat\\Service\\RequestService\\RequestService.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAIA3wAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T21:48:41.614Z",
+              "WhenOpened": "2025-04-27T00:45:09.64Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ModelDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\yassi\\OneDrive\\Desktop\\tutorat\\data\\ModelDbContext.cs",
-              "RelativeDocumentMoniker": "data\\ModelDbContext.cs",
-              "ToolTip": "C:\\Users\\yassi\\OneDrive\\Desktop\\tutorat\\data\\ModelDbContext.cs",
-              "RelativeToolTip": "data\\ModelDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T17:31:55.699Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Request.cs",
-              "DocumentMoniker": "C:\\Users\\yassi\\OneDrive\\Desktop\\tutorat\\data\\Model\\Request.cs",
-              "RelativeDocumentMoniker": "data\\Model\\Request.cs",
-              "ToolTip": "C:\\Users\\yassi\\OneDrive\\Desktop\\tutorat\\data\\Model\\Request.cs",
-              "RelativeToolTip": "data\\Model\\Request.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T00:37:42.9Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "TeacherProfile.xaml",
-              "DocumentMoniker": "C:\\Users\\yassi\\OneDrive\\Desktop\\tutorat\\tutorat\\View\\TeacherProfile.xaml",
-              "RelativeDocumentMoniker": "tutorat\\View\\TeacherProfile.xaml",
-              "ToolTip": "C:\\Users\\yassi\\OneDrive\\Desktop\\tutorat\\tutorat\\View\\TeacherProfile.xaml",
-              "RelativeToolTip": "tutorat\\View\\TeacherProfile.xaml",
+              "DocumentIndex": 5,
+              "Title": "StudentRequest.xaml",
+              "DocumentMoniker": "C:\\Users\\yassi\\OneDrive\\Desktop\\tutorat\\tutorat\\View\\StudentRequest.xaml",
+              "RelativeDocumentMoniker": "tutorat\\View\\StudentRequest.xaml",
+              "ToolTip": "C:\\Users\\yassi\\OneDrive\\Desktop\\tutorat\\tutorat\\View\\StudentRequest.xaml",
+              "RelativeToolTip": "tutorat\\View\\StudentRequest.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-27T00:29:39.473Z",
+              "WhenOpened": "2025-04-27T00:58:18.346Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 6,
               "Title": "Meeting.cs",
               "DocumentMoniker": "C:\\Users\\yassi\\OneDrive\\Desktop\\tutorat\\data\\Model\\Meeting.cs",
               "RelativeDocumentMoniker": "data\\Model\\Meeting.cs",
               "ToolTip": "C:\\Users\\yassi\\OneDrive\\Desktop\\tutorat\\data\\Model\\Meeting.cs",
               "RelativeToolTip": "data\\Model\\Meeting.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAqwAkAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T19:42:41.157Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-26T19:42:41.157Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 12,
+              "Title": "TutorListViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\yassi\\OneDrive\\Desktop\\tutorat\\tutorat\\ViewModel\\TutorListViewModel.cs",
+              "RelativeDocumentMoniker": "tutorat\\ViewModel\\TutorListViewModel.cs",
+              "ToolTip": "C:\\Users\\yassi\\OneDrive\\Desktop\\tutorat\\tutorat\\ViewModel\\TutorListViewModel.cs",
+              "RelativeToolTip": "tutorat\\ViewModel\\TutorListViewModel.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAswBkAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T22:38:48.103Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "TeacherDashboard.xaml",
               "DocumentMoniker": "C:\\Users\\yassi\\OneDrive\\Desktop\\tutorat\\tutorat\\View\\TeacherDashboard.xaml",
               "RelativeDocumentMoniker": "tutorat\\View\\TeacherDashboard.xaml",
               "ToolTip": "C:\\Users\\yassi\\OneDrive\\Desktop\\tutorat\\tutorat\\View\\TeacherDashboard.xaml",
               "RelativeToolTip": "tutorat\\View\\TeacherDashboard.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-26T18:00:21.453Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-26T18:00:21.453Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 9,
               "Title": "IRequestService.cs",
               "DocumentMoniker": "C:\\Users\\yassi\\OneDrive\\Desktop\\tutorat\\tutorat\\Service\\RequestService\\IRequestService.cs",
               "RelativeDocumentMoniker": "tutorat\\Service\\RequestService\\IRequestService.cs",
@@ -357,8 +278,77 @@
               "RelativeToolTip": "tutorat\\Service\\RequestService\\IRequestService.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAAsAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T00:45:32.964Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-27T00:45:32.964Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Meeting.xaml",
+              "DocumentMoniker": "C:\\Users\\yassi\\OneDrive\\Desktop\\tutorat\\tutorat\\View\\Meeting.xaml",
+              "RelativeDocumentMoniker": "tutorat\\View\\Meeting.xaml",
+              "ToolTip": "C:\\Users\\yassi\\OneDrive\\Desktop\\tutorat\\tutorat\\View\\Meeting.xaml",
+              "RelativeToolTip": "tutorat\\View\\Meeting.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-26T21:48:38.042Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "StudentRequest.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\yassi\\OneDrive\\Desktop\\tutorat\\tutorat\\View\\StudentRequest.xaml.cs",
+              "RelativeDocumentMoniker": "tutorat\\View\\StudentRequest.xaml.cs",
+              "ToolTip": "C:\\Users\\yassi\\OneDrive\\Desktop\\tutorat\\tutorat\\View\\StudentRequest.xaml.cs",
+              "RelativeToolTip": "tutorat\\View\\StudentRequest.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T01:56:05.178Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "MeetingViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\yassi\\OneDrive\\Desktop\\tutorat\\tutorat\\ViewModel\\MeetingViewModel.cs",
+              "RelativeDocumentMoniker": "tutorat\\ViewModel\\MeetingViewModel.cs",
+              "ToolTip": "C:\\Users\\yassi\\OneDrive\\Desktop\\tutorat\\tutorat\\ViewModel\\MeetingViewModel.cs",
+              "RelativeToolTip": "tutorat\\ViewModel\\MeetingViewModel.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwAcAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T20:29:18.42Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Meeting.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\yassi\\OneDrive\\Desktop\\tutorat\\tutorat\\View\\Meeting.xaml.cs",
+              "RelativeDocumentMoniker": "tutorat\\View\\Meeting.xaml.cs",
+              "ToolTip": "C:\\Users\\yassi\\OneDrive\\Desktop\\tutorat\\tutorat\\View\\Meeting.xaml.cs",
+              "RelativeToolTip": "tutorat\\View\\Meeting.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T21:48:41.614Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ModelDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\yassi\\OneDrive\\Desktop\\tutorat\\data\\ModelDbContext.cs",
+              "RelativeDocumentMoniker": "data\\ModelDbContext.cs",
+              "ToolTip": "C:\\Users\\yassi\\OneDrive\\Desktop\\tutorat\\data\\ModelDbContext.cs",
+              "RelativeToolTip": "data\\ModelDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T17:31:55.699Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "TeacherProfile.xaml",
+              "DocumentMoniker": "C:\\Users\\yassi\\OneDrive\\Desktop\\tutorat\\tutorat\\View\\TeacherProfile.xaml",
+              "RelativeDocumentMoniker": "tutorat\\View\\TeacherProfile.xaml",
+              "ToolTip": "C:\\Users\\yassi\\OneDrive\\Desktop\\tutorat\\tutorat\\View\\TeacherProfile.xaml",
+              "RelativeToolTip": "tutorat\\View\\TeacherProfile.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-27T00:29:39.473Z"
             },
             {
               "$type": "Document",
@@ -511,7 +501,8 @@
               "ToolTip": "C:\\Users\\yassi\\OneDrive\\Desktop\\tutorat\\tutorat\\MainWindow.xaml",
               "RelativeToolTip": "tutorat\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-23T19:41:28.637Z"
+              "WhenOpened": "2025-04-23T19:41:28.637Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",

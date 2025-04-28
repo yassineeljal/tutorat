@@ -38,7 +38,6 @@ namespace tutorat.ViewModel
         [RelayCommand]
         private void CreateRequest()
         {
-            MessageBox.Show("CreateRequest invoquée");
             if (string.IsNullOrEmpty(subjectInput) || string.IsNullOrEmpty(selectedCategory) || string.IsNullOrEmpty(noteInput) || string.IsNullOrEmpty(daInput))
             {
                 return;
@@ -54,7 +53,7 @@ namespace tutorat.ViewModel
                 Subject = subjectInput,
                 Category = selectedCategory,
                 Note = int.Parse(noteInput),
-                Student = student
+                StudentId = student.Id
             };
             _requestService.CreateRequest(request);
 

@@ -53,7 +53,7 @@ namespace tutorat.Service.RequestService
             {
                 throw new ArgumentNullException(nameof(student));
             }
-            return _db.Requests.Where(r => r.Student.Id == student.Id).ToList();
+            return _db.Requests.Where(r => r.StudentId == student.Id).ToList();
         }
 
 

@@ -163,13 +163,16 @@ namespace data.Migrations
 
             modelBuilder.Entity("data.Model.Request", b =>
                 {
-                    b.HasOne("data.Model.Student", "Student")
-                        .WithMany()
+                    b.HasOne("data.Model.Student", null)
+                        .WithMany("Requests")
                         .HasForeignKey("StudentId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
 
-                    b.Navigation("Student");
+            modelBuilder.Entity("data.Model.Student", b =>
+                {
+                    b.Navigation("Requests");
                 });
 #pragma warning restore 612, 618
         }

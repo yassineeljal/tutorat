@@ -10,5 +10,6 @@ namespace data.Model
         public String LastName { get; set; }
         public int Da { get; set; }
         public bool IsTutor { get; set; }
+        public List<Request> Requests { get; set; }
     }
 }

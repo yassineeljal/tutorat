@@ -1,4 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Reflection.Metadata;
 
 namespace data.Model
 {
@@ -9,6 +11,8 @@ namespace data.Model
         public String Subject { get; set; }
         public String Category { get; set; }
         public int Note { get; set; }
-        public Student Student { get; set; }
+
+        [ForeignKey(nameof(Student))]
+        public int StudentId { get; set; }
     }
 }
