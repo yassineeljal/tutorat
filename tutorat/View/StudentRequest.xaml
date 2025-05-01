@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:tutorat.View"
         mc:Ignorable="d"
-        Title="StudentRequest" Height="170" Width="219">
+        Title="StudentRequest" Height="200" Width="219">
     <Grid Margin="8">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>

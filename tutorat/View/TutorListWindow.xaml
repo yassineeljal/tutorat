@@ -1,0 +1,9 @@
+﻿<Window x:Class="tutorat.View.TutorListWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:view="clr-namespace:tutorat.View.TeacherUserControls"
+        Title="Rencontres" Height="450" Width="800">
+    <Grid>
+        <view:TutorList />
+    </Grid>
+</Window>

@@ -22,12 +22,18 @@
     <Compile Update="View\TeacherUserControls\TutorList.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="View\TutorListWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="View\TutorProfile.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\TutorListWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

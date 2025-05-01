@@ -1,18 +1,20 @@
 ﻿using System.Windows;
-using tutorat.Service.MeetingService;
-using tutorat.ViewModel;
 
 namespace tutorat.View
 {
-
     public partial class Meeting : Window
     {
-        private MeetingViewModel _viewModel;
         public Meeting()
         {
             InitializeComponent();
-            _viewModel = new MeetingViewModel(new MeetingService());
-            DataContext = _viewModel;
+        }
+
+        private void ReturnDashboard_Click(object sender, RoutedEventArgs e)
+        {
+            var dashboard = new TeacherDashboard();
+            dashboard.Show();
+
+            this.Close();
         }
     }
 }
