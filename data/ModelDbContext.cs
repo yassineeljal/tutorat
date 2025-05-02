@@ -10,9 +10,9 @@ namespace data
         public DbSet<Student> Students { get; set; }
         public DbSet<Meeting> Meetings { get; set; }
         public DbSet<Request> Requests { get; set; }
+        public DbSet<Availability> Availabilities { get; set; }  // Ajout de la table Availability
 
         protected override void OnConfiguring(DbContextOptionsBuilder options) =>
             options.UseSqlite("Data Source=tutorat.db");
-
     }
 }

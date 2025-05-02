@@ -3,76 +3,107 @@
   "WorkspaceRootPath": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|c:\\users\\djerr\\onedrive - c\u00E9gep marie-victorin\\desktop\\session 4\\applicationentreprise\\tutorat\\tutorat\\view\\teacherusercontrols\\tutorlist.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|solutionrelative:tutorat\\view\\teacherusercontrols\\tutorlist.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|c:\\users\\djerr\\onedrive - c\u00E9gep marie-victorin\\desktop\\session 4\\applicationentreprise\\tutorat\\tutorat\\viewmodel\\availabilityviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|solutionrelative:tutorat\\viewmodel\\availabilityviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|c:\\users\\djerr\\onedrive - c\u00E9gep marie-victorin\\desktop\\session 4\\applicationentreprise\\tutorat\\tutorat\\view\\meeting.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|solutionrelative:tutorat\\view\\meeting.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|c:\\users\\djerr\\onedrive - c\u00E9gep marie-victorin\\desktop\\session 4\\applicationentreprise\\tutorat\\tutorat\\view\\availabilitywindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|solutionrelative:tutorat\\view\\availabilitywindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|c:\\users\\djerr\\onedrive - c\u00E9gep marie-victorin\\desktop\\session 4\\applicationentreprise\\tutorat\\tutorat\\view\\meeting.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|solutionrelative:tutorat\\view\\meeting.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|c:\\users\\djerr\\onedrive - c\u00E9gep marie-victorin\\desktop\\session 4\\applicationentreprise\\tutorat\\tutorat\\view\\studentrequest.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|solutionrelative:tutorat\\view\\studentrequest.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|c:\\users\\djerr\\onedrive - c\u00E9gep marie-victorin\\desktop\\session 4\\applicationentreprise\\tutorat\\tutorat\\view\\teacherdashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|solutionrelative:tutorat\\view\\teacherdashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|c:\\users\\djerr\\onedrive - c\u00E9gep marie-victorin\\desktop\\session 4\\applicationentreprise\\tutorat\\tutorat\\view\\teacherprofile.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|solutionrelative:tutorat\\view\\teacherprofile.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|c:\\users\\djerr\\onedrive - c\u00E9gep marie-victorin\\desktop\\session 4\\applicationentreprise\\tutorat\\tutorat\\view\\teacherdashboard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|solutionrelative:tutorat\\view\\teacherdashboard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|c:\\users\\djerr\\onedrive - c\u00E9gep marie-victorin\\desktop\\session 4\\applicationentreprise\\tutorat\\tutorat\\view\\teacherusercontrols\\tutorlist.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|solutionrelative:tutorat\\view\\teacherusercontrols\\tutorlist.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|c:\\users\\djerr\\onedrive - c\u00E9gep marie-victorin\\desktop\\session 4\\applicationentreprise\\tutorat\\tutorat\\service\\requestservice\\requestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|solutionrelative:tutorat\\service\\requestservice\\requestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|c:\\users\\djerr\\onedrive - c\u00E9gep marie-victorin\\desktop\\session 4\\applicationentreprise\\tutorat\\tutorat\\view\\tutorprofile.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|solutionrelative:tutorat\\view\\tutorprofile.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|c:\\users\\djerr\\onedrive - c\u00E9gep marie-victorin\\desktop\\session 4\\applicationentreprise\\tutorat\\tutorat\\view\\tutorlistwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|solutionrelative:tutorat\\view\\tutorlistwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|c:\\users\\djerr\\onedrive - c\u00E9gep marie-victorin\\desktop\\session 4\\applicationentreprise\\tutorat\\tutorat\\view\\availabilitywindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|solutionrelative:tutorat\\view\\availabilitywindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|c:\\users\\djerr\\onedrive - c\u00E9gep marie-victorin\\desktop\\session 4\\applicationentreprise\\tutorat\\tutorat\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|solutionrelative:tutorat\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|c:\\users\\djerr\\onedrive - c\u00E9gep marie-victorin\\desktop\\session 4\\applicationentreprise\\tutorat\\tutorat\\view\\tutorlistwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|solutionrelative:tutorat\\view\\tutorlistwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|c:\\users\\djerr\\onedrive - c\u00E9gep marie-victorin\\desktop\\session 4\\applicationentreprise\\tutorat\\tutorat\\view\\teacherdashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|solutionrelative:tutorat\\view\\teacherdashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|c:\\users\\djerr\\onedrive - c\u00E9gep marie-victorin\\desktop\\session 4\\applicationentreprise\\tutorat\\tutorat\\view\\tutorlistwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|solutionrelative:tutorat\\view\\tutorlistwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|c:\\users\\djerr\\onedrive - c\u00E9gep marie-victorin\\desktop\\session 4\\applicationentreprise\\tutorat\\tutorat\\service\\studentservice\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|solutionrelative:tutorat\\service\\studentservice\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|c:\\users\\djerr\\onedrive - c\u00E9gep marie-victorin\\desktop\\session 4\\applicationentreprise\\tutorat\\tutorat\\view\\teacherdashboard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|solutionrelative:tutorat\\view\\teacherdashboard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|c:\\users\\djerr\\onedrive - c\u00E9gep marie-victorin\\desktop\\session 4\\applicationentreprise\\tutorat\\tutorat\\view\\meeting.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|solutionrelative:tutorat\\view\\meeting.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|c:\\users\\djerr\\onedrive - c\u00E9gep marie-victorin\\desktop\\session 4\\applicationentreprise\\tutorat\\tutorat\\view\\meeting.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|solutionrelative:tutorat\\view\\meeting.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|c:\\users\\djerr\\onedrive - c\u00E9gep marie-victorin\\desktop\\session 4\\applicationentreprise\\tutorat\\tutorat\\viewmodel\\tutorlistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|solutionrelative:tutorat\\viewmodel\\tutorlistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|c:\\users\\djerr\\onedrive - c\u00E9gep marie-victorin\\desktop\\session 4\\applicationentreprise\\tutorat\\tutorat\\view\\studentdashboard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|solutionrelative:tutorat\\view\\studentdashboard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|c:\\users\\djerr\\onedrive - c\u00E9gep marie-victorin\\desktop\\session 4\\applicationentreprise\\tutorat\\tutorat\\view\\studentdashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|solutionrelative:tutorat\\view\\studentdashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|c:\\users\\djerr\\onedrive - c\u00E9gep marie-victorin\\desktop\\session 4\\applicationentreprise\\tutorat\\tutorat\\view\\studentrequest.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|solutionrelative:tutorat\\view\\studentrequest.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|c:\\users\\djerr\\onedrive - c\u00E9gep marie-victorin\\desktop\\session 4\\applicationentreprise\\tutorat\\tutorat\\viewmodel\\studentrequestviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|solutionrelative:tutorat\\viewmodel\\studentrequestviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6A9AD3D6-F2EB-41A3-BBE9-B9C311BA70D0}|data\\data.csproj|c:\\users\\djerr\\onedrive - c\u00E9gep marie-victorin\\desktop\\session 4\\applicationentreprise\\tutorat\\data\\model\\request.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6A9AD3D6-F2EB-41A3-BBE9-B9C311BA70D0}|data\\data.csproj|solutionrelative:data\\model\\request.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|c:\\users\\djerr\\onedrive - c\u00E9gep marie-victorin\\desktop\\session 4\\applicationentreprise\\tutorat\\tutorat\\viewmodel\\meetingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|solutionrelative:tutorat\\viewmodel\\meetingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|c:\\users\\djerr\\onedrive - c\u00E9gep marie-victorin\\desktop\\session 4\\applicationentreprise\\tutorat\\tutorat\\view\\studentrequest.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|solutionrelative:tutorat\\view\\studentrequest.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|c:\\users\\djerr\\onedrive - c\u00E9gep marie-victorin\\desktop\\session 4\\applicationentreprise\\tutorat\\tutorat\\service\\availabilityservice\\availabilityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|solutionrelative:tutorat\\service\\availabilityservice\\availabilityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6A9AD3D6-F2EB-41A3-BBE9-B9C311BA70D0}|data\\data.csproj|c:\\users\\djerr\\onedrive - c\u00E9gep marie-victorin\\desktop\\session 4\\applicationentreprise\\tutorat\\data\\model\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6A9AD3D6-F2EB-41A3-BBE9-B9C311BA70D0}|data\\data.csproj|solutionrelative:data\\model\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6A9AD3D6-F2EB-41A3-BBE9-B9C311BA70D0}|data\\data.csproj|c:\\users\\djerr\\onedrive - c\u00E9gep marie-victorin\\desktop\\session 4\\applicationentreprise\\tutorat\\data\\model\\meeting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6A9AD3D6-F2EB-41A3-BBE9-B9C311BA70D0}|data\\data.csproj|solutionrelative:data\\model\\meeting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6A9AD3D6-F2EB-41A3-BBE9-B9C311BA70D0}|data\\data.csproj|c:\\users\\djerr\\onedrive - c\u00E9gep marie-victorin\\desktop\\session 4\\applicationentreprise\\tutorat\\data\\model\\availability.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A9AD3D6-F2EB-41A3-BBE9-B9C311BA70D0}|data\\data.csproj|solutionrelative:data\\model\\availability.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|c:\\users\\djerr\\onedrive - c\u00E9gep marie-victorin\\desktop\\session 4\\applicationentreprise\\tutorat\\tutorat\\service\\availabilityservice\\iavailabilityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|solutionrelative:tutorat\\service\\availabilityservice\\iavailabilityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\djerr\\AppData\\Local\\Temp\\.vsdbgsrc\\4315b130d37ec1c13dcbffadb62faf5459da3810441204f490a8637c4a8c6da9\\XamlReader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|c:\\users\\djerr\\onedrive - c\u00E9gep marie-victorin\\desktop\\session 4\\applicationentreprise\\tutorat\\tutorat\\service\\meetingservice\\meetingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|solutionrelative:tutorat\\service\\meetingservice\\meetingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|c:\\users\\djerr\\onedrive - c\u00E9gep marie-victorin\\desktop\\session 4\\applicationentreprise\\tutorat\\tutorat\\service\\meetingservice\\imeetingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|solutionrelative:tutorat\\service\\meetingservice\\imeetingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|c:\\users\\djerr\\onedrive - c\u00E9gep marie-victorin\\desktop\\session 4\\applicationentreprise\\tutorat\\tutorat\\service\\requestservice\\requestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|solutionrelative:tutorat\\service\\requestservice\\requestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|c:\\users\\djerr\\onedrive - c\u00E9gep marie-victorin\\desktop\\session 4\\applicationentreprise\\tutorat\\tutorat\\service\\studentservice\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|solutionrelative:tutorat\\service\\studentservice\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|c:\\users\\djerr\\onedrive - c\u00E9gep marie-victorin\\desktop\\session 4\\applicationentreprise\\tutorat\\tutorat\\service\\requestservice\\irequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -83,32 +114,20 @@
       "RelativeMoniker": "D:0:0:{6A9AD3D6-F2EB-41A3-BBE9-B9C311BA70D0}|data\\data.csproj|solutionrelative:data\\modeldbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|c:\\users\\djerr\\onedrive - c\u00E9gep marie-victorin\\desktop\\session 4\\applicationentreprise\\tutorat\\tutorat\\view\\studentrequest.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|solutionrelative:tutorat\\view\\studentrequest.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|c:\\users\\djerr\\onedrive - c\u00E9gep marie-victorin\\desktop\\session 4\\applicationentreprise\\tutorat\\tutorat\\viewmodel\\tutorlistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|solutionrelative:tutorat\\viewmodel\\tutorlistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|c:\\users\\djerr\\onedrive - c\u00E9gep marie-victorin\\desktop\\session 4\\applicationentreprise\\tutorat\\tutorat\\viewmodel\\meetingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|solutionrelative:tutorat\\viewmodel\\meetingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|c:\\users\\djerr\\onedrive - c\u00E9gep marie-victorin\\desktop\\session 4\\applicationentreprise\\tutorat\\tutorat\\service\\studentservice\\istudentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|solutionrelative:tutorat\\service\\studentservice\\istudentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|c:\\users\\djerr\\onedrive - c\u00E9gep marie-victorin\\desktop\\session 4\\applicationentreprise\\tutorat\\tutorat\\service\\tutorservice\\itutorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|solutionrelative:tutorat\\service\\tutorservice\\itutorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|c:\\users\\djerr\\onedrive - c\u00E9gep marie-victorin\\desktop\\session 4\\applicationentreprise\\tutorat\\tutorat\\view\\teacherprofile.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|solutionrelative:tutorat\\view\\teacherprofile.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6A9AD3D6-F2EB-41A3-BBE9-B9C311BA70D0}|data\\data.csproj|c:\\users\\djerr\\onedrive - c\u00E9gep marie-victorin\\desktop\\session 4\\applicationentreprise\\tutorat\\data\\model\\request.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A9AD3D6-F2EB-41A3-BBE9-B9C311BA70D0}|data\\data.csproj|solutionrelative:data\\model\\request.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6A9AD3D6-F2EB-41A3-BBE9-B9C311BA70D0}|data\\data.csproj|c:\\users\\djerr\\onedrive - c\u00E9gep marie-victorin\\desktop\\session 4\\applicationentreprise\\tutorat\\data\\model\\tutor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6A9AD3D6-F2EB-41A3-BBE9-B9C311BA70D0}|data\\data.csproj|solutionrelative:data\\model\\tutor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A9AD3D6-F2EB-41A3-BBE9-B9C311BA70D0}|data\\data.csproj|c:\\users\\djerr\\onedrive - c\u00E9gep marie-victorin\\desktop\\session 4\\applicationentreprise\\tutorat\\data\\model\\meeting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A9AD3D6-F2EB-41A3-BBE9-B9C311BA70D0}|data\\data.csproj|solutionrelative:data\\model\\meeting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|c:\\users\\djerr\\onedrive - c\u00E9gep marie-victorin\\desktop\\session 4\\applicationentreprise\\tutorat\\tutorat\\service\\tutorservice\\itutorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|solutionrelative:tutorat\\service\\tutorservice\\itutorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|c:\\users\\djerr\\onedrive - c\u00E9gep marie-victorin\\desktop\\session 4\\applicationentreprise\\tutorat\\tutorat\\service\\teacherservice\\teacherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -121,14 +140,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|c:\\users\\djerr\\onedrive - c\u00E9gep marie-victorin\\desktop\\session 4\\applicationentreprise\\tutorat\\tutorat\\service\\teacherservice\\iteacherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|solutionrelative:tutorat\\service\\teacherservice\\iteacherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|c:\\users\\djerr\\onedrive - c\u00E9gep marie-victorin\\desktop\\session 4\\applicationentreprise\\tutorat\\tutorat\\service\\meetingservice\\meetingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|solutionrelative:tutorat\\service\\meetingservice\\meetingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|c:\\users\\djerr\\onedrive - c\u00E9gep marie-victorin\\desktop\\session 4\\applicationentreprise\\tutorat\\tutorat\\service\\meetingservice\\imeetingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|solutionrelative:tutorat\\service\\meetingservice\\imeetingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|c:\\users\\djerr\\onedrive - c\u00E9gep marie-victorin\\desktop\\session 4\\applicationentreprise\\tutorat\\tutorat\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -150,139 +161,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Meeting.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\View\\Meeting.xaml.cs",
-              "RelativeDocumentMoniker": "tutorat\\View\\Meeting.xaml.cs",
-              "ToolTip": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\View\\Meeting.xaml.cs",
-              "RelativeToolTip": "tutorat\\View\\Meeting.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T21:48:41.614Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Meeting.xaml",
-              "DocumentMoniker": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\View\\Meeting.xaml",
-              "RelativeDocumentMoniker": "tutorat\\View\\Meeting.xaml",
-              "ToolTip": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\View\\Meeting.xaml",
-              "RelativeToolTip": "tutorat\\View\\Meeting.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-26T21:48:38.042Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "TeacherDashboard.xaml",
-              "DocumentMoniker": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\View\\TeacherDashboard.xaml",
-              "RelativeDocumentMoniker": "tutorat\\View\\TeacherDashboard.xaml",
-              "ToolTip": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\View\\TeacherDashboard.xaml",
-              "RelativeToolTip": "tutorat\\View\\TeacherDashboard.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-26T18:00:21.453Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "TeacherProfile.xaml",
-              "DocumentMoniker": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\View\\TeacherProfile.xaml",
-              "RelativeDocumentMoniker": "tutorat\\View\\TeacherProfile.xaml",
-              "ToolTip": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\View\\TeacherProfile.xaml",
-              "RelativeToolTip": "tutorat\\View\\TeacherProfile.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-27T00:29:39.473Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "StudentRequest.xaml",
-              "DocumentMoniker": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\View\\StudentRequest.xaml",
-              "RelativeDocumentMoniker": "tutorat\\View\\StudentRequest.xaml",
-              "ToolTip": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\View\\StudentRequest.xaml",
-              "RelativeToolTip": "tutorat\\View\\StudentRequest.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-27T00:58:18.346Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TutorList.xaml",
-              "DocumentMoniker": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\View\\TeacherUserControls\\TutorList.xaml",
-              "RelativeDocumentMoniker": "tutorat\\View\\TeacherUserControls\\TutorList.xaml",
-              "ToolTip": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\View\\TeacherUserControls\\TutorList.xaml",
-              "RelativeToolTip": "tutorat\\View\\TeacherUserControls\\TutorList.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-26T22:49:05.145Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "TeacherDashboard.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\View\\TeacherDashboard.xaml.cs",
-              "RelativeDocumentMoniker": "tutorat\\View\\TeacherDashboard.xaml.cs",
-              "ToolTip": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\View\\TeacherDashboard.xaml.cs",
-              "RelativeToolTip": "tutorat\\View\\TeacherDashboard.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T03:02:23.146Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "TutorList.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\View\\TeacherUserControls\\TutorList.xaml.cs",
-              "RelativeDocumentMoniker": "tutorat\\View\\TeacherUserControls\\TutorList.xaml.cs",
-              "ToolTip": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\View\\TeacherUserControls\\TutorList.xaml.cs",
-              "RelativeToolTip": "tutorat\\View\\TeacherUserControls\\TutorList.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T22:03:41.899Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "RequestService.cs",
-              "DocumentMoniker": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\Service\\RequestService\\RequestService.cs",
-              "RelativeDocumentMoniker": "tutorat\\Service\\RequestService\\RequestService.cs",
-              "ToolTip": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\Service\\RequestService\\RequestService.cs",
-              "RelativeToolTip": "tutorat\\Service\\RequestService\\RequestService.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAawAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T00:45:09.64Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "TutorProfile.xaml",
-              "DocumentMoniker": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\View\\TutorProfile.xaml",
-              "RelativeDocumentMoniker": "tutorat\\View\\TutorProfile.xaml",
-              "ToolTip": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\View\\TutorProfile.xaml",
-              "RelativeToolTip": "tutorat\\View\\TutorProfile.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-27T00:28:45.026Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
               "Title": "TutorListWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\View\\TutorListWindow.xaml.cs",
               "RelativeDocumentMoniker": "tutorat\\View\\TutorListWindow.xaml.cs",
               "ToolTip": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\View\\TutorListWindow.xaml.cs",
               "RelativeToolTip": "tutorat\\View\\TutorListWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T03:04:14.276Z"
+              "WhenOpened": "2025-05-02T04:31:43.63Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 3,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\App.xaml",
               "RelativeDocumentMoniker": "tutorat\\App.xaml",
@@ -294,14 +190,147 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 2,
+              "Title": "AvailabilityWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\View\\AvailabilityWindow.xaml.cs",
+              "RelativeDocumentMoniker": "tutorat\\View\\AvailabilityWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\View\\AvailabilityWindow.xaml.cs",
+              "RelativeToolTip": "tutorat\\View\\AvailabilityWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T04:02:55.893Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AvailabilityWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\View\\AvailabilityWindow.xaml",
+              "RelativeDocumentMoniker": "tutorat\\View\\AvailabilityWindow.xaml",
+              "ToolTip": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\View\\AvailabilityWindow.xaml",
+              "RelativeToolTip": "tutorat\\View\\AvailabilityWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-01T06:01:26.923Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AvailabilityViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\ViewModel\\AvailabilityViewModel.cs",
+              "RelativeDocumentMoniker": "tutorat\\ViewModel\\AvailabilityViewModel.cs",
+              "ToolTip": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\ViewModel\\AvailabilityViewModel.cs",
+              "RelativeToolTip": "tutorat\\ViewModel\\AvailabilityViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T04:05:21.397Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TeacherDashboard.xaml",
+              "DocumentMoniker": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\View\\TeacherDashboard.xaml",
+              "RelativeDocumentMoniker": "tutorat\\View\\TeacherDashboard.xaml",
+              "ToolTip": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\View\\TeacherDashboard.xaml",
+              "RelativeToolTip": "tutorat\\View\\TeacherDashboard.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-26T18:00:21.453Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TeacherDashboard.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\View\\TeacherDashboard.xaml.cs",
+              "RelativeDocumentMoniker": "tutorat\\View\\TeacherDashboard.xaml.cs",
+              "ToolTip": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\View\\TeacherDashboard.xaml.cs",
+              "RelativeToolTip": "tutorat\\View\\TeacherDashboard.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T03:02:23.146Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Meeting.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\View\\Meeting.xaml.cs",
+              "RelativeDocumentMoniker": "tutorat\\View\\Meeting.xaml.cs",
+              "ToolTip": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\View\\Meeting.xaml.cs",
+              "RelativeToolTip": "tutorat\\View\\Meeting.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T21:48:41.614Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Meeting.xaml",
+              "DocumentMoniker": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\View\\Meeting.xaml",
+              "RelativeDocumentMoniker": "tutorat\\View\\Meeting.xaml",
+              "ToolTip": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\View\\Meeting.xaml",
+              "RelativeToolTip": "tutorat\\View\\Meeting.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-26T21:48:38.042Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "TutorListWindow.xaml",
               "DocumentMoniker": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\View\\TutorListWindow.xaml",
               "RelativeDocumentMoniker": "tutorat\\View\\TutorListWindow.xaml",
               "ToolTip": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\View\\TutorListWindow.xaml",
               "RelativeToolTip": "tutorat\\View\\TutorListWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-01T03:03:58.845Z"
+              "WhenOpened": "2025-05-01T03:03:58.845Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "TutorListViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\ViewModel\\TutorListViewModel.cs",
+              "RelativeDocumentMoniker": "tutorat\\ViewModel\\TutorListViewModel.cs",
+              "ToolTip": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\ViewModel\\TutorListViewModel.cs",
+              "RelativeToolTip": "tutorat\\ViewModel\\TutorListViewModel.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAA5wBAAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T22:38:48.103Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "StudentDashboard.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\View\\StudentDashboard.xaml.cs",
+              "RelativeDocumentMoniker": "tutorat\\View\\StudentDashboard.xaml.cs",
+              "ToolTip": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\View\\StudentDashboard.xaml.cs",
+              "RelativeToolTip": "tutorat\\View\\StudentDashboard.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T23:40:27.079Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "StudentDashboard.xaml",
+              "DocumentMoniker": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\View\\StudentDashboard.xaml",
+              "RelativeDocumentMoniker": "tutorat\\View\\StudentDashboard.xaml",
+              "ToolTip": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\View\\StudentDashboard.xaml",
+              "RelativeToolTip": "tutorat\\View\\StudentDashboard.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-01T23:39:22.316Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "StudentRequest.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\View\\StudentRequest.xaml.cs",
+              "RelativeDocumentMoniker": "tutorat\\View\\StudentRequest.xaml.cs",
+              "ToolTip": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\View\\StudentRequest.xaml.cs",
+              "RelativeToolTip": "tutorat\\View\\StudentRequest.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T01:56:05.178Z"
             },
             {
               "$type": "Document",
@@ -311,205 +340,84 @@
               "RelativeDocumentMoniker": "tutorat\\ViewModel\\StudentRequestViewModel.cs",
               "ToolTip": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\ViewModel\\StudentRequestViewModel.cs",
               "RelativeToolTip": "tutorat\\ViewModel\\StudentRequestViewModel.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAWwDgAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-27T00:59:30.075Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "StudentService.cs",
-              "DocumentMoniker": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\Service\\StudentService\\StudentService.cs",
-              "RelativeDocumentMoniker": "tutorat\\Service\\StudentService\\StudentService.cs",
-              "ToolTip": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\Service\\StudentService\\StudentService.cs",
-              "RelativeToolTip": "tutorat\\Service\\StudentService\\StudentService.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAAACAAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T23:12:36.284Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Student.cs",
-              "DocumentMoniker": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\data\\Model\\Student.cs",
-              "RelativeDocumentMoniker": "data\\Model\\Student.cs",
-              "ToolTip": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\data\\Model\\Student.cs",
-              "RelativeToolTip": "data\\Model\\Student.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T23:27:27.429Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "Request.cs",
-              "DocumentMoniker": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\data\\Model\\Request.cs",
-              "RelativeDocumentMoniker": "data\\Model\\Request.cs",
-              "ToolTip": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\data\\Model\\Request.cs",
-              "RelativeToolTip": "data\\Model\\Request.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T17:42:27.668Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Meeting.cs",
-              "DocumentMoniker": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\data\\Model\\Meeting.cs",
-              "RelativeDocumentMoniker": "data\\Model\\Meeting.cs",
-              "ToolTip": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\data\\Model\\Meeting.cs",
-              "RelativeToolTip": "data\\Model\\Meeting.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAqwAkAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T19:42:41.157Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "TutorListViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\ViewModel\\TutorListViewModel.cs",
-              "RelativeDocumentMoniker": "tutorat\\ViewModel\\TutorListViewModel.cs",
-              "ToolTip": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\ViewModel\\TutorListViewModel.cs",
-              "RelativeToolTip": "tutorat\\ViewModel\\TutorListViewModel.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAswBkAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T22:38:48.103Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "IRequestService.cs",
-              "DocumentMoniker": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\Service\\RequestService\\IRequestService.cs",
-              "RelativeDocumentMoniker": "tutorat\\Service\\RequestService\\IRequestService.cs",
-              "ToolTip": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\Service\\RequestService\\IRequestService.cs",
-              "RelativeToolTip": "tutorat\\Service\\RequestService\\IRequestService.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAsAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T00:45:32.964Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "StudentRequest.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\View\\StudentRequest.xaml.cs",
-              "RelativeDocumentMoniker": "tutorat\\View\\StudentRequest.xaml.cs",
-              "ToolTip": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\View\\StudentRequest.xaml.cs",
-              "RelativeToolTip": "tutorat\\View\\StudentRequest.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T01:56:05.178Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
               "Title": "MeetingViewModel.cs",
               "DocumentMoniker": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\ViewModel\\MeetingViewModel.cs",
               "RelativeDocumentMoniker": "tutorat\\ViewModel\\MeetingViewModel.cs",
               "ToolTip": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\ViewModel\\MeetingViewModel.cs",
               "RelativeToolTip": "tutorat\\ViewModel\\MeetingViewModel.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAgwAcAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAAgwDIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-26T20:29:18.42Z"
             },
             {
               "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "StudentRequest.xaml",
+              "DocumentMoniker": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\View\\StudentRequest.xaml",
+              "RelativeDocumentMoniker": "tutorat\\View\\StudentRequest.xaml",
+              "ToolTip": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\View\\StudentRequest.xaml",
+              "RelativeToolTip": "tutorat\\View\\StudentRequest.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-27T00:58:18.346Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AvailabilityService.cs",
+              "DocumentMoniker": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\Service\\AvailabilityService\\AvailabilityService.cs",
+              "RelativeDocumentMoniker": "tutorat\\Service\\AvailabilityService\\AvailabilityService.cs",
+              "ToolTip": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\Service\\AvailabilityService\\AvailabilityService.cs",
+              "RelativeToolTip": "tutorat\\Service\\AvailabilityService\\AvailabilityService.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAQwDkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T06:11:09.454Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\data\\Model\\Student.cs",
+              "RelativeDocumentMoniker": "data\\Model\\Student.cs",
+              "ToolTip": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\data\\Model\\Student.cs",
+              "RelativeToolTip": "data\\Model\\Student.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-23T23:27:27.429Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 19,
-              "Title": "ModelDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\data\\ModelDbContext.cs",
-              "RelativeDocumentMoniker": "data\\ModelDbContext.cs",
-              "ToolTip": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\data\\ModelDbContext.cs",
-              "RelativeToolTip": "data\\ModelDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAwAAAAAAAAAA==",
+              "Title": "Availability.cs",
+              "DocumentMoniker": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\data\\Model\\Availability.cs",
+              "RelativeDocumentMoniker": "data\\Model\\Availability.cs",
+              "ToolTip": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\data\\Model\\Availability.cs",
+              "RelativeToolTip": "data\\Model\\Availability.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T17:31:55.699Z"
+              "WhenOpened": "2025-05-01T05:41:38.351Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "ITutorService.cs",
-              "DocumentMoniker": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\Service\\TutorService\\ITutorService.cs",
-              "RelativeDocumentMoniker": "tutorat\\Service\\TutorService\\ITutorService.cs",
-              "ToolTip": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\Service\\TutorService\\ITutorService.cs",
-              "RelativeToolTip": "tutorat\\Service\\TutorService\\ITutorService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAcAAAAAAAAAA==",
+              "DocumentIndex": 20,
+              "Title": "IAvailabilityService.cs",
+              "DocumentMoniker": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\Service\\AvailabilityService\\IAvailabilityService.cs",
+              "RelativeDocumentMoniker": "tutorat\\Service\\AvailabilityService\\IAvailabilityService.cs",
+              "ToolTip": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\Service\\AvailabilityService\\IAvailabilityService.cs",
+              "RelativeToolTip": "tutorat\\Service\\AvailabilityService\\IAvailabilityService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T23:37:09.83Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "ITeacherService.cs",
-              "DocumentMoniker": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\Service\\TeacherService\\ITeacherService.cs",
-              "RelativeDocumentMoniker": "tutorat\\Service\\TeacherService\\ITeacherService.cs",
-              "ToolTip": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\Service\\TeacherService\\ITeacherService.cs",
-              "RelativeToolTip": "tutorat\\Service\\TeacherService\\ITeacherService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T23:57:02.438Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "TeacherService.cs",
-              "DocumentMoniker": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\Service\\TeacherService\\TeacherService.cs",
-              "RelativeDocumentMoniker": "tutorat\\Service\\TeacherService\\TeacherService.cs",
-              "ToolTip": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\Service\\TeacherService\\TeacherService.cs",
-              "RelativeToolTip": "tutorat\\Service\\TeacherService\\TeacherService.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T23:57:20.014Z"
+              "WhenOpened": "2025-05-01T06:11:19.374Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 23,
-              "Title": "IStudentService.cs",
-              "DocumentMoniker": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\Service\\StudentService\\IStudentService.cs",
-              "RelativeDocumentMoniker": "tutorat\\Service\\StudentService\\IStudentService.cs",
-              "ToolTip": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\Service\\StudentService\\IStudentService.cs",
-              "RelativeToolTip": "tutorat\\Service\\StudentService\\IStudentService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T23:12:16.637Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "TeacherProfile.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\View\\TeacherProfile.xaml.cs",
-              "RelativeDocumentMoniker": "tutorat\\View\\TeacherProfile.xaml.cs",
-              "ToolTip": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\View\\TeacherProfile.xaml.cs",
-              "RelativeToolTip": "tutorat\\View\\TeacherProfile.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T00:30:46.082Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "Tutor.cs",
-              "DocumentMoniker": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\data\\Model\\Tutor.cs",
-              "RelativeDocumentMoniker": "data\\Model\\Tutor.cs",
-              "ToolTip": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\data\\Model\\Tutor.cs",
-              "RelativeToolTip": "data\\Model\\Tutor.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T23:27:49.2Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "Teacher.cs",
-              "DocumentMoniker": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\data\\Model\\Teacher.cs",
-              "RelativeDocumentMoniker": "data\\Model\\Teacher.cs",
-              "ToolTip": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\data\\Model\\Teacher.cs",
-              "RelativeToolTip": "data\\Model\\Teacher.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T20:36:55.101Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
               "Title": "IMeetingService.cs",
               "DocumentMoniker": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\Service\\MeetingService\\IMeetingService.cs",
               "RelativeDocumentMoniker": "tutorat\\Service\\MeetingService\\IMeetingService.cs",
@@ -521,19 +429,164 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 21,
+              "Title": "XamlReader.cs",
+              "DocumentMoniker": "C:\\Users\\djerr\\AppData\\Local\\Temp\\.vsdbgsrc\\4315b130d37ec1c13dcbffadb62faf5459da3810441204f490a8637c4a8c6da9\\XamlReader.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\4315b130d37ec1c13dcbffadb62faf5459da3810441204f490a8637c4a8c6da9\\XamlReader.cs",
+              "ToolTip": "C:\\Users\\djerr\\AppData\\Local\\Temp\\.vsdbgsrc\\4315b130d37ec1c13dcbffadb62faf5459da3810441204f490a8637c4a8c6da9\\XamlReader.cs [Lecture seule]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\4315b130d37ec1c13dcbffadb62faf5459da3810441204f490a8637c4a8c6da9\\XamlReader.cs [Lecture seule]",
+              "ViewState": "AgIAAPABAAAAAAAAAAAiwP4BAAACAAAAAQAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T01:11:16.567Z",
+              "EditorCaption": " [Lecture seule]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
               "Title": "MeetingService.cs",
               "DocumentMoniker": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\Service\\MeetingService\\MeetingService.cs",
               "RelativeDocumentMoniker": "tutorat\\Service\\MeetingService\\MeetingService.cs",
               "ToolTip": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\Service\\MeetingService\\MeetingService.cs",
               "RelativeToolTip": "tutorat\\Service\\MeetingService\\MeetingService.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAowBwAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-26T20:32:19.795Z"
             },
             {
               "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "RequestService.cs",
+              "DocumentMoniker": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\Service\\RequestService\\RequestService.cs",
+              "RelativeDocumentMoniker": "tutorat\\Service\\RequestService\\RequestService.cs",
+              "ToolTip": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\Service\\RequestService\\RequestService.cs",
+              "RelativeToolTip": "tutorat\\Service\\RequestService\\RequestService.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAiwC8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T00:45:09.64Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "StudentService.cs",
+              "DocumentMoniker": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\Service\\StudentService\\StudentService.cs",
+              "RelativeDocumentMoniker": "tutorat\\Service\\StudentService\\StudentService.cs",
+              "ToolTip": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\Service\\StudentService\\StudentService.cs",
+              "RelativeToolTip": "tutorat\\Service\\StudentService\\StudentService.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAUwCAAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T23:12:36.284Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "IRequestService.cs",
+              "DocumentMoniker": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\Service\\RequestService\\IRequestService.cs",
+              "RelativeDocumentMoniker": "tutorat\\Service\\RequestService\\IRequestService.cs",
+              "ToolTip": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\Service\\RequestService\\IRequestService.cs",
+              "RelativeToolTip": "tutorat\\Service\\RequestService\\IRequestService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T00:45:32.964Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ModelDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\data\\ModelDbContext.cs",
+              "RelativeDocumentMoniker": "data\\ModelDbContext.cs",
+              "ToolTip": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\data\\ModelDbContext.cs",
+              "RelativeToolTip": "data\\ModelDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T17:31:55.699Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Request.cs",
+              "DocumentMoniker": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\data\\Model\\Request.cs",
+              "RelativeDocumentMoniker": "data\\Model\\Request.cs",
+              "ToolTip": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\data\\Model\\Request.cs",
+              "RelativeToolTip": "data\\Model\\Request.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T17:42:27.668Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Tutor.cs",
+              "DocumentMoniker": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\data\\Model\\Tutor.cs",
+              "RelativeDocumentMoniker": "data\\Model\\Tutor.cs",
+              "ToolTip": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\data\\Model\\Tutor.cs",
+              "RelativeToolTip": "data\\Model\\Tutor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-23T23:27:49.2Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Meeting.cs",
+              "DocumentMoniker": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\data\\Model\\Meeting.cs",
+              "RelativeDocumentMoniker": "data\\Model\\Meeting.cs",
+              "ToolTip": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\data\\Model\\Meeting.cs",
+              "RelativeToolTip": "data\\Model\\Meeting.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAqwAkAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T19:42:41.157Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ITutorService.cs",
+              "DocumentMoniker": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\Service\\TutorService\\ITutorService.cs",
+              "RelativeDocumentMoniker": "tutorat\\Service\\TutorService\\ITutorService.cs",
+              "ToolTip": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\Service\\TutorService\\ITutorService.cs",
+              "RelativeToolTip": "tutorat\\Service\\TutorService\\ITutorService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-23T23:37:09.83Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "ITeacherService.cs",
+              "DocumentMoniker": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\Service\\TeacherService\\ITeacherService.cs",
+              "RelativeDocumentMoniker": "tutorat\\Service\\TeacherService\\ITeacherService.cs",
+              "ToolTip": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\Service\\TeacherService\\ITeacherService.cs",
+              "RelativeToolTip": "tutorat\\Service\\TeacherService\\ITeacherService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-23T23:57:02.438Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 32,
+              "Title": "TeacherService.cs",
+              "DocumentMoniker": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\Service\\TeacherService\\TeacherService.cs",
+              "RelativeDocumentMoniker": "tutorat\\Service\\TeacherService\\TeacherService.cs",
+              "ToolTip": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\Service\\TeacherService\\TeacherService.cs",
+              "RelativeToolTip": "tutorat\\Service\\TeacherService\\TeacherService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAIBJwAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-23T23:57:20.014Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Teacher.cs",
+              "DocumentMoniker": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\data\\Model\\Teacher.cs",
+              "RelativeDocumentMoniker": "data\\Model\\Teacher.cs",
+              "ToolTip": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\data\\Model\\Teacher.cs",
+              "RelativeToolTip": "data\\Model\\Teacher.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T20:36:55.101Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\MainWindow.xaml",
               "RelativeDocumentMoniker": "tutorat\\MainWindow.xaml",
@@ -544,7 +597,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 36,
               "Title": "tutorat.csproj",
               "DocumentMoniker": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\tutorat.csproj",
               "RelativeDocumentMoniker": "tutorat\\tutorat.csproj",
@@ -556,7 +609,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 37,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "tutorat\\MainWindow.xaml.cs",

@@ -12,8 +12,8 @@ namespace tutorat.View
         private void ViewMeetings_Click(object sender, RoutedEventArgs e)
         {
             var meetingWindow = new Meeting();
-            this.Close();
-            meetingWindow.Show();
+            this.Close(); 
+            meetingWindow.Show(); 
         }
 
         private void ConsultRequest_Click(object sender, RoutedEventArgs e)
@@ -22,5 +22,6 @@ namespace tutorat.View
             this.Close();
             tutorListWindow.Show();
         }
+
     }
 }

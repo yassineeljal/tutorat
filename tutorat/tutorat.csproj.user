@@ -7,7 +7,13 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="View\AvailabilityWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="View\Meeting.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\StudentDashboard.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="View\StudentRequest.xaml.cs">
@@ -16,21 +22,18 @@
     <Compile Update="View\TeacherDashboard.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="View\TeacherProfile.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="View\TeacherUserControls\TutorList.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Update="View\TutorListWindow.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="View\TutorProfile.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\AvailabilityWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\StudentDashboard.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\TutorListWindow.xaml">

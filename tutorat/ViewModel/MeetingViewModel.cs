@@ -48,10 +48,7 @@ namespace tutorat.ViewModel
             }
         }
 
-        private void DeleteMeeting()
-        {
 
-        }
 
     }
 }

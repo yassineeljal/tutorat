@@ -15,25 +15,18 @@
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
 
-        <Button Content="Retour Dashboard"
-                Height="30"
-                Width="150"
-                Background="#ADD8E6"
-                BorderBrush="Transparent"
-                FontWeight="Bold"
-                Cursor="Hand"
-                VerticalAlignment="Top"
-                HorizontalAlignment="Center"
-                Margin="0,10,0,10"
-                Click="ReturnDashboard_Click"/>
+  
 
         <StackPanel Orientation="Horizontal" Grid.Row="0" Margin="0,0,0,10">
             <TextBlock Text="Id :" VerticalAlignment="Center" Margin="5,0,5,0"
                        Foreground="#007ACC" FontWeight="SemiBold"/>
-            <TextBox Width="100"
+            <TextBox Width="30"
                      Text="{Binding IdInput, UpdateSourceTrigger=PropertyChanged}"
-                     Background="#E6F2FF" BorderBrush="#007ACC"/>
+                     Background="#E6F2FF" BorderBrush="#007ACC"
+                     Height="20"/>
             <Button Content="Rechercher"
+                    Height="25"
+                    Width="75"
                     Margin="10,0,0,0"
                     Background="#ADD8E6"
                     BorderBrush="Transparent"
@@ -41,6 +34,18 @@
                     FontWeight="Bold"
                     Cursor="Hand"
                     Command="{Binding DeleteMeetingCommand}"/>
+
+            <Button Content="Retour Dashboard"
+              Height="25"
+              Width="120"
+              Background="#ADD8E6"
+              BorderBrush="Transparent"
+              FontWeight="Bold"
+              Cursor="Hand"
+              VerticalAlignment="Top"
+              HorizontalAlignment="Center"
+              Margin="10,0,0,0"
+              Click="ReturnDashboard_Click"/>
         </StackPanel>
 
         <DataGrid Grid.Row="1"
