@@ -18,6 +18,13 @@ namespace tutorat.View
 
         private void ConsultRequest_Click(object sender, RoutedEventArgs e)
         {
+            var listStudentWindow = new StudentDemandListWindow();
+            this.Close();
+            listStudentWindow.Show();
+        }
+
+        private void ConsultListTutors_Click(object sender, RoutedEventArgs e)
+        {
             var tutorListWindow = new TutorListWindow();
             this.Close();
             tutorListWindow.Show();

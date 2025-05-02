@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\djerr\OneDrive - Cégep Marie-Victorin\Desktop\Session 4\ApplicationEntreprise\tutorat\tutorat\App.xaml
-7-1242805876
+8920662840
 
-261726729061
+28-819727006
 2221177822220
-MainWindow.xaml;View\AvailabilityWindow.xaml;View\Meeting.xaml;View\StudentDashboard.xaml;View\StudentRequest.xaml;View\TeacherDashboard.xaml;View\TutorListWindow.xaml;
+MainWindow.xaml;View\AvailabilityWindow.xaml;View\Meeting.xaml;View\StudentDashboard.xaml;View\StudentDemandListWindow.xaml;View\StudentRequest.xaml;View\TeacherDashboard.xaml;View\TutorListWindow.xaml;
 
 False
 

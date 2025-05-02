@@ -16,6 +16,9 @@
     <Compile Update="View\StudentDashboard.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="View\StudentDemandListWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="View\StudentRequest.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -34,6 +37,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\StudentDashboard.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\StudentDemandListWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\TutorListWindow.xaml">

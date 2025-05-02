@@ -1,7 +1,7 @@
 ﻿<Window x:Class="tutorat.View.TutorListWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Rencontres" Height="450" Width="800"
+        Title="Liste des tuteurs" Height="450" Width="800"
         Background="#F0F8FF">
 
     <Grid Margin="10" Background="#F0F8FF">
@@ -87,25 +87,7 @@
         </DataGrid>
 
         <StackPanel Orientation="Horizontal" Grid.Row="3" Margin="0,10,0,0" HorizontalAlignment="Center">
-            <TextBlock Text="Entrez le Da de l'étudiant pour le mettre tuteur :" 
-                       VerticalAlignment="Center" 
-                       Margin="0,0,5,0"
-                       Foreground="#007ACC" FontWeight="SemiBold"/>
-            <TextBox Width="100"
-                     Height="25"
-                     Background="#E6F2FF"
-                     BorderBrush="#007ACC"
-                     Margin="5,0,5,0"
-                     Text="{Binding DaInputCreateTutor, UpdateSourceTrigger=PropertyChanged}" />
-            <Button Content="Créer un tuteur"
-                    Height="30"
-                    Width="100"
-                    Background="#ADD8E6"
-                    BorderBrush="Transparent"
-                    FontWeight="Bold"
-                    Cursor="Hand"
-                    Margin="5"
-                    Command="{Binding CreateTutorCommand}" />
+
             <Button Content="Info"
                     Height="30"
                     Width="100"
