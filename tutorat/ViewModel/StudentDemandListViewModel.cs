@@ -1,4 +1,5 @@
 ﻿using System.Collections.ObjectModel;
+using System.Windows;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using data.Model;
@@ -28,7 +29,7 @@ namespace tutorat.ViewModel
         private Student selectedStudent;
 
         [ObservableProperty]
-        private string daInputCreateStudent;
+        private string daInputCreateTutor;
 
         [ObservableProperty]
         [NotifyCanExecuteChangedFor(nameof(DeleteStudentCommand))]
@@ -102,45 +103,40 @@ namespace tutorat.ViewModel
         }
 
         [RelayCommand]
-        private void CreateStudent()
+        private void CreateTutor()
         {
-            if (string.IsNullOrEmpty(daInputCreateStudent))
+            MessageBox.Show("fi");
+
+
+            if (string.IsNullOrEmpty(daInputCreateTutor))
             {
                 return;
             }
-            if (Students.FirstOrDefault(s => s.Da == int.Parse(daInputCreateStudent)) != null)
+            if (Students.FirstOrDefault(s => s.Da == int.Parse(daInputCreateTutor)) == null)
             {
                 return;
             }
             else
             {
-                var tutor = _tutorService.GetByDa(int.Parse(daInputCreateStudent));
-                if (tutor == null)
+                var newStudent = _studentService.GetByDa(int.Parse(daInputCreateTutor));
+                if (newStudent == null)
                 {
                     return;
                 }
                 else
                 {
-                    _studentService.Create(new Student
+                    Tutor tutor = new Tutor
                     {
-                        FirstName = tutor.FirstName,
-                        LastName = tutor.LastName,
-                        Da = tutor.Da
-                    });
-
+                        FirstName = newStudent.FirstName,
+                        LastName = newStudent.LastName,
+                        Da = newStudent.Da,
+                    };
+                    _tutorService.Create(tutor);
+                    MessageBox.Show("adwfgh");
                 }
 
             }
-            var student = _studentService.GetByDa(int.Parse(daInputCreateStudent));
-            if (student == null)
-            {
-                return;
-            }
-            else
-            {
-                Students.Add(student);
-                daInputCreateStudent = string.Empty;
-            }
+
         }
     }
 }

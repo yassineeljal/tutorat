@@ -73,14 +73,14 @@
 
         <!-- Boutons Ajouter et Supprimer -->
         <StackPanel Orientation="Horizontal" Grid.Row="3" Margin="0,10,0,0" HorizontalAlignment="Center">
-            <TextBlock Text="Créer étudiant depuis DA :" 
+            <TextBlock Text="Créer un tuteur depuis DA :" 
                        VerticalAlignment="Center" 
                        Margin="0,0,5,0"
                        Foreground="#007ACC" FontWeight="SemiBold"/>
             <TextBox Width="100" Height="25" Margin="5,0"
-                     Text="{Binding DaInputCreateStudent, UpdateSourceTrigger=PropertyChanged}"
+                     Text="{Binding DaInputCreateTutor, UpdateSourceTrigger=PropertyChanged}"
                      Background="#E6F2FF" BorderBrush="#007ACC"/>
-            <Button Content="Créer" Command="{Binding CreateStudentCommand}"
+            <Button Content="Créer" Command="{Binding CreateTutorCommand}"
                     Height="30" Width="100" Background="#90EE90" BorderBrush="Transparent"
                     FontWeight="Bold" Cursor="Hand" Margin="5"/>
             <Button Content="Supprimer" Command="{Binding DeleteStudentCommand}"
