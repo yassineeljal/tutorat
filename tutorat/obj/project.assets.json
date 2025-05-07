@@ -166,23 +166,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\2387923\\.nuget\\packages\\": {},
+    "C:\\Users\\2171825\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\2387923\\OneDrive - Cégep Marie-Victorin\\Desktop\\tutorat\\tutorat\\tutorat.csproj",
+      "projectUniqueName": "C:\\Users\\2171825\\OneDrive - Cégep Marie-Victorin\\Documents\\420-413\\tutorat\\tutorat\\tutorat.csproj",
       "projectName": "tutorat",
-      "projectPath": "C:\\Users\\2387923\\OneDrive - Cégep Marie-Victorin\\Desktop\\tutorat\\tutorat\\tutorat.csproj",
-      "packagesPath": "C:\\Users\\2387923\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\2387923\\OneDrive - Cégep Marie-Victorin\\Desktop\\tutorat\\tutorat\\obj\\",
+      "projectPath": "C:\\Users\\2171825\\OneDrive - Cégep Marie-Victorin\\Documents\\420-413\\tutorat\\tutorat\\tutorat.csproj",
+      "packagesPath": "C:\\Users\\2171825\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\2171825\\OneDrive - Cégep Marie-Victorin\\Documents\\420-413\\tutorat\\tutorat\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\2387923\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\2171825\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
