@@ -4,57 +4,36 @@ using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Windows;
 using System.Windows.Input;
+using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
 using data.Model;
+using tutorat.Service.AvailabilityService;
 
 namespace tutorat.ViewModel
 {
-    public class AvailabilityViewModel : INotifyPropertyChanged
+    public partial class AvailabilityViewModel : ObservableObject
     {
+        private readonly IAvailabilityService _availabilityService;
         public ObservableCollection<DayOfWeek> Days { get; set; }
 
-        private DayOfWeek _selectedDay;
-        public DayOfWeek SelectedDay
-        {
-            get => _selectedDay;
-            set
-            {
-                _selectedDay = value;
-                OnPropertyChanged();
-            }
-        }
+        [ObservableProperty]
+        private DayOfWeek selectedDay;
 
-        private string _startHour;
-        public string StartHour
-        {
-            get => _startHour;
-            set
-            {
-                _startHour = value;
-                OnPropertyChanged();
-            }
-        }
+        [ObservableProperty]
+        private string startHour;
 
-        private string _endHour;
-        public string EndHour
-        {
-            get => _endHour;
-            set
-            {
-                _endHour = value;
-                OnPropertyChanged();
-            }
-        }
+        [ObservableProperty]
+        private string endHour;
 
-        public ICommand SaveCommand { get; }
 
-        public AvailabilityViewModel()
+        public AvailabilityViewModel(IAvailabilityService availabilityService)
         {
+            _availabilityService=availabilityService;
             Days = new ObservableCollection<DayOfWeek>((DayOfWeek[])Enum.GetValues(typeof(DayOfWeek)));
             SelectedDay = DayOfWeek.Monday;
 
-            SaveCommand = new RelayCommand(Save);
         }
-
+        [RelayCommand]
         private void Save()
         {
             if (!TimeSpan.TryParse(StartHour, out TimeSpan start))
@@ -80,29 +59,17 @@ namespace tutorat.ViewModel
                 DayOfWeek = SelectedDay,
                 StartTime = start,
                 EndTime = end,
-                StudentId = 1 // juste un test
             };
+
+
+            MessageBox.Show("ddddd !");
+
+            _availabilityService.CreateAvailability(availability);
 
             MessageBox.Show("Disponibilité enregistrée !");
         }
 
-        public event PropertyChangedEventHandler PropertyChanged;
 
-        private void OnPropertyChanged([CallerMemberName] string name = null)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
-        }
-    }
 
-    // Simple implémentation de RelayCommand
-    public class RelayCommand : ICommand
-    {
-        private readonly Action _execute;
-        public RelayCommand(Action execute) => _execute = execute;
-
-        public event EventHandler CanExecuteChanged;
-        public bool CanExecute(object parameter) => true;
-
-        public void Execute(object parameter) => _execute();
     }
 }

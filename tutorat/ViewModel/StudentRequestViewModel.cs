@@ -56,12 +56,6 @@ namespace tutorat.ViewModel
                 StudentId = student.Id
             };
             _requestService.CreateRequest(request);
-
         }
-
-
-
-
-
     }
 }

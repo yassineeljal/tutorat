@@ -52,7 +52,7 @@ namespace tutorat.View {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/tutorat;component/view/availabilitywindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/tutorat;V1.0.0.0;component/view/availabilitywindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\View\AvailabilityWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

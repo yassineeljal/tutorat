@@ -1,14 +1,17 @@
 ﻿using System.Windows;
+using tutorat.Service.AvailabilityService;
 using tutorat.ViewModel;
 
 namespace tutorat.View
 {
     public partial class AvailabilityWindow : Window
     {
+        private AvailabilityViewModel viewModel;
         public AvailabilityWindow()
         {
             InitializeComponent();
-            DataContext = new AvailabilityViewModel();
+            viewModel = new AvailabilityViewModel(new AvailabilityService());
+            DataContext = viewModel;
         }
     }
 }

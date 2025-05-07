@@ -79,7 +79,7 @@ namespace data.Migrations
                     b.Property<int>("StudentId")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int?>("TutorId")
+                    b.Property<int>("TutorId")
                         .HasColumnType("INTEGER");
 
                     b.HasKey("Id");
@@ -171,7 +171,7 @@ namespace data.Migrations
 
             modelBuilder.Entity("data.Model.Availability", b =>
                 {
-                    b.HasOne("Student", "Student")
+                    b.HasOne("Student", null)
                         .WithMany("Availabilities")
                         .HasForeignKey("StudentId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -179,9 +179,9 @@ namespace data.Migrations
 
                     b.HasOne("Tutor", null)
                         .WithMany("Availabilities")
-                        .HasForeignKey("TutorId");
-
-                    b.Navigation("Student");
+                        .HasForeignKey("TutorId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("data.Model.Meeting", b =>
