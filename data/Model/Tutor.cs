@@ -9,5 +9,7 @@ public class Tutor
     public string FirstName { get; set; }
     public string LastName { get; set; }
 
-    public List<Availability> Availabilities { get; set; } 
+    public List<Availability> Availabilities { get; set; }
+    public List<Meeting> Meetings { get; set; }
+
 }

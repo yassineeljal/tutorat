@@ -11,4 +11,6 @@ public class Student
 
     public List<Request> Requests { get; set; }
     public List<Availability> Availabilities { get; set; } 
+
+    public List<Meeting> Meetings { get; set; }
 }

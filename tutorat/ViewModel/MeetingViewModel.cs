@@ -28,8 +28,6 @@ namespace tutorat.ViewModel
                 Name = "Meeting 1",
                 Description = "Description 1",
                 DateMeeting = DateTime.Now,
-                Tutor = new Tutor { FirstName = "Alice", LastName = "Martin", Da = 98765 },
-                Student = new Student { FirstName = "Bob", LastName = "Dupont", Da = 12345 }
             });
             Meetings.Add(new Meeting
             {
@@ -37,8 +35,6 @@ namespace tutorat.ViewModel
                 Name = "Meeting 2",
                 Description = "Description 2",
                 DateMeeting = DateTime.Now.AddDays(1),
-                Tutor = new Tutor { FirstName = "Charlie", LastName = "Brown", Da = 54321 },
-                Student = new Student { FirstName = "David", LastName = "Smith", Da = 67890 }
             });
 
             var meetings = _meetingService.GetAll();

@@ -10,6 +10,9 @@
     <Compile Update="View\AvailabilityWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="View\CreateMeeting.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="View\Meeting.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
