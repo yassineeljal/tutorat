@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|c:\\users\\djerr\\onedrive - c\u00E9gep marie-victorin\\desktop\\session 4\\applicationentreprise\\tutorat\\tutorat\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|solutionrelative:tutorat\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|c:\\users\\djerr\\onedrive - c\u00E9gep marie-victorin\\desktop\\session 4\\applicationentreprise\\tutorat\\tutorat\\viewmodel\\studentdemandlistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|solutionrelative:tutorat\\viewmodel\\studentdemandlistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,10 +17,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|c:\\users\\djerr\\onedrive - c\u00E9gep marie-victorin\\desktop\\session 4\\applicationentreprise\\tutorat\\tutorat\\view\\studentdashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|solutionrelative:tutorat\\view\\studentdashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|c:\\users\\djerr\\onedrive - c\u00E9gep marie-victorin\\desktop\\session 4\\applicationentreprise\\tutorat\\tutorat\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|solutionrelative:tutorat\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E967C801-8594-4583-80C4-279A1CD18C57}|tutorat\\tutorat.csproj|c:\\users\\djerr\\onedrive - c\u00E9gep marie-victorin\\desktop\\session 4\\applicationentreprise\\tutorat\\tutorat\\service\\availabilityservice\\availabilityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -188,31 +188,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "StudentDemandListViewModel.cs",
               "DocumentMoniker": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\ViewModel\\StudentDemandListViewModel.cs",
               "RelativeDocumentMoniker": "tutorat\\ViewModel\\StudentDemandListViewModel.cs",
               "ToolTip": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\ViewModel\\StudentDemandListViewModel.cs",
               "RelativeToolTip": "tutorat\\ViewModel\\StudentDemandListViewModel.cs",
-              "ViewState": "AgIAAHEAAAAAAAAAAAAkwH4AAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAHEAAAAAAAAAAAAkwHUAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-02T05:19:30.169Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "AvailabilityWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\View\\AvailabilityWindow.xaml",
-              "RelativeDocumentMoniker": "tutorat\\View\\AvailabilityWindow.xaml",
-              "ToolTip": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\View\\AvailabilityWindow.xaml",
-              "RelativeToolTip": "tutorat\\View\\AvailabilityWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-03T22:01:28.79Z",
               "EditorCaption": ""
             },
             {
@@ -229,27 +217,25 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "StudentDemandListWindow.xaml",
               "DocumentMoniker": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\View\\StudentDemandListWindow.xaml",
               "RelativeDocumentMoniker": "tutorat\\View\\StudentDemandListWindow.xaml",
               "ToolTip": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\View\\StudentDemandListWindow.xaml",
               "RelativeToolTip": "tutorat\\View\\StudentDemandListWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-02T05:16:11.908Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-02T05:16:11.908Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "StudentDashboard.xaml",
               "DocumentMoniker": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\View\\StudentDashboard.xaml",
               "RelativeDocumentMoniker": "tutorat\\View\\StudentDashboard.xaml",
               "ToolTip": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\View\\StudentDashboard.xaml",
               "RelativeToolTip": "tutorat\\View\\StudentDashboard.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-01T23:39:22.316Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-01T23:39:22.316Z"
             },
             {
               "$type": "Document",
@@ -289,6 +275,29 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\App.xaml",
+              "RelativeDocumentMoniker": "tutorat\\App.xaml",
+              "ToolTip": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\App.xaml",
+              "RelativeToolTip": "tutorat\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-24T01:00:36.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AvailabilityWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\View\\AvailabilityWindow.xaml",
+              "RelativeDocumentMoniker": "tutorat\\View\\AvailabilityWindow.xaml",
+              "ToolTip": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\View\\AvailabilityWindow.xaml",
+              "RelativeToolTip": "tutorat\\View\\AvailabilityWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-03T22:01:28.79Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 14,
               "Title": "20250503223645_availabilityyy.cs",
               "DocumentMoniker": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\data\\Migrations\\20250503223645_availabilityyy.cs",
@@ -322,18 +331,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-02T05:17:38.188Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\App.xaml",
-              "RelativeDocumentMoniker": "tutorat\\App.xaml",
-              "ToolTip": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\App.xaml",
-              "RelativeToolTip": "tutorat\\App.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-24T01:00:36.742Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -380,8 +377,7 @@
               "ToolTip": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\View\\TutorListWindow.xaml",
               "RelativeToolTip": "tutorat\\View\\TutorListWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-01T03:03:58.845Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-01T03:03:58.845Z"
             },
             {
               "$type": "Document",
@@ -476,8 +472,7 @@
               "ToolTip": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\View\\TeacherDashboard.xaml",
               "RelativeToolTip": "tutorat\\View\\TeacherDashboard.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-26T18:00:21.453Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-26T18:00:21.453Z"
             },
             {
               "$type": "Document",
@@ -512,8 +507,7 @@
               "ToolTip": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\View\\Meeting.xaml",
               "RelativeToolTip": "tutorat\\View\\Meeting.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-26T21:48:38.042Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-26T21:48:38.042Z"
             },
             {
               "$type": "Document",
@@ -548,8 +542,7 @@
               "ToolTip": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\View\\StudentRequest.xaml",
               "RelativeToolTip": "tutorat\\View\\StudentRequest.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-27T00:58:18.346Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-27T00:58:18.346Z"
             },
             {
               "$type": "Document",
@@ -561,8 +554,7 @@
               "RelativeToolTip": "tutorat\\Service\\AvailabilityService\\AvailabilityService.cs",
               "ViewState": "AgIAABUAAAAAqqpaUecKwCkAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T06:11:09.454Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-01T06:11:09.454Z"
             },
             {
               "$type": "Document",
@@ -705,8 +697,7 @@
               "ToolTip": "C:\\Users\\djerr\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\Session 4\\ApplicationEntreprise\\tutorat\\tutorat\\MainWindow.xaml",
               "RelativeToolTip": "tutorat\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-23T19:41:28.637Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-23T19:41:28.637Z"
             },
             {
               "$type": "Document",
