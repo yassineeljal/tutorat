@@ -1,5 +1,6 @@
 ﻿using data;
 using data.Model;
+using Microsoft.EntityFrameworkCore;
 
 namespace tutorat.Service.StudentService
 {
@@ -25,7 +26,7 @@ namespace tutorat.Service.StudentService
 
         public IEnumerable<Student> GetAll()
         {
-            return _db.Students.ToList();
+            return _db.Students.Include(s => s.Requests).ToList();
         }
 
         public Student GetByDa(int Da)

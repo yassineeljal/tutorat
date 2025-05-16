@@ -11,11 +11,11 @@ namespace tutorat.View
     public partial class StudentDemandListWindow : Window
     {
 
-        private StudentDemandListViewModel viewModel;
+        private StudentDemandToBeTutorListViewModel viewModel;
         public StudentDemandListWindow()
         {
             InitializeComponent();
-            viewModel = new StudentDemandListViewModel(new StudentService(),new TutorService());
+            viewModel = new StudentDemandToBeTutorListViewModel(new StudentService(),new TutorService());
             DataContext = viewModel;
         }
 

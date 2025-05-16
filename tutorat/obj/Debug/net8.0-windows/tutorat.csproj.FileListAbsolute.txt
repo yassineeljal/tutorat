@@ -680,3 +680,5 @@ C:\Users\djerr\OneDrive\Desktop\tutorat\tutorat\obj\Debug\net8.0-windows\refint\
 C:\Users\djerr\OneDrive\Desktop\tutorat\tutorat\obj\Debug\net8.0-windows\tutorat.pdb
 C:\Users\djerr\OneDrive\Desktop\tutorat\tutorat\obj\Debug\net8.0-windows\tutorat.genruntimeconfig.cache
 C:\Users\djerr\OneDrive\Desktop\tutorat\tutorat\obj\Debug\net8.0-windows\ref\tutorat.dll
+C:\Users\yassi\OneDrive\Desktop\tutorat\tutorat\obj\Debug\net8.0-windows\View\CreateDisponibility.baml
+C:\Users\yassi\OneDrive\Desktop\tutorat\tutorat\obj\Debug\net8.0-windows\View\CreateDisponibility.g.cs

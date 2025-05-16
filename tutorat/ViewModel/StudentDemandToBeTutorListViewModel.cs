@@ -8,14 +8,14 @@ using tutorat.Service.TutorService;
 
 namespace tutorat.ViewModel
 {
-    public partial class StudentDemandListViewModel : ObservableObject
+    public partial class StudentDemandToBeTutorListViewModel : ObservableObject
     {
         private readonly IStudentService _studentService;
         private readonly ITutorService _tutorService;
         public ObservableCollection<Student> Students { get; set; } = new ObservableCollection<Student>();
         public ObservableCollection<Student> StudentsSearch { get; set; } = new ObservableCollection<Student>();
 
-        public StudentDemandListViewModel(IStudentService studentService, ITutorService tutorService)
+        public StudentDemandToBeTutorListViewModel(IStudentService studentService, ITutorService tutorService)
         {
             _studentService = studentService;
             _tutorService = tutorService;
@@ -37,28 +37,29 @@ namespace tutorat.ViewModel
 
         private void LoadStudents()
         {
-            _studentService.Create(new Student
-            {
-                FirstName = "Mathilde",
-                LastName = "Lemoine",
-                Da = 123456
-            });
-            _studentService.Create(new Student
-            {
-                FirstName = "Julien",
-                LastName = "Girard",
-                Da = 654321
-            });
-            _tutorService.Create(new Tutor
-            {
-                FirstName = "Prof",
-                LastName = "Test",
-                Da = 777
-            });
             var students = _studentService.GetAll();
             foreach (var student in students)
             {
-                Students.Add(student);
+                if(student.Requests == null)
+                {
+                    continue;
+                }
+                else
+                {
+                    foreach (var request in student.Requests)
+                    {
+                        if (request.Subject == "Devenir tuteur")
+                        {
+                            Students.Add(student);
+                            break;
+                        }
+                        else
+                        {
+                            continue;
+                        }
+                    }
+                }
+
             }
         }
 
@@ -105,8 +106,6 @@ namespace tutorat.ViewModel
         [RelayCommand]
         private void CreateTutor()
         {
-            MessageBox.Show("fi");
-
 
             if (string.IsNullOrEmpty(daInputCreateTutor))
             {
@@ -125,14 +124,16 @@ namespace tutorat.ViewModel
                 }
                 else
                 {
+                    var request = newStudent.Requests.FirstOrDefault(r => r.Subject == "Devenir tuteur");
                     Tutor tutor = new Tutor
                     {
                         FirstName = newStudent.FirstName,
                         LastName = newStudent.LastName,
                         Da = newStudent.Da,
+                        Category = request.Subject,
                     };
                     _tutorService.Create(tutor);
-                    MessageBox.Show("adwfgh");
+                    MessageBox.Show("tuteur créé");
                 }
 
             }

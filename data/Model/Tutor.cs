@@ -8,6 +8,7 @@ public class Tutor
     public int Da { get; set; }
     public string FirstName { get; set; }
     public string LastName { get; set; }
+    public string Category { get; set; }
 
     public List<Availability> Availabilities { get; set; }
     public List<Meeting> Meetings { get; set; }

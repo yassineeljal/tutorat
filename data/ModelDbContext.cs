@@ -17,14 +17,12 @@ namespace data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            // Disponibilité ←→ Étudiant (nullable)
             modelBuilder.Entity<Availability>()
                 .HasOne(a => a.Student)
                 .WithMany(s => s.Availabilities)
                 .HasForeignKey(a => a.StudentId)
                 .IsRequired(false);
 
-            // Disponibilité ←→ Tuteur (nullable)
             modelBuilder.Entity<Availability>()
                 .HasOne(a => a.Tutor)
                 .WithMany(t => t.Availabilities)
