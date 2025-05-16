@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\djerr\\Desktop\\tutorat\\tutorat\\tutorat.csproj": {}
+    "C:\\Users\\djerr\\OneDrive\\Desktop\\tutorat\\tutorat\\tutorat.csproj": {}
   },
   "projects": {
-    "C:\\Users\\djerr\\Desktop\\tutorat\\data\\data.csproj": {
+    "C:\\Users\\djerr\\OneDrive\\Desktop\\tutorat\\data\\data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\djerr\\Desktop\\tutorat\\data\\data.csproj",
+        "projectUniqueName": "C:\\Users\\djerr\\OneDrive\\Desktop\\tutorat\\data\\data.csproj",
         "projectName": "data",
-        "projectPath": "C:\\Users\\djerr\\Desktop\\tutorat\\data\\data.csproj",
+        "projectPath": "C:\\Users\\djerr\\OneDrive\\Desktop\\tutorat\\data\\data.csproj",
         "packagesPath": "C:\\Users\\djerr\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\djerr\\Desktop\\tutorat\\data\\obj\\",
+        "outputPath": "C:\\Users\\djerr\\OneDrive\\Desktop\\tutorat\\data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -88,14 +88,14 @@
         }
       }
     },
-    "C:\\Users\\djerr\\Desktop\\tutorat\\tutorat\\tutorat.csproj": {
+    "C:\\Users\\djerr\\OneDrive\\Desktop\\tutorat\\tutorat\\tutorat.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\djerr\\Desktop\\tutorat\\tutorat\\tutorat.csproj",
+        "projectUniqueName": "C:\\Users\\djerr\\OneDrive\\Desktop\\tutorat\\tutorat\\tutorat.csproj",
         "projectName": "tutorat",
-        "projectPath": "C:\\Users\\djerr\\Desktop\\tutorat\\tutorat\\tutorat.csproj",
+        "projectPath": "C:\\Users\\djerr\\OneDrive\\Desktop\\tutorat\\tutorat\\tutorat.csproj",
         "packagesPath": "C:\\Users\\djerr\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\djerr\\Desktop\\tutorat\\tutorat\\obj\\",
+        "outputPath": "C:\\Users\\djerr\\OneDrive\\Desktop\\tutorat\\tutorat\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -117,8 +117,8 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "C:\\Users\\djerr\\Desktop\\tutorat\\data\\data.csproj": {
-                "projectPath": "C:\\Users\\djerr\\Desktop\\tutorat\\data\\data.csproj"
+              "C:\\Users\\djerr\\OneDrive\\Desktop\\tutorat\\data\\data.csproj": {
+                "projectPath": "C:\\Users\\djerr\\OneDrive\\Desktop\\tutorat\\data\\data.csproj"
               }
             }
           }

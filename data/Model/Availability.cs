@@ -1,6 +1,5 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 
 namespace data.Model
 {
@@ -8,15 +7,16 @@ namespace data.Model
     {
         [Key]
         public int Id { get; set; }
-        
-        public DayOfWeek DayOfWeek { get; set; } 
+
+        public DayOfWeek DayOfWeek { get; set; }
         public TimeSpan StartTime { get; set; }
         public TimeSpan EndTime { get; set; }
 
-        [ForeignKey(nameof(Student))]
-        public int StudentId { get; set; }
+        // Clés étrangères rendues optionnelles
+        public int? StudentId { get; set; }
+        public Student Student { get; set; }
 
-        [ForeignKey(nameof(Tutor))]
-        public int TutorId { get; set; }
+        public int? TutorId { get; set; }
+        public Tutor Tutor { get; set; }
     }
 }

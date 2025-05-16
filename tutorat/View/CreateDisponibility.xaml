@@ -8,11 +8,14 @@
             <!-- Statut -->
             <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
                 <Label Content="Statut :" VerticalAlignment="Center"/>
-                <ComboBox SelectedItem="{Binding Status, Mode=TwoWay}"
-                          Width="100" Margin="5,0,0,0">
+                <ComboBox 
+                     SelectedValue="{Binding Status, Mode=TwoWay}"
+                     SelectedValuePath="Content"
+                     Width="100" Margin="5,0,0,0">
                     <ComboBoxItem Content="Etudiant"/>
                     <ComboBoxItem Content="Tuteur"/>
                 </ComboBox>
+
             </StackPanel>
 
             <!-- DA -->

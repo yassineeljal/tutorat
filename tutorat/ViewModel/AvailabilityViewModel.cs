@@ -54,7 +54,7 @@ namespace tutorat.ViewModel
                 return;
             }
 
-            Availability availability = new Availability
+            var availability = new Availability
             {
                 DayOfWeek = SelectedDay,
                 StartTime = start,
