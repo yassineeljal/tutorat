@@ -12,7 +12,7 @@ namespace tutorat.View
         public TutorListWindow()
         {
             InitializeComponent();
-            _viewModel = new TutorListViewModel(new TutorService(), new StudentService());
+            _viewModel = new TutorListViewModel(new TutorService());
             DataContext = _viewModel;
         }
 

@@ -41,7 +41,8 @@ namespace tutorat.Service.StudentService
 
         public void Update(Student student)
         {
-            throw new NotImplementedException();
+            _db.Students.Update(student);
+            _db.SaveChanges();
         }
     }
 }

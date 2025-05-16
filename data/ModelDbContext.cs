@@ -28,6 +28,12 @@ namespace data
                 .WithMany(t => t.Availabilities)
                 .HasForeignKey(a => a.TutorId)
                 .IsRequired(false);
+
+            modelBuilder.Entity<Student>()
+                .HasOne(s => s.Tutor)
+                .WithOne(t => t.Student)
+                .HasForeignKey<Student>(s => s.TutorId)
+                .OnDelete(DeleteBehavior.SetNull);
         }
     }
 }

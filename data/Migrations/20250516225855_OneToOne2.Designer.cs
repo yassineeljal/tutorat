@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using data;
 
@@ -10,9 +11,11 @@ using data;
 namespace data.Migrations
 {
     [DbContext(typeof(ModelDbContext))]
-    partial class TutorDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250516225855_OneToOne2")]
+    partial class OneToOne2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "9.0.4");
@@ -37,13 +40,7 @@ namespace data.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<int?>("TutorId")
-                        .HasColumnType("INTEGER");
-
                     b.HasKey("Id");
-
-                    b.HasIndex("TutorId")
-                        .IsUnique();
 
                     b.ToTable("Students");
                 });
@@ -185,16 +182,6 @@ namespace data.Migrations
                     b.ToTable("Teachers");
                 });
 
-            modelBuilder.Entity("Student", b =>
-                {
-                    b.HasOne("Tutor", "Tutor")
-                        .WithOne("Student")
-                        .HasForeignKey("Student", "TutorId")
-                        .OnDelete(DeleteBehavior.SetNull);
-
-                    b.Navigation("Tutor");
-                });
-
             modelBuilder.Entity("data.Model.Availability", b =>
                 {
                     b.HasOne("Student", "Student")
@@ -248,9 +235,6 @@ namespace data.Migrations
                     b.Navigation("Availabilities");
 
                     b.Navigation("Meetings");
-
-                    b.Navigation("Student")
-                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }

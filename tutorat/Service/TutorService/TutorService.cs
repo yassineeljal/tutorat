@@ -1,5 +1,6 @@
 ﻿using data;
 using data.Model;
+using Microsoft.EntityFrameworkCore;
 
 namespace tutorat.Service.TutorService
 {
@@ -14,11 +15,21 @@ namespace tutorat.Service.TutorService
 
         public void Delete(int da)
         {
-            if (_db.Tutors.Find(da) != null) {
-                _db.Tutors.Remove(_db.Tutors.Find(da));
+            var tutor = _db.Tutors.Include(t => t.Availabilities).Include(t => t.Meetings).FirstOrDefault(t => t.Da == da);
+
+            if (tutor != null)
+            {
+                if (tutor.Meetings != null && tutor.Meetings.Count > 0)
+                    _db.Meetings.RemoveRange(tutor.Meetings);
+
+                if (tutor.Availabilities != null && tutor.Availabilities.Count > 0)
+                    _db.Availabilities.RemoveRange(tutor.Availabilities);
+
+                _db.Tutors.Remove(tutor);
                 _db.SaveChanges();
             }
         }
+
 
         public IEnumerable<Tutor> GetAll()
         {
@@ -35,10 +46,7 @@ namespace tutorat.Service.TutorService
 
         public void Update(Tutor tutor)
         {
-            var exist = _db.Tutors.FirstOrDefault(t => t.Da == tutor.Da);
-            if (exist != null){
-                
-            }
+            _db.Tutors.Update(tutor);
             _db.SaveChanges();
         }
     }
