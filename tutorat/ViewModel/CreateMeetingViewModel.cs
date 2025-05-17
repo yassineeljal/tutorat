@@ -48,7 +48,6 @@ namespace tutorat.ViewModel
         [RelayCommand]
         private void CreateMeeting()
         {
-            MessageBox.Show("entrer");
             if (name == null && description == null && date == null && time == null && tutorDa == null && studentDa == null)
             {
                 MessageBox.Show("veuillez remplire tout les gens");
@@ -58,7 +57,6 @@ namespace tutorat.ViewModel
 
             else
             {
-                MessageBox.Show("else");
 
                 var timeMeeting = TimeSpan.Parse(time);
                 var dateMeeting = date.Date.Add(timeMeeting);
@@ -75,7 +73,7 @@ namespace tutorat.ViewModel
                     TutorId = tutor.Id
 
                 });
-                MessageBox.Show("fini");
+                MessageBox.Show("Rencontre créée");
 
 
             }

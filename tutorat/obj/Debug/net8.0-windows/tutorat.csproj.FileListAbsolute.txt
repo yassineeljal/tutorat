@@ -326,10 +326,8 @@ C:\Users\djerr\OneDrive - Cégep Marie-Victorin\Desktop\Session 4\ApplicationEnt
 C:\Users\djerr\OneDrive - Cégep Marie-Victorin\Desktop\Session 4\ApplicationEntreprise\tutorat\tutorat\obj\Debug\net8.0-windows\View\StudentDashboard.g.cs
 C:\Users\djerr\OneDrive - Cégep Marie-Victorin\Desktop\Session 4\ApplicationEntreprise\tutorat\tutorat\obj\Debug\net8.0-windows\View\StudentDemandListWindow.g.cs
 C:\Users\djerr\OneDrive - Cégep Marie-Victorin\Desktop\Session 4\ApplicationEntreprise\tutorat\tutorat\obj\Debug\net8.0-windows\View\StudentDemandListWindow.baml
-C:\Users\yassi\OneDrive\Desktop\tutorat\tutorat\obj\Debug\net8.0-windows\View\AvailabilityWindow.baml
 C:\Users\yassi\OneDrive\Desktop\tutorat\tutorat\obj\Debug\net8.0-windows\View\StudentDashboard.baml
 C:\Users\yassi\OneDrive\Desktop\tutorat\tutorat\obj\Debug\net8.0-windows\View\TutorListWindow.baml
-C:\Users\yassi\OneDrive\Desktop\tutorat\tutorat\obj\Debug\net8.0-windows\View\AvailabilityWindow.g.cs
 C:\Users\yassi\OneDrive\Desktop\tutorat\tutorat\obj\Debug\net8.0-windows\View\StudentDashboard.g.cs
 C:\Users\yassi\OneDrive\Desktop\tutorat\tutorat\obj\Debug\net8.0-windows\View\StudentDemandListWindow.g.cs
 C:\Users\yassi\OneDrive\Desktop\tutorat\tutorat\obj\Debug\net8.0-windows\View\TutorListWindow.g.cs
