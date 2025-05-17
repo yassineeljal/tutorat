@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using tutorat.Service.RequestService;
 using tutorat.Service.StudentService;
 using tutorat.Service.TutorService;
 using tutorat.ViewModel;
@@ -26,7 +27,7 @@ namespace tutorat.View
         public LinkStudentTutor()
         {
             InitializeComponent();
-            _viewModel = new LinkStudentTutorViewModel(new TutorService(), new StudentService());
+            _viewModel = new LinkStudentTutorViewModel(new TutorService(), new StudentService(), new RequestService());
             DataContext = _viewModel;
         }
     }

@@ -1,79 +1,84 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.ObjectModel;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using tutorat.Service.StudentService;
 using tutorat.Service.TutorService;
+using tutorat.Service.RequestService;
+using data.Model;
 
 namespace tutorat.ViewModel
 {
-    public partial class LinkStudentTutorViewModel: ObservableObject
+    public partial class LinkStudentTutorViewModel : ObservableObject
     {
-        public ObservableCollection<Tutor> Tutors { get; set; } =  new ObservableCollection<Tutor>();
-        public ObservableCollection<Student> Students { get; set; } = new ObservableCollection<Student>();
+        public ObservableCollection<Tutor> Tutors { get; set; } = new();
+        public ObservableCollection<Request> Requests { get; set; } = new();
 
         private readonly ITutorService _tutorService;
         private readonly IStudentService _studentService;
-        public LinkStudentTutorViewModel(ITutorService tutorService, IStudentService studentService)
+        private readonly IRequestService _requestService;
+
+        public LinkStudentTutorViewModel(ITutorService tutorService,IStudentService studentService, IRequestService requestService)
         {
             _tutorService = tutorService;
             _studentService = studentService;
-            LoadStudent();
-            LoadTutors();
+            _requestService = requestService;
 
+            LoadRequests();
+            LoadTutors();
         }
 
         [ObservableProperty]
-        private Student selectedStudent;
-
+        private Request selectedRequest;
 
         [ObservableProperty]
         private Tutor selectedTutor;
 
-
-
         [RelayCommand]
         public void LinkStudentToTutor()
         {
-            if (SelectedStudent == null || SelectedTutor == null)
+            if (SelectedRequest == null || SelectedTutor == null)
                 return;
 
-            if (SelectedStudent.IsLinked || SelectedTutor.IsLinked)
+            // Récupération du Student à partir de la Request
+            var student = _studentService.GetById(SelectedRequest.StudentId);
+
+            if (student == null)
+            {
+                System.Windows.MessageBox.Show("Étudiant introuvable.");
+                return;
+            }
+
+            if (student.IsLinked || SelectedTutor.IsLinked)
             {
                 System.Windows.MessageBox.Show("L'étudiant ou le tuteur est déjà lié.");
                 return;
             }
 
-            SelectedStudent.TutorId = SelectedTutor.Id;
-            SelectedStudent.IsLinked = true;
+            // Mise à jour
+            student.TutorId = SelectedTutor.Id;
+            student.IsLinked = true;
             SelectedTutor.IsLinked = true;
 
-            _studentService.Update(SelectedStudent);
+            _studentService.Update(student);
             _tutorService.Update(SelectedTutor);
 
             System.Windows.MessageBox.Show(
-                $"{SelectedStudent.FirstName} {SelectedStudent.LastName} a été lié à {SelectedTutor.FirstName} {SelectedTutor.LastName}.");
+                $"{student.FirstName} {student.LastName} a été lié à {SelectedTutor.FirstName} {SelectedTutor.LastName}.");
         }
 
-        private  void LoadStudent()
+        private void LoadRequests()
         {
-            var students = _studentService.GetAll();
+            var requests = _requestService.GetAllRequests();
 
-            foreach (var student in students)
+            Requests.Clear();
+            foreach (var request in requests)
             {
-                if (student.Requests == null)
-                    continue;
-
-                foreach (var request in student.Requests)
+                if (request.Subject == "Demander de l'aide")
                 {
-                    if (request.Subject == "Demander de l'aide" && !student.IsLinked)
+                    var student = _studentService.GetById(request.StudentId);
+                    if (student != null && !student.IsLinked)
                     {
-                        Students.Add(student);
-                        break;
+                        Requests.Add(request);
                     }
                 }
             }
@@ -82,13 +87,10 @@ namespace tutorat.ViewModel
         private void LoadTutors()
         {
             var tutors = _tutorService.GetAll();
+            Tutors.Clear();
             foreach (var tutor in tutors)
             {
-                if (tutor.IsLinked)
-                {
-                    continue;
-                }
-                else
+                if (!tutor.IsLinked)
                 {
                     Tutors.Add(tutor);
                 }

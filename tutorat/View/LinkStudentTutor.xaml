@@ -12,19 +12,20 @@
             <ColumnDefinition Width="Auto" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
-        
-        <GroupBox Header="Étudiants" Margin="5">
-            <DataGrid ItemsSource="{Binding Students}"
-                      SelectedItem="{Binding SelectedStudent}"
-                      AutoGenerateColumns="False"
-                      SelectionMode="Single"
-                      CanUserAddRows="False"
-                      Margin="5">
+
+        <GroupBox Header="Requêtes d’aide" Margin="5">
+            <DataGrid ItemsSource="{Binding Requests}"
+              SelectedItem="{Binding SelectedRequest}"
+              AutoGenerateColumns="False"
+              SelectionMode="Single"
+              CanUserAddRows="False"
+              Margin="5">
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="Auto"/>
-                    <DataGridTextColumn Header="Prénom" Binding="{Binding FirstName}" Width="*"/>
-                    <DataGridTextColumn Header="Nom" Binding="{Binding LastName}" Width="*"/>
-                    <DataGridTextColumn Header="Da" Binding="{Binding Da}" Width="*"/>
+                    <DataGridTextColumn Header="Sujet" Binding="{Binding Subject}" Width="*"/>
+                    <DataGridTextColumn Header="Catégorie" Binding="{Binding Category}" Width="*"/>
+                    <DataGridTextColumn Header="Note" Binding="{Binding Note}" Width="Auto"/>
+                    <DataGridTextColumn Header="Étudiant ID" Binding="{Binding StudentId}" Width="Auto"/>
                 </DataGrid.Columns>
             </DataGrid>
         </GroupBox>

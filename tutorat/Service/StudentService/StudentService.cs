@@ -8,6 +8,11 @@ namespace tutorat.Service.StudentService
     {
         private ModelDbContext _db = new ModelDbContext();
 
+        public Student GetById(int id)
+        {
+            return _db.Students.Include(s => s.Requests).Include(s => s.Availabilities).Include(s => s.Meetings).FirstOrDefault(s => s.Id == id);
+        }
+
         public void Create(Student student)
         {
             _db.Students.Add(student);
