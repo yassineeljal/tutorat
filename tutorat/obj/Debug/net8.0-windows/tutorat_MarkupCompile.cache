@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\yassi\OneDrive\Desktop\tutorat\tutorat\App.xaml
-101817289512
+9410244171
 
-321454749291
+29-1607048448
 222-1577912795
-MainWindow.xaml;View\CreateDisponibility.xaml;View\CreateMeeting.xaml;View\LinkStudentTutor.xaml;View\Meeting.xaml;View\StudentDashboard.xaml;View\StudentDemandListWindow.xaml;View\StudentRequest.xaml;View\TeacherDashboard.xaml;View\TutorListWindow.xaml;
+View\CreateDisponibility.xaml;View\CreateMeeting.xaml;View\LinkStudentTutor.xaml;View\Meeting.xaml;View\StudentDashboard.xaml;View\StudentDemandListWindow.xaml;View\StudentRequest.xaml;View\TeacherDashboard.xaml;View\TutorListWindow.xaml;
 
-False
+True
 
