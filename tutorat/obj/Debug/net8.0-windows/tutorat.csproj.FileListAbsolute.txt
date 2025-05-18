@@ -645,13 +645,11 @@ C:\Users\djerr\OneDrive\Desktop\tutorat\tutorat\bin\Debug\net8.0-windows\runtime
 C:\Users\djerr\OneDrive\Desktop\tutorat\tutorat\bin\Debug\net8.0-windows\data.dll
 C:\Users\djerr\OneDrive\Desktop\tutorat\tutorat\bin\Debug\net8.0-windows\data.pdb
 C:\Users\djerr\OneDrive\Desktop\tutorat\tutorat\obj\Debug\net8.0-windows\tutorat.csproj.AssemblyReference.cache
-C:\Users\djerr\OneDrive\Desktop\tutorat\tutorat\obj\Debug\net8.0-windows\View\AvailabilityWindow.baml
 C:\Users\djerr\OneDrive\Desktop\tutorat\tutorat\obj\Debug\net8.0-windows\View\CreateDisponibility.baml
 C:\Users\djerr\OneDrive\Desktop\tutorat\tutorat\obj\Debug\net8.0-windows\View\StudentDashboard.baml
 C:\Users\djerr\OneDrive\Desktop\tutorat\tutorat\obj\Debug\net8.0-windows\View\TeacherDashboard.baml
 C:\Users\djerr\OneDrive\Desktop\tutorat\tutorat\obj\Debug\net8.0-windows\View\TutorListWindow.baml
 C:\Users\djerr\OneDrive\Desktop\tutorat\tutorat\obj\Debug\net8.0-windows\MainWindow.g.cs
-C:\Users\djerr\OneDrive\Desktop\tutorat\tutorat\obj\Debug\net8.0-windows\View\AvailabilityWindow.g.cs
 C:\Users\djerr\OneDrive\Desktop\tutorat\tutorat\obj\Debug\net8.0-windows\View\CreateDisponibility.g.cs
 C:\Users\djerr\OneDrive\Desktop\tutorat\tutorat\obj\Debug\net8.0-windows\View\CreateMeeting.g.cs
 C:\Users\djerr\OneDrive\Desktop\tutorat\tutorat\obj\Debug\net8.0-windows\View\Meeting.g.cs
@@ -684,3 +682,7 @@ C:\Users\yassi\OneDrive\Desktop\tutorat\tutorat\obj\Debug\net8.0-windows\View\Cr
 C:\Users\yassi\OneDrive\Desktop\tutorat\tutorat\obj\Debug\net8.0-windows\View\CreateDisponibility.g.cs
 C:\Users\yassi\OneDrive\Desktop\tutorat\tutorat\obj\Debug\net8.0-windows\View\LinkStudentTutor.g.cs
 C:\Users\yassi\OneDrive\Desktop\tutorat\tutorat\obj\Debug\net8.0-windows\View\LinkStudentTutor.baml
+C:\Users\djerr\OneDrive\Desktop\tutorat\tutorat\obj\Debug\net8.0-windows\View\LinkStudentTutor.g.cs
+C:\Users\djerr\OneDrive\Desktop\tutorat\tutorat\obj\Debug\net8.0-windows\View\LinkStudentTutor.baml
+C:\Users\djerr\OneDrive\Desktop\tutorat\tutorat\obj\Debug\net8.0-windows\View\TutorDashboard.baml
+C:\Users\djerr\OneDrive\Desktop\tutorat\tutorat\obj\Debug\net8.0-windows\View\TutorDashboard.g.cs

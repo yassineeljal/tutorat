@@ -1,116 +1,164 @@
-﻿<Window x:Class="tutorat.View.CreateDisponibility"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="CreateDisponibility" Height="450" Width="300">
-    <ScrollViewer VerticalScrollBarVisibility="Auto">
-        <StackPanel Margin="10">
+﻿<Page x:Class="tutorat.View.CreateDisponibility"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="Créer une disponibilité">
 
-            <!-- Statut -->
-            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
-                <Label Content="Statut :" VerticalAlignment="Center"/>
-                <ComboBox 
-                     SelectedValue="{Binding Status, Mode=TwoWay}"
-                     SelectedValuePath="Content"
-                     Width="100" Margin="5,0,0,0">
-                    <ComboBoxItem Content="Etudiant"/>
-                    <ComboBoxItem Content="Tuteur"/>
-                </ComboBox>
+    <Grid Background="AliceBlue">
+        <!-- Centre la carte de saisie -->
+        <Border Background="WhiteSmoke"
+                CornerRadius="10"
+                Padding="20"
+                Margin="20"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                MaxWidth="500">
+            <!-- Le ScrollViewer gère le défilement si le contenu est plus grand que la zone -->
+            <ScrollViewer VerticalScrollBarVisibility="Auto">
+                <StackPanel>
 
-            </StackPanel>
+                    <!-- Titre -->
+                    <TextBlock Text="Créer une disponibilité"
+                               FontSize="20"
+                               FontWeight="Bold"
+                               Foreground="DarkSlateGray"
+                               HorizontalAlignment="Center"
+                               Margin="0,0,0,20"/>
 
-            <!-- DA -->
-            <StackPanel Orientation="Horizontal" Margin="0,0,0,20">
-                <Label Content="DA :" VerticalAlignment="Center"/>
-                <TextBox Text="{Binding Da, Mode=TwoWay}"
-                         Width="80" Margin="5,0,0,0"/>
-            </StackPanel>
+                    <!-- Statut -->
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                        <Label Content="Statut :" Width="70" VerticalAlignment="Center"/>
+                        <ComboBox SelectedValue="{Binding Status, Mode=TwoWay}"
+                                  SelectedValuePath="Content"
+                                  Width="150" Background="White">
+                            <ComboBoxItem Content="Etudiant"/>
+                            <ComboBoxItem Content="Tuteur"/>
+                        </ComboBox>
+                    </StackPanel>
 
-            <TextBlock Text="Disponibilités" FontWeight="Bold"
-                       FontSize="14" Margin="0,0,0,5"/>
+                    <!-- DA -->
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,20">
+                        <Label Content="DA :" Width="70" VerticalAlignment="Center"/>
+                        <TextBox Text="{Binding Da, Mode=TwoWay}"
+                                 Width="150" Background="White"/>
+                    </StackPanel>
 
-            <!-- Lundi -->
-            <StackPanel Orientation="Horizontal" Margin="0,5">
-                <CheckBox IsChecked="{Binding LundiChecked, Mode=TwoWay}"
-                          Content="Lundi"/>
-                <TextBlock Text="Début :" Margin="10,0,5,0"/>
-                <TextBox Text="{Binding LundiStart, Mode=TwoWay}" Width="50"/>
-                <TextBlock Text="h" Margin="5,0,5,0"/>
-                <TextBox Text="{Binding LundiEnd, Mode=TwoWay}"   Width="50"/>
-                <TextBlock Text="h" Margin="5,0,0,0"/>
-            </StackPanel>
+                    <!-- Sous-titre -->
+                    <TextBlock Text="Disponibilités"
+                               FontWeight="Bold"
+                               FontSize="16"
+                               Foreground="SlateGray"
+                               Margin="0,0,0,10"/>
 
-            <!-- Mardi -->
-            <StackPanel Orientation="Horizontal" Margin="0,5">
-                <CheckBox IsChecked="{Binding MardiChecked, Mode=TwoWay}"
-                          Content="Mardi"/>
-                <TextBlock Text="Début :" Margin="10,0,5,0"/>
-                <TextBox Text="{Binding MardiStart, Mode=TwoWay}" Width="50"/>
-                <TextBlock Text="h" Margin="5,0,5,0"/>
-                <TextBox Text="{Binding MardiEnd, Mode=TwoWay}"   Width="50"/>
-                <TextBlock Text="h" Margin="5,0,0,0"/>
-            </StackPanel>
+                    <!-- Lundi -->
+                    <StackPanel Orientation="Horizontal" Margin="0,5">
+                        <CheckBox Content="Lundi"
+                                  IsChecked="{Binding LundiChecked, Mode=TwoWay}"
+                                  Width="70"/>
+                        <TextBlock Text="Début :" VerticalAlignment="Center" Margin="10,0,5,0"/>
+                        <TextBox Text="{Binding LundiStart, Mode=TwoWay}"
+                                 Width="40" Background="White"/>
+                        <TextBlock Text="h" Margin="5,0,5,0" VerticalAlignment="Center"/>
+                        <TextBox Text="{Binding LundiEnd, Mode=TwoWay}"
+                                 Width="40" Background="White"/>
+                        <TextBlock Text="h" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                    </StackPanel>
 
-            <!-- Mercredi -->
-            <StackPanel Orientation="Horizontal" Margin="0,5">
-                <CheckBox IsChecked="{Binding MercrediChecked, Mode=TwoWay}"
-                          Content="Mercredi"/>
-                <TextBlock Text="Début :" Margin="10,0,5,0"/>
-                <TextBox Text="{Binding MercrediStart, Mode=TwoWay}" Width="50"/>
-                <TextBlock Text="h" Margin="5,0,5,0"/>
-                <TextBox Text="{Binding MercrediEnd, Mode=TwoWay}"   Width="50"/>
-                <TextBlock Text="h" Margin="5,0,0,0"/>
-            </StackPanel>
+                    <!-- Mardi -->
+                    <StackPanel Orientation="Horizontal" Margin="0,5">
+                        <CheckBox Content="Mardi"
+                                  IsChecked="{Binding MardiChecked, Mode=TwoWay}"
+                                  Width="70"/>
+                        <TextBlock Text="Début :" VerticalAlignment="Center" Margin="10,0,5,0"/>
+                        <TextBox Text="{Binding MardiStart, Mode=TwoWay}"
+                                 Width="40" Background="White"/>
+                        <TextBlock Text="h" Margin="5,0,5,0" VerticalAlignment="Center"/>
+                        <TextBox Text="{Binding MardiEnd, Mode=TwoWay}"
+                                 Width="40" Background="White"/>
+                        <TextBlock Text="h" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                    </StackPanel>
 
-            <!-- Jeudi -->
-            <StackPanel Orientation="Horizontal" Margin="0,5">
-                <CheckBox IsChecked="{Binding JeudiChecked, Mode=TwoWay}"
-                          Content="Jeudi"/>
-                <TextBlock Text="Début :" Margin="10,0,5,0"/>
-                <TextBox Text="{Binding JeudiStart, Mode=TwoWay}" Width="50"/>
-                <TextBlock Text="h" Margin="5,0,5,0"/>
-                <TextBox Text="{Binding JeudiEnd, Mode=TwoWay}"   Width="50"/>
-                <TextBlock Text="h" Margin="5,0,0,0"/>
-            </StackPanel>
+                    <!-- Mercredi -->
+                    <StackPanel Orientation="Horizontal" Margin="0,5">
+                        <CheckBox Content="Mercredi"
+                                  IsChecked="{Binding MercrediChecked, Mode=TwoWay}"
+                                  Width="70"/>
+                        <TextBlock Text="Début :" VerticalAlignment="Center" Margin="10,0,5,0"/>
+                        <TextBox Text="{Binding MercrediStart, Mode=TwoWay}"
+                                 Width="40" Background="White"/>
+                        <TextBlock Text="h" Margin="5,0,5,0" VerticalAlignment="Center"/>
+                        <TextBox Text="{Binding MercrediEnd, Mode=TwoWay}"
+                                 Width="40" Background="White"/>
+                        <TextBlock Text="h" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                    </StackPanel>
 
-            <!-- Vendredi -->
-            <StackPanel Orientation="Horizontal" Margin="0,5">
-                <CheckBox IsChecked="{Binding VendrediChecked, Mode=TwoWay}"
-                          Content="Vendredi"/>
-                <TextBlock Text="Début :" Margin="10,0,5,0"/>
-                <TextBox Text="{Binding VendrediStart, Mode=TwoWay}" Width="50"/>
-                <TextBlock Text="h" Margin="5,0,5,0"/>
-                <TextBox Text="{Binding VendrediEnd, Mode=TwoWay}"   Width="50"/>
-                <TextBlock Text="h" Margin="5,0,0,0"/>
-            </StackPanel>
+                    <!-- Jeudi -->
+                    <StackPanel Orientation="Horizontal" Margin="0,5">
+                        <CheckBox Content="Jeudi"
+                                  IsChecked="{Binding JeudiChecked, Mode=TwoWay}"
+                                  Width="70"/>
+                        <TextBlock Text="Début :" VerticalAlignment="Center" Margin="10,0,5,0"/>
+                        <TextBox Text="{Binding JeudiStart, Mode=TwoWay}"
+                                 Width="40" Background="White"/>
+                        <TextBlock Text="h" Margin="5,0,5,0" VerticalAlignment="Center"/>
+                        <TextBox Text="{Binding JeudiEnd, Mode=TwoWay}"
+                                 Width="40" Background="White"/>
+                        <TextBlock Text="h" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                    </StackPanel>
 
-            <!-- Samedi -->
-            <StackPanel Orientation="Horizontal" Margin="0,5">
-                <CheckBox IsChecked="{Binding SamediChecked, Mode=TwoWay}"
-                          Content="Samedi"/>
-                <TextBlock Text="Début :" Margin="10,0,5,0"/>
-                <TextBox Text="{Binding SamediStart, Mode=TwoWay}" Width="50"/>
-                <TextBlock Text="h" Margin="5,0,5,0"/>
-                <TextBox Text="{Binding SamediEnd, Mode=TwoWay}"   Width="50"/>
-                <TextBlock Text="h" Margin="5,0,0,0"/>
-            </StackPanel>
+                    <!-- Vendredi -->
+                    <StackPanel Orientation="Horizontal" Margin="0,5">
+                        <CheckBox Content="Vendredi"
+                                  IsChecked="{Binding VendrediChecked, Mode=TwoWay}"
+                                  Width="70"/>
+                        <TextBlock Text="Début :" VerticalAlignment="Center" Margin="10,0,5,0"/>
+                        <TextBox Text="{Binding VendrediStart, Mode=TwoWay}"
+                                 Width="40" Background="White"/>
+                        <TextBlock Text="h" Margin="5,0,5,0" VerticalAlignment="Center"/>
+                        <TextBox Text="{Binding VendrediEnd, Mode=TwoWay}"
+                                 Width="40" Background="White"/>
+                        <TextBlock Text="h" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                    </StackPanel>
 
-            <!-- Dimanche -->
-            <StackPanel Orientation="Horizontal" Margin="0,5">
-                <CheckBox IsChecked="{Binding DimancheChecked, Mode=TwoWay}"
-                          Content="Dimanche"/>
-                <TextBlock Text="Début :" Margin="10,0,5,0"/>
-                <TextBox Text="{Binding DimancheStart, Mode=TwoWay}" Width="50"/>
-                <TextBlock Text="h" Margin="5,0,5,0"/>
-                <TextBox Text="{Binding DimancheEnd, Mode=TwoWay}"   Width="50"/>
-                <TextBlock Text="h" Margin="5,0,0,0"/>
-            </StackPanel>
+                    <!-- Samedi -->
+                    <StackPanel Orientation="Horizontal" Margin="0,5">
+                        <CheckBox Content="Samedi"
+                                  IsChecked="{Binding SamediChecked, Mode=TwoWay}"
+                                  Width="70"/>
+                        <TextBlock Text="Début :" VerticalAlignment="Center" Margin="10,0,5,0"/>
+                        <TextBox Text="{Binding SamediStart, Mode=TwoWay}"
+                                 Width="40" Background="White"/>
+                        <TextBlock Text="h" Margin="5,0,5,0" VerticalAlignment="Center"/>
+                        <TextBox Text="{Binding SamediEnd, Mode=TwoWay}"
+                                 Width="40" Background="White"/>
+                        <TextBlock Text="h" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                    </StackPanel>
 
-            <!-- Bouton -->
-            <Button Content="Ajouter disponibilité"
-                    Command="{Binding SaveCommand}"
-                    Width="200" Height="30"
-                    HorizontalAlignment="Center"
-                    Margin="0,20,0,0"/>
-        </StackPanel>
-    </ScrollViewer>
-</Window>
+                    <!-- Dimanche -->
+                    <StackPanel Orientation="Horizontal" Margin="0,5">
+                        <CheckBox Content="Dimanche"
+                                  IsChecked="{Binding DimancheChecked, Mode=TwoWay}"
+                                  Width="70"/>
+                        <TextBlock Text="Début :" VerticalAlignment="Center" Margin="10,0,5,0"/>
+                        <TextBox Text="{Binding DimancheStart, Mode=TwoWay}"
+                                 Width="40" Background="White"/>
+                        <TextBlock Text="h" Margin="5,0,5,0" VerticalAlignment="Center"/>
+                        <TextBox Text="{Binding DimancheEnd, Mode=TwoWay}"
+                                 Width="40" Background="White"/>
+                        <TextBlock Text="h" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                    </StackPanel>
+
+                    <!-- Bouton -->
+                    <Button Content="Ajouter disponibilité"
+                            Command="{Binding SaveCommand}"
+                            Width="200" Height="40"
+                            Background="SteelBlue"
+                            Foreground="White"
+                            FontWeight="Bold"
+                            HorizontalAlignment="Center"
+                            Margin="0,30,0,0"
+                            Cursor="Hand"/>
+                </StackPanel>
+            </ScrollViewer>
+        </Border>
+    </Grid>
+</Page>

@@ -1,29 +1,15 @@
-﻿using System.Windows;
+﻿using System.Windows.Controls;
 using tutorat.Service.MeetingService;
 using tutorat.ViewModel;
 
 namespace tutorat.View
 {
-    public partial class Meeting : Window
+    public partial class Meeting : Page
     {
-
-        private MeetingViewModel viewModel;
-        public Meeting()
+        public Meeting(MeetingViewModel vm)
         {
             InitializeComponent();
-
-            viewModel  = new MeetingViewModel(new MeetingService());
-            DataContext = viewModel;
-
+            DataContext = vm;
         }
-
-
-        private void ReturnDashboard_Click(object sender, RoutedEventArgs e)
-        {
-            var teacherDashboard = new TeacherDashboard(); // Ouvre le tableau de bord enseignant
-            teacherDashboard.Show(); // Affiche la nouvelle fenêtre
-            this.Close(); // Ferme la fenêtre actuelle
-        }
-
     }
 }

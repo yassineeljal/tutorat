@@ -1,36 +1,22 @@
-﻿using System.Windows;
+﻿using System.Windows.Controls;
 using tutorat.Service.StudentService;
 using tutorat.Service.TutorService;
-using tutorat.ViewModel; // ⬅️ Assure-toi d’avoir bien ce using
+using tutorat.ViewModel;
 
 namespace tutorat.View
 {
-    /// <summary>
-    /// Logique d'interaction pour StudentDemandListWindow.xaml
-    /// </summary>
-    public partial class StudentDemandListWindow : Window
+    public partial class StudentDemandListWindow : Page
     {
+        private readonly StudentDemandToBeTutorListViewModel _viewModel;
 
-        private StudentDemandToBeTutorListViewModel viewModel;
         public StudentDemandListWindow()
         {
             InitializeComponent();
-            viewModel = new StudentDemandToBeTutorListViewModel(new StudentService(),new TutorService());
-            DataContext = viewModel;
-        }
-
-
-        private void ReturnDashboard_Click(object sender, RoutedEventArgs e)
-        {
-            var teacherDashboard = new TeacherDashboard(); 
-            teacherDashboard.Show();
-            this.Close();
+            _viewModel = new StudentDemandToBeTutorListViewModel(
+                new StudentService(),
+                new TutorService()
+            );
+            DataContext = _viewModel;
         }
     }
 }
-
-
-
-
-
-

@@ -1,4 +1,10 @@
 ﻿using System.Windows;
+using System.Windows.Controls;
+using tutorat.ViewModel;
+using tutorat.Service.MeetingService;
+using tutorat.Service.StudentService;
+using tutorat.Service.TutorService;
+using tutorat.Service.RequestService;
 
 namespace tutorat.View
 {
@@ -7,28 +13,32 @@ namespace tutorat.View
         public TeacherDashboard()
         {
             InitializeComponent();
+            // Frame reste vide au démarrage
         }
 
         private void ViewMeetings_Click(object sender, RoutedEventArgs e)
         {
-            var meetingWindow = new Meeting();
-            this.Close(); 
-            meetingWindow.Show(); 
+            MainFrame.Navigate(new Meeting(
+                new MeetingViewModel(new MeetingService())
+            ));
         }
 
         private void ConsultRequest_Click(object sender, RoutedEventArgs e)
         {
-            var listStudentWindow = new StudentDemandListWindow();
-            this.Close();
-            listStudentWindow.Show();
+            MainFrame.Navigate(new StudentDemandListWindow(
+            
+            ));
         }
 
         private void ConsultListTutors_Click(object sender, RoutedEventArgs e)
         {
-            var tutorListWindow = new TutorListWindow();
-            this.Close();
-            tutorListWindow.Show();
+            MainFrame.Navigate(new TutorListWindow(           ));
         }
 
+        private void OpenLinkStudentTutor_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new LinkStudentTutor());
+           
+        }
     }
 }

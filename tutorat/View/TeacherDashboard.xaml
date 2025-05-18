@@ -1,53 +1,38 @@
 ﻿<Window x:Class="tutorat.View.TeacherDashboard"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d"
-        Title="TeacherDashboard" Height="450" Width="800"
+        Title="TeacherDashboard" 
+        WindowState="Maximized"
         Background="#F0F8FF" WindowStartupLocation="CenterScreen">
-
-    <Grid>
-        <TextBlock Text="Bienvenue sur le tableau de bord enseignant !" 
-                   FontSize="24" 
-                   FontWeight="Bold"
-                   Foreground="#007ACC"
-                   HorizontalAlignment="Center" 
-                   VerticalAlignment="Top" 
-                   Margin="0,30,0,0"/>
-
-        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,20,0,0">
-            <Button Content="Voir Rencontres" 
-                    Width="200" 
-                    Height="40" 
-                    Margin="0,0,0,20"
-                    Background="#ADD8E6"
-                    BorderBrush="Transparent"
-                    FontWeight="SemiBold"
-                    FontSize="14"
-                    Cursor="Hand"
-                    Click="ViewMeetings_Click"/>
-
-            <Button Content="Consulter Demandes d'étudiants" 
-                    Width="220" 
-                    Height="40" 
-                    Background="#ADD8E6"
-                    BorderBrush="Transparent"
-                    FontWeight="SemiBold"
-                    FontSize="14"
-                    Cursor="Hand"
-                    Margin="0,0,0,20"
-                    Click="ConsultRequest_Click"/>
-
-            <Button Content="Consulter Listes Tuteurs" 
-                    Width="200" 
-                    Height="40" 
-                    Background="#ADD8E6"
-                    BorderBrush="Transparent"
-                    FontWeight="SemiBold"
-                    FontSize="14"
-                    Cursor="Hand"
-                    Click="ConsultListTutors_Click"/>
+    <DockPanel>
+        <!-- Navbar -->
+        <StackPanel DockPanel.Dock="Top"
+                Orientation="Horizontal"
+                Background="WhiteSmoke"
+                Height="50">
+            <Button Content="Voir Rencontres"
+              Click="ViewMeetings_Click"
+              Margin="10,5" Padding="15,5"
+              Background="#ADD8E6" FontWeight="SemiBold" Cursor="Hand"/>
+            <Button Content="Consulter Demandes d'étudiants"
+              Click="ConsultRequest_Click"
+              Margin="10,5" Padding="15,5"
+              Background="#ADD8E6" FontWeight="SemiBold" Cursor="Hand"/>
+            <Button Content="Consulter Listes Tuteurs"
+              Click="ConsultListTutors_Click"
+              Margin="10,5" Padding="15,5"
+              Background="#ADD8E6" FontWeight="SemiBold" Cursor="Hand"/>
+            <Button Content="Lier Étudiants-Tuteurs"
+              Click="OpenLinkStudentTutor_Click"
+              Margin="10,5" Padding="15,5"
+              Background="#ADD8E6" FontWeight="SemiBold" Cursor="Hand"/>
+            
+            
         </StackPanel>
-    </Grid>
+
+        <!-- Frame central -->
+        <Frame x:Name="MainFrame"
+           NavigationUIVisibility="Hidden"
+           Margin="10" Background="White"/>
+    </DockPanel>
 </Window>

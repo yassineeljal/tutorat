@@ -1,14 +1,14 @@
-﻿using System.Windows;
+﻿using System.Windows.Controls;
 using tutorat.Service.RequestService;
 using tutorat.Service.StudentService;
 using tutorat.ViewModel;
 
 namespace tutorat.View
 {
-
-    public partial class StudentRequest : Window
+    public partial class StudentRequest : Page
     {
         private StudentRequestViewModel _viewModel;
+
         public StudentRequest()
         {
             InitializeComponent();
