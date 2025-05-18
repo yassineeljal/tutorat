@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using data;
 
@@ -10,9 +11,11 @@ using data;
 namespace data.Migrations
 {
     [DbContext(typeof(ModelDbContext))]
-    partial class TutorDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250518035211_laison")]
+    partial class laison
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "9.0.4");
@@ -199,8 +202,7 @@ namespace data.Migrations
                 {
                     b.HasOne("Student", "Student")
                         .WithMany("Availabilities")
-                        .HasForeignKey("StudentId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .HasForeignKey("StudentId");
 
                     b.HasOne("Tutor", "Tutor")
                         .WithMany("Availabilities")
@@ -213,32 +215,26 @@ namespace data.Migrations
 
             modelBuilder.Entity("data.Model.Meeting", b =>
                 {
-                    b.HasOne("Student", "Student")
+                    b.HasOne("Student", null)
                         .WithMany("Meetings")
                         .HasForeignKey("StudentId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Tutor", "Tutor")
+                    b.HasOne("Tutor", null)
                         .WithMany("Meetings")
                         .HasForeignKey("TutorId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("Student");
-
-                    b.Navigation("Tutor");
                 });
 
             modelBuilder.Entity("data.Model.Request", b =>
                 {
-                    b.HasOne("Student", "Student")
+                    b.HasOne("Student", null)
                         .WithMany("Requests")
                         .HasForeignKey("StudentId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("Student");
                 });
 
             modelBuilder.Entity("Student", b =>

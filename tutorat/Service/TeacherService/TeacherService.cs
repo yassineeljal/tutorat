@@ -10,7 +10,14 @@ namespace tutorat.Service.TeacherService
 {
     public class TeacherService : ITeacherService
     {
-        private ModelDbContext _db;
+        private ModelDbContext _db = new ModelDbContext();
+        public Teacher GetByLastName(string lastname)
+        {
+            var teacher = from t in _db.Teachers
+                          where t.LastName == lastname
+                          select t;
+            return teacher.FirstOrDefault();
+        }
 
         public void Create(Teacher teacher)
         {
@@ -21,9 +28,10 @@ namespace tutorat.Service.TeacherService
 
         public void Delete(int id)
         {
-            if(_db.Teachers.Find(id) != null)
+            if (_db.Teachers.Find(id) != null)
             {
                 _db.Teachers.Remove(_db.Teachers.Find(id));
+                _db.SaveChanges();
             }
         }
 

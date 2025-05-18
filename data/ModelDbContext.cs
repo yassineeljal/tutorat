@@ -21,13 +21,33 @@ namespace data
                 .HasOne(a => a.Student)
                 .WithMany(s => s.Availabilities)
                 .HasForeignKey(a => a.StudentId)
-                .IsRequired(false);
+                .IsRequired(false)
+                .OnDelete(DeleteBehavior.Cascade);
 
             modelBuilder.Entity<Availability>()
                 .HasOne(a => a.Tutor)
                 .WithMany(t => t.Availabilities)
                 .HasForeignKey(a => a.TutorId)
-                .IsRequired(false);
+                .IsRequired(false)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            modelBuilder.Entity<Request>()
+                .HasOne(r => r.Student)
+                .WithMany(s => s.Requests)
+                .HasForeignKey(r => r.StudentId)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            modelBuilder.Entity<Meeting>()
+                .HasOne(m => m.Student)
+                .WithMany(s => s.Meetings)
+                .HasForeignKey(m => m.StudentId)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            modelBuilder.Entity<Meeting>()
+                .HasOne(m => m.Tutor)
+                .WithMany(t => t.Meetings)
+                .HasForeignKey(m => m.TutorId)
+                .OnDelete(DeleteBehavior.Cascade);
 
             modelBuilder.Entity<Student>()
                 .HasOne(s => s.Tutor)

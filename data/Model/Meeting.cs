@@ -12,10 +12,11 @@ namespace data.Model
         public DateTime DateMeeting { get; set; }
 
         [ForeignKey(nameof(Tutor))]
-
         public int TutorId { get; set; }
+        public Tutor Tutor { get; set; }
 
         [ForeignKey(nameof(Student))]
         public int StudentId { get; set; }
+        public Student Student { get; set; }
     }
 }

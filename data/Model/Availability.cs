@@ -12,7 +12,6 @@ namespace data.Model
         public TimeSpan StartTime { get; set; }
         public TimeSpan EndTime { get; set; }
 
-        // Clés étrangères rendues optionnelles
         public int? StudentId { get; set; }
         public Student Student { get; set; }
 

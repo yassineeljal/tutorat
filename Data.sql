@@ -7,12 +7,15 @@ DELETE FROM Tutors;
 DELETE FROM Teachers;
 DELETE FROM Students;
 
-INSERT INTO Students (Id, FirstName, LastName, Da) VALUES
-  (1, 'Alice', 'Dupont', 1234),
-  (2, 'Bob',   'Martin', 2345),
-  (3, 'Chloé', 'Bernard',3456),
-  (4, 'David', 'Moreau', 4567),
-  (5, 'Emma',  'Lambert',5678);
+-- Étudiants (ajout de IsLinked)
+INSERT INTO Students (Id, FirstName, LastName, Da, IsLinked) VALUES
+  (1, 'Alice', 'Dupont', 1234, 0),
+  (2, 'Bob',   'Martin', 2345, 0),
+  (3, 'Chloé', 'Bernard',3456, 0),
+  (4, 'David', 'Moreau', 4567, 0),
+  (5, 'Emma',  'Lambert',5678, 0);
+
+-- Enseignants
 INSERT INTO Teachers (Id, FirstName, LastName) VALUES
   (1, 'François', 'Petit'),
   (2, 'Isabelle','Robert'),
@@ -20,13 +23,15 @@ INSERT INTO Teachers (Id, FirstName, LastName) VALUES
   (4, 'Marie',    'Durand'),
   (5, 'Nathalie', 'Mercier');
 
-INSERT INTO Tutors (Id, Da, FirstName, LastName) VALUES
-  (1, 1001, 'Paul',  'Michel'),
-  (2, 1002, 'Sophie','Martin'),
-  (3, 1003, 'Luc',   'Garcia'),
-  (4, 1004, 'Anne',  'Rousseau'),
-  (5, 1005, 'Marc',  'Blanc');
+-- Tuteurs (ajout de IsLinked)
+INSERT INTO Tutors (Id, Da, FirstName, LastName, Category, IsLinked) VALUES
+  (1, 1001, 'Paul',  'Michel',   'Mathématiques', 0),
+  (2, 1002, 'Sophie','Martin',   'Physique',      0),
+  (3, 1003, 'Luc',   'Garcia',   'Chimie',        0),
+  (4, 1004, 'Anne',  'Rousseau', 'Anglais',       0),
+  (5, 1005, 'Marc',  'Blanc',    'Histoire',      0);
 
+-- Requêtes
 INSERT INTO Requests (Id, Subject, Category, Note, StudentId) VALUES
   (1,  'Mathématiques', 'Algèbre',      8, 1),
   (2,  'Physique',      'Mécanique',     6, 2),
@@ -39,6 +44,7 @@ INSERT INTO Requests (Id, Subject, Category, Note, StudentId) VALUES
   (9,  'Philosophie',   'Éthique',       7, 4),
   (10, 'SVT',           'Géologie',      6, 5);
 
+-- Disponibilités
 INSERT INTO Availabilities (Id, DayOfWeek, StartTime, EndTime, StudentId, TutorId) VALUES
   (1, 1, '09:00:00', '11:00:00', 1, 1),
   (2, 3, '14:00:00', '16:00:00', 1, 2),
@@ -51,6 +57,7 @@ INSERT INTO Availabilities (Id, DayOfWeek, StartTime, EndTime, StudentId, TutorI
   (9, 4, '10:00:00', '12:00:00', 4, 5),
   (10,1, '14:00:00', '16:00:00', 5, 3);
 
+-- Rencontres
 INSERT INTO Meetings (Id, Name, Description, DateMeeting, TutorId, StudentId) VALUES
   (1,  'Session Maths 1',     'Révision algèbre linéaire',          '2025-05-20 10:00:00', 1, 1),
   (2,  'Session Physique',    'Étude de la dynamique',              '2025-05-22 15:00:00', 2, 2),
