@@ -18,7 +18,7 @@ namespace tutorat.View
 
         private void OnOpenAvailability(object sender, RoutedEventArgs e)
         {
-            MainFrame.Navigate(new CreateDisponibility()); // Assure-toi que cette page existe
+            MainFrame.Navigate(new CreateDisponibility()); 
         }
     }
 }

@@ -13,7 +13,6 @@ namespace tutorat.View
         public TeacherDashboard()
         {
             InitializeComponent();
-            // Frame reste vide au démarrage
         }
 
         private void ViewMeetings_Click(object sender, RoutedEventArgs e)

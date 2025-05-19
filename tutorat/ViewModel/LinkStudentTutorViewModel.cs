@@ -39,7 +39,6 @@ namespace tutorat.ViewModel
             if (SelectedRequest == null || SelectedTutor == null)
                 return;
 
-            // Récupération du Student à partir de la Request
             var student = _studentService.GetById(SelectedRequest.StudentId);
 
             if (student == null)
@@ -54,7 +53,6 @@ namespace tutorat.ViewModel
                 return;
             }
 
-            // Mise à jour
             student.TutorId = SelectedTutor.Id;
             student.IsLinked = true;
             SelectedTutor.IsLinked = true;

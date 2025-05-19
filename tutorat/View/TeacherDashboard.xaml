@@ -5,7 +5,6 @@
         WindowState="Maximized"
         Background="#F0F8FF" WindowStartupLocation="CenterScreen">
     <DockPanel>
-        <!-- Navbar -->
         <StackPanel DockPanel.Dock="Top"
                 Orientation="Horizontal"
                 Background="WhiteSmoke"
@@ -30,7 +29,6 @@
             
         </StackPanel>
 
-        <!-- Frame central -->
         <Frame x:Name="MainFrame"
            NavigationUIVisibility="Hidden"
            Margin="10" Background="White"/>

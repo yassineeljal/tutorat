@@ -8,7 +8,6 @@
 
     <DockPanel>
 
-        <!-- Barre de navigation -->
         <StackPanel DockPanel.Dock="Top"
                     Orientation="Horizontal"
                     Background="WhiteSmoke"
@@ -33,7 +32,6 @@
                     Cursor="Hand"/>
         </StackPanel>
 
-        <!-- Contenu principal -->
         <Frame x:Name="MainFrame"
                Margin="10"
                NavigationUIVisibility="Hidden"

@@ -18,9 +18,7 @@ using tutorat.ViewModel;
 
 namespace tutorat.View
 {
-    /// <summary>
-    /// Logique d'interaction pour AdminDashboard.xaml
-    /// </summary>
+    
     public partial class AdminDashboard : Window
     {
         private AdminDashboardViewModel viewModel;

@@ -6,9 +6,7 @@ using tutorat.ViewModel;
 
 namespace tutorat.View
 {
-    /// <summary>
-    /// Logique d'interaction pour CreateDisponibility.xaml
-    /// </summary>
+
     public partial class CreateDisponibility : Page
     {
         private CreateDisponibilityViewModel viewModel;

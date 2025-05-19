@@ -8,7 +8,6 @@
 
     <DockPanel>
 
-        <!-- Barre de navigation -->
         <StackPanel DockPanel.Dock="Top"
                     Orientation="Horizontal"
                     Background="WhiteSmoke"
@@ -30,14 +29,12 @@
                     Cursor="Hand"/>
         </StackPanel>
 
-        <!-- Contenu principal -->
         <Grid Background="White" Margin="10" >
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
-            <!-- Texte de bienvenue -->
             <TextBlock Text="Bienvenue dans votre espace étudiant"
                        FontSize="20"
                        FontWeight="Bold"
@@ -46,7 +43,6 @@
                        Margin="0,20,0,20"
                        Grid.Row="0"/>
 
-            <!-- Zone de contenu navigable -->
             <Frame x:Name="MainFrame"
                    Grid.Row="1"
                    Margin="10"
