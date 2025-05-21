@@ -17,8 +17,7 @@ namespace tutorat.View
 
         private void ViewMeetings_Click(object sender, RoutedEventArgs e)
         {
-            MainFrame.Navigate(new Meeting(
-                new MeetingViewModel(new MeetingService())
+            MainFrame.Navigate(new Meeting(new MeetingViewModel(new MeetingService())
             ));
         }
 

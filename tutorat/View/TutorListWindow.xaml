@@ -37,7 +37,7 @@
                 <DataGridTextColumn Header="Prénom"   Binding="{Binding FirstName}" Width="*"/>
                 <DataGridTextColumn Header="Nom"      Binding="{Binding LastName}"  Width="*"/>
                 <DataGridTextColumn Header="Catégorie" Binding="{Binding Category}"  Width="*"/>
-                <DataGridTextColumn Header="Est lié"  Binding="{Binding Islinked}"  Width="*"/>
+                <DataGridTextColumn Header="Est lié"  Binding="{Binding IsLinked}"  Width="*"/>
                 <DataGridTextColumn Header="DA"       Binding="{Binding Da}"        Width="Auto"/>
             </DataGrid.Columns>
         </DataGrid>

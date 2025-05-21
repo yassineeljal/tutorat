@@ -6,9 +6,11 @@ namespace tutorat.View
 {
     public partial class Meeting : Page
     {
+        private MeetingViewModel MeetingViewModel;
         public Meeting(MeetingViewModel vm)
         {
             InitializeComponent();
+            MeetingViewModel = vm;
             DataContext = vm;
         }
     }

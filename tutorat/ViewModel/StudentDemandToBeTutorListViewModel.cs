@@ -114,21 +114,39 @@ namespace tutorat.ViewModel
 
                 if (!int.TryParse(daInputCreateTutor, out var da)) return;
 
-                var newStudent = await _studentService.GetByDaAsync(da);
-                if (newStudent == null) return;
+                var student = await _studentService.GetByDaAsync(da);
+                if (student == null)
+                {
+                    MessageBox.Show("Aucun étudiant trouvé avec ce DA.", "Erreur", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    return;
+                }
 
-                var request = newStudent.Requests?.FirstOrDefault(r => r.Subject == "Devenir tuteur");
-                if (request == null) return;
+                var request = student.Requests.FirstOrDefault(r => r.Subject == "Devenir tuteur");
+                if (request == null)
+                {
+                    MessageBox.Show("Aucune demande 'Devenir tuteur' trouvée pour cet étudiant.", "Erreur", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    return;
+                }
+
+                var existingTutor = await _tutorService.GetByDaAsync(da);
+                if (existingTutor != null)
+                {
+                    MessageBox.Show("Un tuteur avec ce DA existe déjà.", "Erreur", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    return;
+                }
 
                 var tutor = new Tutor
                 {
-                    FirstName = newStudent.FirstName,
-                    LastName = newStudent.LastName,
-                    Da = newStudent.Da,
-                    Category = request.Subject
+                    FirstName = student.FirstName,
+                    LastName = student.LastName,
+                    Da = student.Da,
+                    Category = request.Category,
+                    Password = student.Password,
+                    IsLinked = false
                 };
 
                 await _tutorService.CreateAsync(tutor);
+
                 MessageBox.Show("Tuteur créé avec succès.", "Succès", MessageBoxButton.OK, MessageBoxImage.Information);
             }
             catch (Exception ex)
