@@ -10,6 +10,8 @@ public class Tutor
     public string LastName { get; set; }
     public string Category { get; set; }
     public bool IsLinked { get; set; } = false;
+    public string Password { get; set; }
+
 
     public List<Availability> Availabilities { get; set; }
     public List<Meeting> Meetings { get; set; }

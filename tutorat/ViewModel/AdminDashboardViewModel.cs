@@ -47,7 +47,7 @@ namespace tutorat.ViewModel
         private string teacherLastName;
 
         [RelayCommand]
-        public void AddStudent()
+        public async Task AddStudentAsync()
         {
             try
             {
@@ -58,7 +58,7 @@ namespace tutorat.ViewModel
                     Da = int.Parse(StudentDa),
                 };
 
-                _studentService.Create(student);
+                await _studentService.CreateAsync(student);
                 MessageBox.Show("Étudiant ajouté");
             }
             catch (Exception ex)
@@ -68,16 +68,29 @@ namespace tutorat.ViewModel
         }
 
         [RelayCommand]
-        public void DeleteStudent()
+        public async Task DeleteStudentAsync()
         {
-                var student = _studentService.GetByDa(int.Parse(StudentDa));
-                _studentService.Delete(student.Id);
-                MessageBox.Show("Étudiant supprimé");
-
+            try
+            {
+                var student = await _studentService.GetByDaAsync(int.Parse(StudentDa));
+                if (student != null)
+                {
+                    await _studentService.DeleteAsync(student.Id);
+                    MessageBox.Show("Étudiant supprimé");
+                }
+                else
+                {
+                    MessageBox.Show("Étudiant introuvable");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erreur lors de la suppression de l'étudiant : {ex.Message}");
+            }
         }
 
         [RelayCommand]
-        public void AddTutor()
+        public async Task AddTutorAsync()
         {
             try
             {
@@ -88,7 +101,8 @@ namespace tutorat.ViewModel
                     Da = int.Parse(TutorDa),
                     Category = TutorCategory
                 };
-                _tutorService.Create(tutor);
+
+                await _tutorService.CreateAsync(tutor);
                 MessageBox.Show("Tuteur ajouté");
             }
             catch (Exception ex)
@@ -97,12 +111,13 @@ namespace tutorat.ViewModel
             }
         }
 
+
         [RelayCommand]
-        public void DeleteTutor()
+        public async Task DeleteTutorAsync()
         {
             try
             {
-                _tutorService.Delete(int.Parse(TutorDa));
+                await _tutorService.DeleteAsync(int.Parse(TutorDa));
                 MessageBox.Show("Tuteur supprimé");
             }
             catch (Exception ex)
@@ -112,7 +127,7 @@ namespace tutorat.ViewModel
         }
 
         [RelayCommand]
-        public void AddTeacher()
+        public async Task AddTeacherAsync()
         {
             try
             {
@@ -121,7 +136,8 @@ namespace tutorat.ViewModel
                     FirstName = TeacherFirstName,
                     LastName = TeacherLastName,
                 };
-                _teacherService.Create(teacher);
+
+                await _teacherService.CreateAsync(teacher);
                 MessageBox.Show("Enseignant ajouté");
             }
             catch (Exception ex)
@@ -131,13 +147,20 @@ namespace tutorat.ViewModel
         }
 
         [RelayCommand]
-        public void DeleteTeacher()
+        public async Task DeleteTeacherAsync()
         {
             try
             {
-                var teacher = _teacherService.GetByLastName(TeacherLastName);
-                _teacherService.Delete(teacher.Id);
-                MessageBox.Show("Enseignant supprimé");
+                var teacher = await _teacherService.GetByLastNameAsync(TeacherLastName);
+                if (teacher != null)
+                {
+                    await _teacherService.DeleteAsync(teacher.Id);
+                    MessageBox.Show("Enseignant supprimé");
+                }
+                else
+                {
+                    MessageBox.Show("Enseignant introuvable");
+                }
             }
             catch (Exception ex)
             {

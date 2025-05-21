@@ -60,7 +60,7 @@ namespace tutorat.View {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/tutorat;V1.0.0.0;component/view/studentdashboard.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/tutorat;component/view/studentdashboard.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\View\StudentDashboard.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

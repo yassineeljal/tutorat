@@ -6,48 +6,50 @@ namespace tutorat.Service.StudentService
 {
     public class StudentService : IStudentService
     {
-        private ModelDbContext _db = new ModelDbContext();
+        private readonly ModelDbContext _db = new ModelDbContext();
 
-        public Student GetById(int id)
+        public async Task<Student> GetByIdAsync(int id)
         {
-            return _db.Students.Include(s => s.Requests).Include(s => s.Availabilities).Include(s => s.Meetings).FirstOrDefault(s => s.Id == id);
+            return await _db.Students
+                .Include(s => s.Requests)
+                .Include(s => s.Availabilities)
+                .Include(s => s.Meetings)
+                .FirstOrDefaultAsync(s => s.Id == id);
         }
 
-        public void Create(Student student)
+        public async Task CreateAsync(Student student)
         {
-            _db.Students.Add(student);
-            _db.SaveChanges();
-
+            await _db.Students.AddAsync(student);
+            await _db.SaveChangesAsync();
         }
 
-        public void Delete(int id)
+        public async Task DeleteAsync(int id)
         {
-            if (_db.Students.Find(id) != null)
+            var student = await _db.Students.FindAsync(id);
+            if (student != null)
             {
-                _db.Students.Remove(_db.Students.Find(id));
-                _db.SaveChanges();
+                _db.Students.Remove(student);
+                await _db.SaveChangesAsync();
             }
         }
 
-        public IEnumerable<Student> GetAll()
+        public async Task<IEnumerable<Student>> GetAllAsync()
         {
-            return _db.Students.Include(s => s.Requests).ToList();
+            return await _db.Students
+                .Include(s => s.Requests)
+                .ToListAsync();
         }
 
-        public Student GetByDa(int Da)
+        public async Task<Student> GetByDaAsync(int Da)
         {
-            var student = _db.Students.FirstOrDefault(s => s.Da == Da);
-            if (student == null)
-            {
-                return null;
-            }
-            return student;
+            return await _db.Students.FirstOrDefaultAsync(s => s.Da == Da);
         }
 
-        public void Update(Student student)
+        public async Task UpdateAsync(Student student)
         {
             _db.Students.Update(student);
-            _db.SaveChanges();
+            await _db.SaveChangesAsync();
         }
+
     }
 }

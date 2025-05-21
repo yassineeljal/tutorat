@@ -48,27 +48,48 @@ namespace tutorat.ViewModel
         private String daInput;
 
         [RelayCommand]
-        private void CreateRequest()
+        private async Task CreateRequestAsync()
         {
-            if (string.IsNullOrEmpty(selectedSubject) || string.IsNullOrEmpty(selectedCategory) || string.IsNullOrEmpty(noteInput) || string.IsNullOrEmpty(daInput))
+            try
             {
-                return;
-                
+                if (string.IsNullOrWhiteSpace(selectedSubject) ||
+                    string.IsNullOrWhiteSpace(selectedCategory) ||
+                    string.IsNullOrWhiteSpace(noteInput) ||
+                    string.IsNullOrWhiteSpace(daInput))
+                {
+                    MessageBox.Show("Tous les champs sont requis.", "Erreur", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    return;
+                }
+
+                if (!int.TryParse(daInput, out var da) || !int.TryParse(noteInput, out var note))
+                {
+                    MessageBox.Show("DA ou note invalide.", "Erreur", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return;
+                }
+
+                var student = await _studentService.GetByDaAsync(da);
+                if (student == null)
+                {
+                    MessageBox.Show("Étudiant introuvable.", "Erreur", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    return;
+                }
+
+                var request = new Request
+                {
+                    Subject = selectedSubject,
+                    Category = selectedCategory,
+                    Note = note,
+                    StudentId = student.Id
+                };
+
+                await _requestService.CreateRequestAsync(request);
+                MessageBox.Show("Demande envoyée avec succès.", "Succès", MessageBoxButton.OK, MessageBoxImage.Information);
             }
-            var student = _studentService.GetByDa(int.Parse(daInput));
-            if (student == null)
+            catch (Exception ex)
             {
-                return;
+                MessageBox.Show($"Erreur lors de l'envoi de la demande : {ex.Message}", "Erreur", MessageBoxButton.OK, MessageBoxImage.Error);
             }
-            var request = new Request
-            {
-                Subject = selectedSubject,
-                Category = selectedCategory,
-                Note = int.Parse(noteInput),
-                StudentId = student.Id
-            };
-            _requestService.CreateRequest(request);
-            MessageBox.Show("Demande envoyée");
         }
+
     }
 }

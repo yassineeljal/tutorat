@@ -17,32 +17,20 @@ namespace tutorat.ViewModel
         public MeetingViewModel(IMeetingService meetingService)
         {
             _meetingService = meetingService;
-            LoadMeetings();
+            LoadMeetingsAsync();
         }
 
-        private void LoadMeetings()
+        private async Task LoadMeetingsAsync()
         {
-            Meetings.Add(new Meeting
-            {
-                Id = 1,
-                Name = "Meeting 1",
-                Description = "Description 1",
-                DateMeeting = DateTime.Now,
-            });
-            Meetings.Add(new Meeting
-            {
-                Id = 2,
-                Name = "Meeting 2",
-                Description = "Description 2",
-                DateMeeting = DateTime.Now.AddDays(1),
-            });
+            var meetings = await _meetingService.GetAllAsync();
 
-            var meetings = _meetingService.GetAll();
+            Meetings.Clear();
             foreach (var meeting in meetings)
             {
                 Meetings.Add(meeting);
             }
         }
+
 
 
 

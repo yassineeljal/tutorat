@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using data;
 using data.Model;
+using Microsoft.EntityFrameworkCore;
 
 namespace tutorat.Service.MeetingService
 {
@@ -13,25 +14,30 @@ namespace tutorat.Service.MeetingService
     {
         private ModelDbContext _db = new ModelDbContext();
 
-        public void Create(Meeting meeting)
+        public async Task CreateAsync(Meeting meeting)
         {
-            _db.Meetings.Add(meeting);
-            _db.SaveChanges();
+            await _db.Meetings.AddAsync(meeting);
+            await _db.SaveChangesAsync();
         }
-        public void Delete(int id)
+
+        public async Task DeleteAsync(int id)
         {
-            throw new NotImplementedException();
+            var meeting = await _db.Meetings.FindAsync(id);
+            if (meeting != null)
+            {
+                _db.Meetings.Remove(meeting);
+                await _db.SaveChangesAsync();
+            }
         }
-        public IEnumerable<Meeting> GetAll()
+
+        public async Task<IEnumerable<Meeting>> GetAllAsync()
         {
-            return _db.Meetings.ToList();
+            return await _db.Meetings.ToListAsync();
         }
-        public Meeting GetById(int id)
+
+        public async Task<Meeting> GetByIdAsync(int id)
         {
-            var meeting = from t in _db.Meetings
-                        where t.Id == id
-                        select t;
-            return meeting.FirstOrDefault();
+            return await _db.Meetings.FirstOrDefaultAsync(t => t.Id == id);
         }
     }
 }

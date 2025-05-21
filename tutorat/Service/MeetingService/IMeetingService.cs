@@ -4,9 +4,9 @@ namespace tutorat.Service.MeetingService
 {
     public interface IMeetingService
     {
-        Meeting GetById(int id);
-        IEnumerable<Meeting> GetAll();
-        void Create(Meeting meeting);
-        void Delete(int id);
+        Task<Meeting> GetByIdAsync(int id);
+        Task<IEnumerable<Meeting>> GetAllAsync();
+        Task CreateAsync(Meeting meeting);
+        Task DeleteAsync(int id);
     }
 }

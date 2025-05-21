@@ -17,7 +17,7 @@ namespace tutorat.ViewModel
         public TutorListViewModel(ITutorService tutorService)
         {
             _tutorService = tutorService;
-            LoadTutors();
+            LoadTutorsAsync();
 
         }
 
@@ -34,54 +34,66 @@ namespace tutorat.ViewModel
         [NotifyCanExecuteChangedFor(nameof(DeleteTutorCommand))]
         private Tutor selectedTutorSearch;
 
-        private void LoadTutors()
+        private async Task LoadTutorsAsync()
         {
-            var tutors = _tutorService.GetAll();
-            foreach (var tutor in tutors)
+            try
             {
-                Tutors.Add(tutor);
+                var tutors = await _tutorService.GetAllAsync();
+                Tutors.Clear();
+                foreach (var tutor in tutors)
+                {
+                    Tutors.Add(tutor);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erreur lors du chargement des tuteurs : {ex.Message}", "Erreur", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
+
         [RelayCommand]
-        private void SearchTutor()
+        private async Task SearchTutorAsync()
         {
-            var tutor = _tutorService.GetByDa(int.Parse(daInput));
-            if (string.IsNullOrEmpty(daInput))
-            {
-                return;
-            }
-            if( tutor == null || TutorsSearch.FirstOrDefault(t => t.Da == tutor.Da) != null) {
-                return;
-            }
-            else
-            {
-                TutorsSearch.Clear();
-                TutorsSearch.Add(_tutorService.GetByDa(int.Parse(daInput)));
-            }
+            if (string.IsNullOrWhiteSpace(daInput)) return;
 
+            if (!int.TryParse(daInput, out var da)) return;
+
+            try
+            {
+                var tutor = await _tutorService.GetByDaAsync(da);
+                if (tutor == null || TutorsSearch.Any(t => t.Da == tutor.Da)) return;
+
+                TutorsSearch.Clear();
+                TutorsSearch.Add(tutor);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erreur lors de la recherche : {ex.Message}", "Erreur", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
 
-        private bool canDeleteTutor()
+        private bool CanDeleteTutor()
         {
             return SelectedTutorSearch != null;
         }
 
-        [RelayCommand(CanExecute = nameof(canDeleteTutor))]
-        private void DeleteTutor()
+        [RelayCommand(CanExecute = nameof(CanDeleteTutor))]
+        private async Task DeleteTutorAsync()
         {
-            MessageBox.Show("23432");
-            if (SelectedTutorSearch != null)
+            if (SelectedTutorSearch == null) return;
+
+            try
             {
-                _tutorService.Delete(SelectedTutorSearch.Da);
+                await _tutorService.DeleteAsync(SelectedTutorSearch.Da);
                 Tutors.Remove(SelectedTutorSearch);
                 TutorsSearch.Clear();
                 SelectedTutor = null;
-                MessageBox.Show("fregagfsda");
+                MessageBox.Show("Tuteur supprimé.");
             }
-            else
+            catch (Exception ex)
             {
-                return;
+                MessageBox.Show($"Erreur lors de la suppression : {ex.Message}", "Erreur", MessageBoxButton.OK, MessageBoxImage.Error);
             }
-        }       
+        }
     }
 }

@@ -6,16 +6,20 @@ namespace tutorat.Service.TutorService
 {
     public class TutorService : ITutorService
     {
-        private ModelDbContext _db = new ModelDbContext();
-        public void Create(Tutor tutor)
+        private readonly ModelDbContext _db = new ModelDbContext();
+
+        public async Task CreateAsync(Tutor tutor)
         {
-            _db.Tutors.Add(tutor);
-            _db.SaveChanges();
+            await _db.Tutors.AddAsync(tutor);
+            await _db.SaveChangesAsync();
         }
 
-        public void Delete(int da)
+        public async Task DeleteAsync(int da)
         {
-            var tutor = _db.Tutors.Include(t => t.Availabilities).Include(t => t.Meetings).FirstOrDefault(t => t.Da == da);
+            var tutor = await _db.Tutors
+                .Include(t => t.Availabilities)
+                .Include(t => t.Meetings)
+                .FirstOrDefaultAsync(t => t.Da == da);
 
             if (tutor != null)
             {
@@ -26,28 +30,28 @@ namespace tutorat.Service.TutorService
                     _db.Availabilities.RemoveRange(tutor.Availabilities);
 
                 _db.Tutors.Remove(tutor);
-                _db.SaveChanges();
+                await _db.SaveChangesAsync();
             }
         }
 
-
-        public IEnumerable<Tutor> GetAll()
+        public async Task<IEnumerable<Tutor>> GetAllAsync()
         {
-            return _db.Tutors.ToList();
+            return await _db.Tutors.ToListAsync();
         }
 
-        public Tutor GetByDa(int da)
+        public async Task<Tutor> GetByDaAsync(int da)
         {
-            var tutor = from t in _db.Tutors
-                        where t.Da == da
-                        select t;
-            return tutor.FirstOrDefault();
+            return await _db.Tutors.FirstOrDefaultAsync(t => t.Da == da);
         }
 
-        public void Update(Tutor tutor)
+        public async Task UpdateAsync(Tutor tutor)
         {
-            _db.Tutors.Update(tutor);
-            _db.SaveChanges();
+            var existing = await _db.Tutors.FindAsync(tutor.Id);
+            if (existing != null)
+            {
+                _db.Entry(existing).CurrentValues.SetValues(tutor);
+                await _db.SaveChangesAsync();
+            }
         }
     }
 }

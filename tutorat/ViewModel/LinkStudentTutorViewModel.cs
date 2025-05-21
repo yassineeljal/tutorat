@@ -23,8 +23,8 @@ namespace tutorat.ViewModel
             _studentService = studentService;
             _requestService = requestService;
 
-            LoadRequests();
-            LoadTutors();
+            LoadRequestsAsync();
+            LoadTutorsAsync();
         }
 
         [ObservableProperty]
@@ -34,12 +34,12 @@ namespace tutorat.ViewModel
         private Tutor selectedTutor;
 
         [RelayCommand]
-        public void LinkStudentToTutor()
+        public async Task LinkStudentToTutorAsync()
         {
             if (SelectedRequest == null || SelectedTutor == null)
                 return;
 
-            var student = _studentService.GetById(SelectedRequest.StudentId);
+            var student = await _studentService.GetByIdAsync(SelectedRequest.StudentId);
 
             if (student == null)
             {
@@ -57,23 +57,24 @@ namespace tutorat.ViewModel
             student.IsLinked = true;
             SelectedTutor.IsLinked = true;
 
-            _studentService.Update(student);
-            _tutorService.Update(SelectedTutor);
+            await _studentService.UpdateAsync(student);
+            await _tutorService.UpdateAsync(SelectedTutor);
 
             System.Windows.MessageBox.Show(
                 $"{student.FirstName} {student.LastName} a été lié à {SelectedTutor.FirstName} {SelectedTutor.LastName}.");
         }
 
-        private void LoadRequests()
+
+        private async Task LoadRequestsAsync()
         {
-            var requests = _requestService.GetAllRequests();
+            var requests = await _requestService.GetAllRequestsAsync();
 
             Requests.Clear();
             foreach (var request in requests)
             {
                 if (request.Subject == "Demander de l'aide")
                 {
-                    var student = _studentService.GetById(request.StudentId);
+                    var student = await _studentService.GetByIdAsync(request.StudentId);
                     if (student != null && !student.IsLinked)
                     {
                         Requests.Add(request);
@@ -82,9 +83,11 @@ namespace tutorat.ViewModel
             }
         }
 
-        private void LoadTutors()
+
+        private async Task LoadTutorsAsync()
         {
-            var tutors = _tutorService.GetAll();
+            var tutors = await _tutorService.GetAllAsync();
+
             Tutors.Clear();
             foreach (var tutor in tutors)
             {

@@ -1,30 +1,30 @@
 ﻿using data;
 using data.Model;
+using Microsoft.EntityFrameworkCore;
 
 namespace tutorat.Service.RequestService
 {
     public class RequestService : IRequestService
     {
-        private ModelDbContext _db = new ModelDbContext();
+        private readonly ModelDbContext _db = new ModelDbContext();
 
-        public void CreateRequest(Request request)
+        public async Task CreateRequestAsync(Request request)
         {
             if (request == null)
             {
                 throw new ArgumentNullException(nameof(request));
             }
-            _db.Requests.Add(request);
-            _db.SaveChanges();
-
+            await _db.Requests.AddAsync(request);
+            await _db.SaveChangesAsync();
         }
 
-        public void DeleteRequest(int id)
+        public async Task DeleteRequestAsync(int id)
         {
-            var request = _db.Requests.Find(id);
+            var request = await _db.Requests.FindAsync(id);
             if (request != null)
             {
                 _db.Requests.Remove(request);
-                _db.SaveChanges();
+                await _db.SaveChangesAsync();
             }
             else
             {
@@ -32,14 +32,14 @@ namespace tutorat.Service.RequestService
             }
         }
 
-        public IEnumerable<Request> GetAllRequests()
+        public async Task<IEnumerable<Request>> GetAllRequestsAsync()
         {
-            return _db.Requests.ToList();
+            return await _db.Requests.ToListAsync();
         }
 
-        public Request GetRequestById(int id)
+        public async Task<Request> GetRequestByIdAsync(int id)
         {
-            var request = _db.Requests.Find(id);
+            var request = await _db.Requests.FindAsync(id);
             if (request == null)
             {
                 throw new ArgumentException($"Request with id {id} not found.");
@@ -47,13 +47,15 @@ namespace tutorat.Service.RequestService
             return request;
         }
 
-        public IEnumerable<Request> GetRequestsByStudent(Student student)
+        public async Task<IEnumerable<Request>> GetRequestsByStudentAsync(Student student)
         {
             if (student == null)
             {
                 throw new ArgumentNullException(nameof(student));
             }
-            return _db.Requests.Where(r => r.StudentId == student.Id).ToList();
+            return await _db.Requests
+                            .Where(r => r.StudentId == student.Id)
+                            .ToListAsync();
         }
 
 

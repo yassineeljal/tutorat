@@ -1,32 +1,30 @@
 ﻿using data;
 using data.Model;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+using Microsoft.EntityFrameworkCore;
 
 namespace tutorat.Service.AvailabilityService
 {
     public class AvailabilityService : IAvailabilityService
     {
-        private ModelDbContext _db = new ModelDbContext();
+        private readonly ModelDbContext _db = new ModelDbContext();
 
-        public void CreateAvailability(Availability availability)
+        public async Task CreateAvailabilityAsync(Availability availability)
         {
             if (availability == null)
             {
                 throw new ArgumentNullException(nameof(availability));
             }
-            _db.Availabilities.Add(availability);
-            _db.SaveChanges();
+            await _db.Availabilities.AddAsync(availability);
+            await _db.SaveChangesAsync();
         }
 
-        public void UpdateAvailability(Availability availability)
+        public async Task UpdateAvailabilityAsync(Availability availability)
         {
             if (availability == null)
             {
                 throw new ArgumentNullException(nameof(availability));
             }
-            var existingAvailability = _db.Availabilities.Find(availability.Id);
+            var existingAvailability = await _db.Availabilities.FindAsync(availability.Id);
             if (existingAvailability != null)
             {
                 existingAvailability.DayOfWeek = availability.DayOfWeek;
@@ -34,7 +32,7 @@ namespace tutorat.Service.AvailabilityService
                 existingAvailability.EndTime = availability.EndTime;
                 existingAvailability.StudentId = availability.StudentId;
 
-                _db.SaveChanges();
+                await _db.SaveChangesAsync();
             }
             else
             {
@@ -42,13 +40,13 @@ namespace tutorat.Service.AvailabilityService
             }
         }
 
-        public void DeleteAvailability(int id)
+        public async Task DeleteAvailabilityAsync(int id)
         {
-            var availability = _db.Availabilities.Find(id);
+            var availability = await _db.Availabilities.FindAsync(id);
             if (availability != null)
             {
                 _db.Availabilities.Remove(availability);
-                _db.SaveChanges();
+                await _db.SaveChangesAsync();
             }
             else
             {
@@ -56,14 +54,17 @@ namespace tutorat.Service.AvailabilityService
             }
         }
 
-        public IEnumerable<Availability> GetAllAvailabilities()
+        public async Task<IEnumerable<Availability>> GetAllAvailabilitiesAsync()
         {
-            return _db.Availabilities.ToList();
+            return await _db.Availabilities.ToListAsync();
         }
 
-        public IEnumerable<Availability> GetAvailabilitiesByStudent(int studentId)
+        public async Task<IEnumerable<Availability>> GetAvailabilitiesByStudentAsync(int studentId)
         {
-            return _db.Availabilities.Where(a => a.StudentId == studentId).ToList();
+            return await _db.Availabilities
+                             .Where(a => a.StudentId == studentId)
+                             .ToListAsync();
         }
+
     }
 }

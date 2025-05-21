@@ -19,7 +19,7 @@ namespace tutorat.ViewModel
         {
             _studentService = studentService;
             _tutorService = tutorService;
-            LoadStudents();
+            LoadStudentsAsync();
         }
 
         [ObservableProperty]
@@ -35,109 +35,107 @@ namespace tutorat.ViewModel
         [NotifyCanExecuteChangedFor(nameof(DeleteStudentCommand))]
         private Student selectedStudentSearch;
 
-        private void LoadStudents()
+        private async Task LoadStudentsAsync()
         {
-            var students = _studentService.GetAll();
-            foreach (var student in students)
+            try
             {
-                if(student.Requests == null)
+                var students = await _studentService.GetAllAsync();
+                Students.Clear();
+
+                foreach (var student in students)
                 {
-                    continue;
-                }
-                else
-                {
-                    foreach (var request in student.Requests)
+                    if (student.Requests == null) continue;
+
+                    if (student.Requests.Any(r => r.Subject == "Devenir tuteur"))
                     {
-                        if (request.Subject == "Devenir tuteur")
-                        {
-                            Students.Add(student);
-                            break;
-                        }
-                        else
-                        {
-                            continue;
-                        }
+                        Students.Add(student);
                     }
                 }
-
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erreur lors du chargement des étudiants : {ex.Message}", "Erreur", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
         [RelayCommand]
-        private void SearchStudent()
+        private async Task SearchStudentAsync()
         {
-            var student = _studentService.GetByDa(int.Parse(daInput));
-            if (string.IsNullOrEmpty(daInput))
+            try
             {
-                return;
-            }
-            if (student == null || StudentsSearch.FirstOrDefault(s => s.Da == student.Da) != null)
-            {
-                return;
-            }
-            else
-            {
+                if (string.IsNullOrEmpty(daInput)) return;
+
+                if (!int.TryParse(daInput, out var da)) return;
+
+                var student = await _studentService.GetByDaAsync(da);
+
+                if (student == null || StudentsSearch.Any(s => s.Da == student.Da)) return;
+
                 StudentsSearch.Clear();
-                StudentsSearch.Add(_studentService.GetByDa(int.Parse(daInput)));
+                StudentsSearch.Add(student);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erreur lors de la recherche de l'étudiant : {ex.Message}", "Erreur", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
-        private bool canDeleteStudent()
+        private bool CanDeleteStudent()
         {
             return SelectedStudentSearch != null;
         }
 
-        [RelayCommand(CanExecute = nameof(canDeleteStudent))]
-        private void DeleteStudent()
+        [RelayCommand(CanExecute = nameof(CanDeleteStudent))]
+        private async Task DeleteStudentAsync()
         {
-            if (SelectedStudentSearch != null)
+            try
             {
-                _studentService.Delete(SelectedStudentSearch.Da);
+                if (SelectedStudentSearch == null) return;
+
+                await _studentService.DeleteAsync(SelectedStudentSearch.Da);
                 Students.Remove(SelectedStudentSearch);
                 StudentsSearch.Clear();
                 SelectedStudent = null;
+
+                MessageBox.Show("Étudiant supprimé avec succès.", "Succès", MessageBoxButton.OK, MessageBoxImage.Information);
             }
-            else
+            catch (Exception ex)
             {
-                return;
+                MessageBox.Show($"Erreur lors de la suppression de l'étudiant : {ex.Message}", "Erreur", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
         [RelayCommand]
-        private void CreateTutor()
+        private async Task CreateTutorAsync()
         {
+            try
+            {
+                if (string.IsNullOrEmpty(daInputCreateTutor)) return;
 
-            if (string.IsNullOrEmpty(daInputCreateTutor))
-            {
-                return;
-            }
-            if (Students.FirstOrDefault(s => s.Da == int.Parse(daInputCreateTutor)) == null)
-            {
-                return;
-            }
-            else
-            {
-                var newStudent = _studentService.GetByDa(int.Parse(daInputCreateTutor));
-                if (newStudent == null)
+                if (!int.TryParse(daInputCreateTutor, out var da)) return;
+
+                var newStudent = await _studentService.GetByDaAsync(da);
+                if (newStudent == null) return;
+
+                var request = newStudent.Requests?.FirstOrDefault(r => r.Subject == "Devenir tuteur");
+                if (request == null) return;
+
+                var tutor = new Tutor
                 {
-                    return;
-                }
-                else
-                {
-                    var request = newStudent.Requests.FirstOrDefault(r => r.Subject == "Devenir tuteur");
-                    Tutor tutor = new Tutor
-                    {
-                        FirstName = newStudent.FirstName,
-                        LastName = newStudent.LastName,
-                        Da = newStudent.Da,
-                        Category = request.Subject,
-                    };
-                    _tutorService.Create(tutor);
-                    MessageBox.Show("tuteur créé");
-                }
+                    FirstName = newStudent.FirstName,
+                    LastName = newStudent.LastName,
+                    Da = newStudent.Da,
+                    Category = request.Subject
+                };
 
+                await _tutorService.CreateAsync(tutor);
+                MessageBox.Show("Tuteur créé avec succès.", "Succès", MessageBoxButton.OK, MessageBoxImage.Information);
             }
-
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erreur lors de la création du tuteur : {ex.Message}", "Erreur", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
+
     }
 }

@@ -9,10 +9,10 @@ namespace tutorat.Service.RequestService
 {
     public interface IRequestService
     {
-        void CreateRequest(Request request);
-        void DeleteRequest(int id);
-        IEnumerable<Request> GetAllRequests();
-        Request GetRequestById(int id);
-        IEnumerable<Request> GetRequestsByStudent(Student student);
+        Task CreateRequestAsync(Request request);
+        Task DeleteRequestAsync(int id);
+        Task<IEnumerable<Request>> GetAllRequestsAsync();
+        Task<Request> GetRequestByIdAsync(int id);
+        Task<IEnumerable<Request>> GetRequestsByStudentAsync(Student student);
     }
 }

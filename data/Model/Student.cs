@@ -10,6 +10,7 @@ public class Student
     public string LastName { get; set; }
     public int Da { get; set; }
     public bool IsLinked { get; set; } = false;
+    public string Password { get; set; }
 
     public List<Request> Requests { get; set; }
     public List<Availability> Availabilities { get; set; } 

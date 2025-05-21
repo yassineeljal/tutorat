@@ -4,11 +4,11 @@ namespace tutorat.Service.StudentService
 {
     public interface IStudentService
     {
-        Student GetById(int id);
-        void Create(Student student);
-        void Update(Student student);
-        void Delete(int id);
-        Student GetByDa(int Da);
-        IEnumerable<Student> GetAll();
+        Task<Student> GetByIdAsync(int id);
+        Task CreateAsync(Student student);
+        Task UpdateAsync(Student student);
+        Task DeleteAsync(int id);
+        Task<Student> GetByDaAsync(int Da);
+        Task<IEnumerable<Student>> GetAllAsync();
     }
 }

@@ -46,38 +46,49 @@ namespace tutorat.ViewModel
         private string studentDa;
 
         [RelayCommand]
-        private void CreateMeeting()
+        private async Task CreateMeetingAsync()
         {
-            MessageBox.Show("entrer");
-            if (name == null && description == null && date == null && time == null && tutorDa == null && studentDa == null)
-            {
-                MessageBox.Show("veuillez remplire tout les gens");
-                return;
 
+            if (string.IsNullOrWhiteSpace(name) ||
+                string.IsNullOrWhiteSpace(description) ||
+                date == null ||
+                string.IsNullOrWhiteSpace(time) ||
+                string.IsNullOrWhiteSpace(tutorDa) ||
+                string.IsNullOrWhiteSpace(studentDa))
+            {
+                MessageBox.Show("Veuillez remplir tous les champs.", "Erreur", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
             }
 
-            else
+            try
             {
-                MessageBox.Show("else");
 
                 var timeMeeting = TimeSpan.Parse(time);
                 var dateMeeting = date.Date.Add(timeMeeting);
 
-                var tutor = _tutorService.GetByDa(int.Parse(tutorDa));
-                var student = _studentService.GetByDa(int.Parse(studentDa));
+                var tutor = await _tutorService.GetByDaAsync(int.Parse(tutorDa));
+                var student = await _studentService.GetByDaAsync(int.Parse(studentDa));
 
-                _meetingService.Create(new Meeting
+                if (tutor == null || student == null)
+                {
+                    MessageBox.Show("Tuteur ou étudiant introuvable.", "Erreur", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return;
+                }
+
+                await _meetingService.CreateAsync(new Meeting
                 {
                     Name = name,
                     Description = description,
                     DateMeeting = dateMeeting,
                     StudentId = student.Id,
                     TutorId = tutor.Id
-
                 });
-                MessageBox.Show("fini");
 
-
+                MessageBox.Show("Rencontre créée avec succès !");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erreur lors de la création : {ex.Message}", "Erreur", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
     }

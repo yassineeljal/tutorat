@@ -57,7 +57,7 @@ namespace tutorat.ViewModel
         [ObservableProperty] private string dimancheEnd;
 
         [RelayCommand]
-        private void Save()
+        private async Task SaveAsync()
         {
             if (!int.TryParse(Da, out var daValue))
             {
@@ -70,7 +70,7 @@ namespace tutorat.ViewModel
 
             if (Status == "Etudiant")
             {
-                student = _studentService.GetByDa(daValue);
+                student = await _studentService.GetByDaAsync(daValue);
                 if (student == null)
                 {
                     MessageBox.Show($"Étudiant DA={daValue} introuvable.", "Erreur", MessageBoxButton.OK, MessageBoxImage.Error);
@@ -79,7 +79,7 @@ namespace tutorat.ViewModel
             }
             else if (Status == "Tuteur")
             {
-                tutor = _tutorService.GetByDa(daValue);
+                tutor = await _tutorService.GetByDaAsync(daValue);
                 if (tutor == null)
                 {
                     MessageBox.Show($"Tuteur DA={daValue} introuvable.", "Erreur", MessageBoxButton.OK, MessageBoxImage.Error);
@@ -92,18 +92,18 @@ namespace tutorat.ViewModel
                 return;
             }
 
-            CreateForDay(DayOfWeek.Monday, LundiChecked, LundiStart, LundiEnd, student, tutor);
-            CreateForDay(DayOfWeek.Tuesday, MardiChecked, MardiStart, MardiEnd, student, tutor);
-            CreateForDay(DayOfWeek.Wednesday, MercrediChecked, MercrediStart, MercrediEnd, student, tutor);
-            CreateForDay(DayOfWeek.Thursday, JeudiChecked, JeudiStart, JeudiEnd, student, tutor);
-            CreateForDay(DayOfWeek.Friday, VendrediChecked, VendrediStart, VendrediEnd, student, tutor);
-            CreateForDay(DayOfWeek.Saturday, SamediChecked, SamediStart, SamediEnd, student, tutor);
-            CreateForDay(DayOfWeek.Sunday, DimancheChecked, DimancheStart, DimancheEnd, student, tutor);
+            await CreateForDayAsync(DayOfWeek.Monday, LundiChecked, LundiStart, LundiEnd, student, tutor);
+            await CreateForDayAsync(DayOfWeek.Tuesday, MardiChecked, MardiStart, MardiEnd, student, tutor);
+            await CreateForDayAsync(DayOfWeek.Wednesday, MercrediChecked, MercrediStart, MercrediEnd, student, tutor);
+            await CreateForDayAsync(DayOfWeek.Thursday, JeudiChecked, JeudiStart, JeudiEnd, student, tutor);
+            await CreateForDayAsync(DayOfWeek.Friday, VendrediChecked, VendrediStart, VendrediEnd, student, tutor);
+            await CreateForDayAsync(DayOfWeek.Saturday, SamediChecked, SamediStart, SamediEnd, student, tutor);
+            await CreateForDayAsync(DayOfWeek.Sunday, DimancheChecked, DimancheStart, DimancheEnd, student, tutor);
 
             MessageBox.Show("Disponibilités enregistrées !", "Succès", MessageBoxButton.OK, MessageBoxImage.Information);
         }
 
-        private void CreateForDay(
+        private async Task CreateForDayAsync(
             DayOfWeek day,
             bool isChecked,
             string startText,
@@ -132,7 +132,7 @@ namespace tutorat.ViewModel
 
             try
             {
-                _availabilityService.CreateAvailability(newAvailability);
+                await _availabilityService.CreateAvailabilityAsync(newAvailability);
             }
             catch (Exception ex)
             {
