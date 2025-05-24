@@ -19,5 +19,12 @@ namespace tutorat.View
         {
             MainFrame.Navigate(new CreateDisponibility());
         }
+        private void OnLogoutClick(object sender, RoutedEventArgs e)
+        {
+            var loginWindow = new Login();
+            loginWindow.Show();
+            this.Close();
+        }
+
     }
 }

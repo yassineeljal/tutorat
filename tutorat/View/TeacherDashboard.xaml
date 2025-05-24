@@ -25,8 +25,13 @@
               Click="OpenLinkStudentTutor_Click"
               Margin="10,5" Padding="15,5"
               Background="#ADD8E6" FontWeight="SemiBold" Cursor="Hand"/>
-            
-            
+            <Button Content="Se déconnecter"
+                    Click="OnLogoutClick"
+                    Margin="10,5"
+                    Padding="15,5"
+                    Background="Tomato"
+                    FontWeight="Bold"
+                    Cursor="Hand"/>
         </StackPanel>
 
         <Frame x:Name="MainFrame"

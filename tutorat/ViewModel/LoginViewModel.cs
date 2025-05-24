@@ -46,7 +46,6 @@ namespace tutorat.ViewModel
         [RelayCommand]
         private async Task LoginAsync()
         {
-            MessageBox.Show("Entrée");
             if (string.IsNullOrWhiteSpace(Da) || string.IsNullOrWhiteSpace(Password) || string.IsNullOrWhiteSpace(SelectedRole))
             {
                 StatusMessage = "Veuillez remplir tous les champs.";
