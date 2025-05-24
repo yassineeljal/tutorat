@@ -32,7 +32,10 @@ namespace tutorat.Service.MeetingService
 
         public async Task<IEnumerable<Meeting>> GetAllAsync()
         {
-            return await _db.Meetings.ToListAsync();
+            return await _db.Meetings
+                .Include(m => m.Tutor)
+                .Include(m => m.Student)
+                .ToListAsync();
         }
 
         public async Task<Meeting> GetByIdAsync(int id)

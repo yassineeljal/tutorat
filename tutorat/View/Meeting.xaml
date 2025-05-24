@@ -11,24 +11,9 @@
       <RowDefinition Height="*"/>
     </Grid.RowDefinitions>
 
-    <StackPanel Orientation="Horizontal" Grid.Row="0" Margin="0,0,0,10">
-      <TextBlock Text="Id :" VerticalAlignment="Center" Margin="5,0,5,0"
-                 Foreground="#007ACC" FontWeight="SemiBold"/>
-      <TextBox Width="30"
-               Text="{Binding IdInput, UpdateSourceTrigger=PropertyChanged}"
-               Background="#E6F2FF" BorderBrush="#007ACC"
-               Height="20"/>
-      <Button Content="Rechercher"
-              Height="25" Width="75" Margin="10,0,0,0"
-              Background="#ADD8E6" BorderBrush="Transparent"
-              FontWeight="Bold"
-              Command="{Binding DeleteMeetingCommand}"
-              Cursor="Hand"/>
-    </StackPanel>
 
     <DataGrid Grid.Row="1"
               ItemsSource="{Binding Meetings}"
-              SelectedItem="{Binding SelectedMeeting}"
               AutoGenerateColumns="False"
               CanUserAddRows="False"
               AlternatingRowBackground="#E6F2FF"
@@ -36,10 +21,10 @@
       <DataGrid.Columns>
         <DataGridTextColumn Header="Id"          Binding="{Binding Id}"          Width="Auto"/>
         <DataGridTextColumn Header="Nom"         Binding="{Binding Name}"        Width="*"/>
-        <DataGridTextColumn Header="Description" Binding="{Binding Description}" Width="*"/>
+        <DataGridTextColumn Header="Description" Binding="{Binding Description}" Width="*"/>    
         <DataGridTextColumn Header="Date"        Binding="{Binding DateMeeting}" Width="Auto"/>
-        <DataGridTextColumn Header="Tuteur"      Binding="{Binding Tutor.Da}"     Width="Auto"/>
-        <DataGridTextColumn Header="Étudiant"    Binding="{Binding Student.Da}"   Width="Auto"/>
+        <DataGridTextColumn Header="Tuteur"      Binding="{Binding Tutor.FirstName}"     Width="Auto"/>
+        <DataGridTextColumn Header="Étudiant"    Binding="{Binding Student.FirstName}"   Width="Auto"/>
       </DataGrid.Columns>
     </DataGrid>
   </Grid>
