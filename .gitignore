@@ -349,3 +349,17 @@ Temporary Items
 # Exceptions to the exclusions
 !src/Microsoft.DotNet.Wpf/src/WpfGfx/codegen/mcg/main/*.rsp
 !src/Microsoft.DotNet.Wpf/src/WpfGfx/tools/csp/**/*.rsp
+
+#  Ignorer tous les dossiers bin/ et obj/ imbriqués 
+**/bin/
+**/obj/
+
+#  Ignorer les fichiers de cache et de build VS spécifiques 
+**/*.dtbcache.v2
+**/*.futdcache.v2
+
+#  Ignorer les bases de données et index 
+*.db
+
+#  Ignorer les backups JSON de layout 
+*.backup.json
