@@ -1,5 +1,3 @@
-# tutorat
-# Apporter des modifs à la bd
-dotnet build
-dotnet ef migrations add creation --project data --startup-project tutorat
-dotnet ef database update --project data --startup-project tutorat
+# Étape pour mettre en place la bd
+- Copier la base de donnée qui est dans la racine du projet.
+- La coller dans /tutorat/tutorat/bin/Debug/net8.0-windows
