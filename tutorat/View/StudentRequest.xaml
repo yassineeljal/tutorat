@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:tutorat.View"
         mc:Ignorable="d"
-        Title="StudentRequest" Height="170" Width="219">
+        Title="StudentRequest" Height="200" Width="219">
     <Grid Margin="8">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -19,18 +19,17 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <StackPanel></StackPanel>
-        <TextBlock Grid.Row="0"
-                   VerticalAlignment="Center" Margin="0,0,8,8"
+        <TextBlock VerticalAlignment="Center" Margin="0,0,8,8"
                    Text="Sujet :"/>
-        <TextBox   Grid.Row="0" Grid.Column="1"
-                   Margin="0,0,0,8"
-                   Text="{Binding SubjectInput, UpdateSourceTrigger=PropertyChanged}"/>
+        <ComboBox Grid.Column="1"
+                  Margin="0,0,0,8"
+                  ItemsSource="{Binding Subjects}"
+                  SelectedItem="{Binding SelectedSubject, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
 
         <TextBlock Grid.Row="1"
                    VerticalAlignment="Center" Margin="0,0,8,8"
                    Text="Catégorie :"/>
         <ComboBox  Grid.Row="1" Grid.Column="1"
-                   Name="CboCategorie"
                    Margin="0,0,0,8"
                    ItemsSource="{Binding Categories}"
                    SelectedItem="{Binding SelectedCategory, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>

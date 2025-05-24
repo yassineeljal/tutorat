@@ -1,11 +1,17 @@
 ﻿using data;
 using data.Model;
+using Microsoft.EntityFrameworkCore;
 
 namespace tutorat.Service.StudentService
 {
     public class StudentService : IStudentService
     {
         private ModelDbContext _db = new ModelDbContext();
+
+        public Student GetById(int id)
+        {
+            return _db.Students.Include(s => s.Requests).Include(s => s.Availabilities).Include(s => s.Meetings).FirstOrDefault(s => s.Id == id);
+        }
 
         public void Create(Student student)
         {
@@ -25,7 +31,7 @@ namespace tutorat.Service.StudentService
 
         public IEnumerable<Student> GetAll()
         {
-            return _db.Students.ToList();
+            return _db.Students.Include(s => s.Requests).ToList();
         }
 
         public Student GetByDa(int Da)
@@ -40,7 +46,8 @@ namespace tutorat.Service.StudentService
 
         public void Update(Student student)
         {
-            throw new NotImplementedException();
+            _db.Students.Update(student);
+            _db.SaveChanges();
         }
     }
 }

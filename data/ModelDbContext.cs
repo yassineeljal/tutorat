@@ -1,5 +1,5 @@
-﻿using data.Model;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
+using data.Model;
 
 namespace data
 {
@@ -10,9 +10,30 @@ namespace data
         public DbSet<Student> Students { get; set; }
         public DbSet<Meeting> Meetings { get; set; }
         public DbSet<Request> Requests { get; set; }
+        public DbSet<Availability> Availabilities { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder options) =>
             options.UseSqlite("Data Source=tutorat.db");
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Availability>()
+                .HasOne(a => a.Student)
+                .WithMany(s => s.Availabilities)
+                .HasForeignKey(a => a.StudentId)
+                .IsRequired(false);
+
+            modelBuilder.Entity<Availability>()
+                .HasOne(a => a.Tutor)
+                .WithMany(t => t.Availabilities)
+                .HasForeignKey(a => a.TutorId)
+                .IsRequired(false);
+
+            modelBuilder.Entity<Student>()
+                .HasOne(s => s.Tutor)
+                .WithOne(t => t.Student)
+                .HasForeignKey<Student>(s => s.TutorId)
+                .OnDelete(DeleteBehavior.SetNull);
+        }
     }
 }

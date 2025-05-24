@@ -1,27 +1,34 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
+﻿using System.Windows;
 
 namespace tutorat.View
 {
-    /// <summary>
-    /// Logique d'interaction pour TeacherDashboard.xaml
-    /// </summary>
     public partial class TeacherDashboard : Window
     {
         public TeacherDashboard()
         {
             InitializeComponent();
         }
+
+        private void ViewMeetings_Click(object sender, RoutedEventArgs e)
+        {
+            var meetingWindow = new Meeting();
+            this.Close(); 
+            meetingWindow.Show(); 
+        }
+
+        private void ConsultRequest_Click(object sender, RoutedEventArgs e)
+        {
+            var listStudentWindow = new StudentDemandListWindow();
+            this.Close();
+            listStudentWindow.Show();
+        }
+
+        private void ConsultListTutors_Click(object sender, RoutedEventArgs e)
+        {
+            var tutorListWindow = new TutorListWindow();
+            this.Close();
+            tutorListWindow.Show();
+        }
+
     }
 }

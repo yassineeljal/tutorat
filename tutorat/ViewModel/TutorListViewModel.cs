@@ -1,4 +1,5 @@
 ﻿using System.Collections.ObjectModel;
+using System.Windows;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using data.Model;
@@ -10,14 +11,12 @@ namespace tutorat.ViewModel
     public partial class TutorListViewModel : ObservableObject
     {
         private readonly ITutorService _tutorService;
-        private readonly IStudentService _studentService ;
         public ObservableCollection<Tutor> Tutors { get; set; } = new ObservableCollection<Tutor>();
         public ObservableCollection<Tutor> TutorsSearch { get; set; } = new ObservableCollection<Tutor>();
 
-        public TutorListViewModel(ITutorService tutorService, IStudentService studentService)
+        public TutorListViewModel(ITutorService tutorService)
         {
             _tutorService = tutorService;
-            _studentService = studentService;
             LoadTutors();
 
         }
@@ -37,24 +36,6 @@ namespace tutorat.ViewModel
 
         private void LoadTutors()
         {
-            _tutorService.Create(new Tutor
-            {
-                FirstName = "Alice",
-                LastName = "Martin",
-                Da = 98765
-            });
-            _tutorService.Create(new Tutor
-            {
-                FirstName = "Alice",
-                LastName = "Martin",
-                Da = 2
-            });
-            _studentService.Create(new Student
-            {
-                FirstName = "hayawane",
-                LastName = "Martin",
-                Da = 200
-            });
             var tutors = _tutorService.GetAll();
             foreach (var tutor in tutors)
             {
@@ -88,59 +69,19 @@ namespace tutorat.ViewModel
         [RelayCommand(CanExecute = nameof(canDeleteTutor))]
         private void DeleteTutor()
         {
+            MessageBox.Show("23432");
             if (SelectedTutorSearch != null)
             {
                 _tutorService.Delete(SelectedTutorSearch.Da);
                 Tutors.Remove(SelectedTutorSearch);
                 TutorsSearch.Clear();
                 SelectedTutor = null;
+                MessageBox.Show("fregagfsda");
             }
             else
             {
                 return;
             }
-        }
-
-        [RelayCommand]
-        private void CreateTutor()
-        {
-            if (string.IsNullOrEmpty(daInputCreateTutor))
-            {
-                return;
-            }
-            if (Tutors.FirstOrDefault(t => t.Da == int.Parse(daInputCreateTutor)) != null)
-            {
-                return;
-            }
-            else
-            {
-                var student = _studentService.GetByDa(int.Parse(daInputCreateTutor));
-                if (student == null)
-                {
-                    return;
-                }
-                else
-                {
-                    _tutorService.Create(new Tutor
-                    {
-                        FirstName = student.FirstName,
-                        LastName = student.LastName,
-                        Da = student.Da
-                    });
-
-                }
-
-            }
-            var tutor = _tutorService.GetByDa(int.Parse(daInputCreateTutor));
-            if (tutor == null)
-            {
-                return;
-            }
-            else
-            {
-                Tutors.Add(tutor);
-                daInputCreateTutor = string.Empty;
-            }
-        }
+        }       
     }
 }

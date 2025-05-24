@@ -17,6 +17,96 @@ namespace data.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "9.0.4");
 
+            modelBuilder.Entity("Student", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Da")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("IsLinked")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("TutorId")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("TutorId")
+                        .IsUnique();
+
+                    b.ToTable("Students");
+                });
+
+            modelBuilder.Entity("Tutor", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Category")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("Da")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("IsLinked")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Tutors");
+                });
+
+            modelBuilder.Entity("data.Model.Availability", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("DayOfWeek")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<TimeSpan>("EndTime")
+                        .HasColumnType("TEXT");
+
+                    b.Property<TimeSpan>("StartTime")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("StudentId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("TutorId")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("StudentId");
+
+                    b.HasIndex("TutorId");
+
+                    b.ToTable("Availabilities");
+                });
+
             modelBuilder.Entity("data.Model.Meeting", b =>
                 {
                     b.Property<int>("Id")
@@ -76,31 +166,6 @@ namespace data.Migrations
                     b.ToTable("Requests");
                 });
 
-            modelBuilder.Entity("data.Model.Student", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int>("Da")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<string>("FirstName")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<bool>("IsTutor")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<string>("LastName")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Students");
-                });
-
             modelBuilder.Entity("data.Model.Teacher", b =>
                 {
                     b.Property<int>("Id")
@@ -120,59 +185,72 @@ namespace data.Migrations
                     b.ToTable("Teachers");
                 });
 
-            modelBuilder.Entity("data.Model.Tutor", b =>
+            modelBuilder.Entity("Student", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
+                    b.HasOne("Tutor", "Tutor")
+                        .WithOne("Student")
+                        .HasForeignKey("Student", "TutorId")
+                        .OnDelete(DeleteBehavior.SetNull);
 
-                    b.Property<int>("Da")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<string>("FirstName")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("LastName")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Tutors");
+                    b.Navigation("Tutor");
                 });
 
-            modelBuilder.Entity("data.Model.Meeting", b =>
+            modelBuilder.Entity("data.Model.Availability", b =>
                 {
-                    b.HasOne("data.Model.Student", "Student")
-                        .WithMany()
-                        .HasForeignKey("StudentId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                    b.HasOne("Student", "Student")
+                        .WithMany("Availabilities")
+                        .HasForeignKey("StudentId");
 
-                    b.HasOne("data.Model.Tutor", "Tutor")
-                        .WithMany()
-                        .HasForeignKey("TutorId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                    b.HasOne("Tutor", "Tutor")
+                        .WithMany("Availabilities")
+                        .HasForeignKey("TutorId");
 
                     b.Navigation("Student");
 
                     b.Navigation("Tutor");
                 });
 
+            modelBuilder.Entity("data.Model.Meeting", b =>
+                {
+                    b.HasOne("Student", null)
+                        .WithMany("Meetings")
+                        .HasForeignKey("StudentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Tutor", null)
+                        .WithMany("Meetings")
+                        .HasForeignKey("TutorId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
             modelBuilder.Entity("data.Model.Request", b =>
                 {
-                    b.HasOne("data.Model.Student", null)
+                    b.HasOne("Student", null)
                         .WithMany("Requests")
                         .HasForeignKey("StudentId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("data.Model.Student", b =>
+            modelBuilder.Entity("Student", b =>
                 {
+                    b.Navigation("Availabilities");
+
+                    b.Navigation("Meetings");
+
                     b.Navigation("Requests");
+                });
+
+            modelBuilder.Entity("Tutor", b =>
+                {
+                    b.Navigation("Availabilities");
+
+                    b.Navigation("Meetings");
+
+                    b.Navigation("Student")
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }

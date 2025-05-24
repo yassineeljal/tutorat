@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace data.Model
 {
@@ -10,7 +11,11 @@ namespace data.Model
         public String Description { get; set; }
         public DateTime DateMeeting { get; set; }
 
-        public Tutor Tutor { get; set; }
-        public Student Student { get; set; }
+        [ForeignKey(nameof(Tutor))]
+
+        public int TutorId { get; set; }
+
+        [ForeignKey(nameof(Student))]
+        public int StudentId { get; set; }
     }
 }

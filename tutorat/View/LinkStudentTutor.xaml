@@ -1,0 +1,57 @@
+﻿<Window x:Class="tutorat.View.LinkStudentTutor"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:tutorat.View"
+        mc:Ignorable="d"
+        Title="LinkStudentTutor" Height="450" Width="800">
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <GroupBox Header="Requêtes d’aide" Margin="5">
+            <DataGrid ItemsSource="{Binding Requests}"
+              SelectedItem="{Binding SelectedRequest}"
+              AutoGenerateColumns="False"
+              SelectionMode="Single"
+              CanUserAddRows="False"
+              Margin="5">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="Auto"/>
+                    <DataGridTextColumn Header="Sujet" Binding="{Binding Subject}" Width="*"/>
+                    <DataGridTextColumn Header="Catégorie" Binding="{Binding Category}" Width="*"/>
+                    <DataGridTextColumn Header="Note" Binding="{Binding Note}" Width="Auto"/>
+                    <DataGridTextColumn Header="Étudiant ID" Binding="{Binding StudentId}" Width="Auto"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </GroupBox>
+
+        <StackPanel Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button Content="Lier"
+                    Padding="10,5"
+                    Command="{Binding LinkStudentToTutorCommand}"/>
+        </StackPanel>
+
+        <GroupBox Header="Tuteurs" Grid.Column="2" Margin="5">
+            <DataGrid ItemsSource="{Binding Tutors}"
+                      SelectedItem="{Binding SelectedTutor}"
+                      AutoGenerateColumns="False"
+                      SelectionMode="Single"
+                      CanUserAddRows="False"
+                      Margin="5">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="Auto"/>
+                    <DataGridTextColumn Header="Prénom" Binding="{Binding FirstName}" Width="*"/>
+                    <DataGridTextColumn Header="Nom" Binding="{Binding LastName}" Width="*"/>
+                    <DataGridTextColumn Header="Da" Binding="{Binding Da}" Width="*"/>
+                    <DataGridTextColumn Header="Catégorie" Binding="{Binding Category}" Width="*"/>
+                    
+                </DataGrid.Columns>
+            </DataGrid>
+        </GroupBox>
+    </Grid>
+</Window>
