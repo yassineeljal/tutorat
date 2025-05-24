@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\hamza\source\repos\tutorat\bb\tutorat\obj\Debug\net8.0-windows\
+C:\Users\hamza\source\repos\tutorat\bb\tutorat\obj\Release\net8.0-windows\
 tutorat
 none
 false
-TRACE;DEBUG;NET;NET8_0;NETCOREAPP
+TRACE;RELEASE;NET;NET8_0;NETCOREAPP
 C:\Users\hamza\source\repos\tutorat\bb\tutorat\App.xaml
 764022125
 
-24-1267739694
-199-1628166083
+241346988066
+199-1234662250
 MainWindow.xaml;View\Meeting.xaml;View\StudentRequest.xaml;View\TeacherDashboard.xaml;View\TeacherProfile.xaml;View\TeacherUserControls\TutorList.xaml;View\TutorProfile.xaml;
 
 True
